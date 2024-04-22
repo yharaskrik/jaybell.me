@@ -81,7 +81,12 @@ import { filter } from 'rxjs';
                     }
                 </ul>
             </div>
-            <div class="navbar-center ml-4 mr-4">
+            <div
+                class="navbar-center ml-4 mr-4 font-semibold text-primary-content sm:text-3xl"
+            >
+                Jay Cooper Bell
+            </div>
+            <div class="navbar-end">
                 <div class="avatar">
                     <div
                         class="w-24 rounded-full ring ring-primary ring-offset-2 ring-offset-base-100 hover:h-auto hover:w-28 hover:ring-secondary-focus hover:transition-all"
@@ -96,9 +101,6 @@ import { filter } from 'rxjs';
                         /></a>
                     </div>
                 </div>
-            </div>
-            <div class="navbar-end">
-                <ul class="menu menu-horizontal gap-2 px-1 text-base"></ul>
             </div>
         </nav>
     `,

@@ -3,6 +3,13 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-home',
     standalone: true,
+    styles: [
+        `
+            .hero {
+                place-items: start center;
+            }
+        `,
+    ],
     template: `
         <section class="z-10 flex w-full flex-1 flex-col">
             <div class="hero flex-1">
@@ -16,8 +23,7 @@ import { Component } from '@angular/core';
                      after:top-[70%] after:-z-10 after:h-5 after:w-5 after:translate-y-0 after:bg-primary after:transition-all
                      after:duration-500 hover:before:translate-y-[-20px] hover:after:translate-y-[-20px] md:text-5xl"
                         >
-                            Hello! I am Jay, or as I am known online, Jay Cooper
-                            Bell
+                            Hello! I am Jay
                         </h1>
                         <p
                             class="mb-5 text-lg md:text-2xl md:leading-8 lg:leading-[3rem]"
@@ -28,26 +34,33 @@ import { Component } from '@angular/core';
                         <p
                             class="mb-5 text-lg md:text-2xl md:leading-8 lg:leading-[3rem]"
                         >
-                            Born and raised in
-                            <span
-                                class="inline-block border-none bg-gradient-to-r from-red-500 via-white to-red-500 font-extrabold text-black"
-                            >
-                                Canada,
-                            </span>
-                            I have been involved in starting four startups over
-                            the course of my career but have been working on
+                            Born and raised in Canada, I have been involved in
+                            starting four startups over the course of my career
+                            but have been working on
                             <a href="https://trellis.org">Trellis.org</a> for
-                            over six years now..
+                            over six years now.
                         </p>
                         <p
                             class="mb-5 text-lg md:text-2xl md:leading-8 lg:leading-[3rem]"
                         >
-                            Something
+                            In 2018 I Co-Founded
+                            <a href="https://trellis.org">Trellis.org</a> with
+                            my friend Justin and have been working to empower
+                            global collective impact since.
                         </p>
                         <p
                             class="mb-5 text-lg md:text-2xl md:leading-8 lg:leading-[3rem]"
                         >
-                            Something
+                            I am an Angular GDE,
+                            <a href="https://nx.dev/community">Nx Champion</a>,
+                            Host of The
+                            <a href="https://twitter.com/AngularShow"
+                                >Angular Plus Show</a
+                            >
+                            and
+                            <a href="https://thisislearning.dev">
+                                This Is Learning
+                            </a>
                         </p>
                     </div>
                 </div>

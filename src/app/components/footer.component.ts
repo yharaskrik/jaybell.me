@@ -23,7 +23,10 @@ import { SvgIconComponent } from '@ngneat/svg-icon';
                     </div>
                 </div>
                 <p class="font-bold">Jay Cooper Bell. <br /></p>
-                <p>Copyright © {{ year }} - All Rights Reserved</p>
+                <p>
+                    Website structure and inspiration from:
+                    <a href="https://mrrobot.dev/">https://mrrobot.dev/</a>
+                </p>
             </div>
             <div>
                 <ul class="grid grid-flow-col text-base xl:gap-8">
