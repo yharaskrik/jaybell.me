@@ -6,34 +6,45 @@ import analog from '@analogjs/platform';
 import { Nitro } from 'nitropack';
 
 const devBindingsModule = async (nitro: Nitro) => {
-  if (nitro.options.dev) {
-    nitro.options.plugins.push('./src/dev-bindings.ts');
-  }
+    if (nitro.options.dev) {
+        nitro.options.plugins.push('./src/dev-bindings.ts');
+    }
 };
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  publicDir: 'src/assets',
-  build: {
-    target: ['es2020'],
-  },
-  resolve: {
-    mainFields: ['module'],
-  },
-  plugins: [analog({
-    nitro: {
-      preset: "cloudflare-pages",
-      modules: [devBindingsModule]
-    }
-  })],
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    setupFiles: ['src/test.ts'],
-    include: ['**/*.spec.ts'],
-    reporters: ['default'],
-  },
-  define: {
-    'import.meta.vitest': mode !== 'production',
-  },
+    publicDir: 'src/public',
+    build: {
+        target: ['es2020'],
+        commonjsOptions: { transformMixedEsModules: true },
+    },
+    resolve: {
+        mainFields: ['module'],
+    },
+    plugins: [
+        analog({
+            vite: { experimental: { supportAnalogFormat: true } },
+            nitro: {
+                preset: 'cloudflare-pages',
+                modules: [devBindingsModule],
+                externals: { inline: ['zone.js/node', 'tslib'] },
+            },
+            prerender: {
+                routes: ['/'],
+                sitemap: {
+                    host: 'https://jaybell.me',
+                },
+            },
+        }),
+    ],
+    test: {
+        globals: true,
+        environment: 'jsdom',
+        setupFiles: ['src/test.ts'],
+        include: ['**/*.spec.ts'],
+        reporters: ['default'],
+    },
+    define: {
+        'import.meta.vitest': mode !== 'production',
+    },
 }));

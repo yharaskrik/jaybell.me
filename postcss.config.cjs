@@ -1,6 +1,11 @@
+const { join } = require('path');
+
 module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
+    plugins: {
+        'tailwindcss/nesting': 'postcss-nesting',
+        tailwindcss: {
+            config: join(__dirname, 'tailwind.config.cjs'),
+        },
+        autoprefixer: {},
+    },
 };

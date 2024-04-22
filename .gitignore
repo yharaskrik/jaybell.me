@@ -45,3 +45,6 @@ Thumbs.db
 # wrangler files
 .wrangler
 .dev.vars
+
+# Vite
+vite.config.ts*.mjs

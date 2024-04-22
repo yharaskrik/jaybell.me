@@ -9,18 +9,18 @@ import { config } from './app/app.config.server';
 import { AppComponent } from './app/app.component';
 
 if (import.meta.env.PROD) {
-  enableProdMode();
+    enableProdMode();
 }
 
 export function bootstrap() {
-  return bootstrapApplication(AppComponent, config);
+    return bootstrapApplication(AppComponent, config);
 }
 
 export default async function render(url: string, document: string) {
-  const html = await renderApplication(bootstrap, {
-    document,
-    url,
-  });
+    const html = await renderApplication(bootstrap, {
+        document,
+        url,
+    });
 
-  return html;
+    return html;
 }
