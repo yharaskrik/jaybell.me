@@ -13,7 +13,9 @@
 html,
 body {
   @apply flex min-h-screen w-full flex-auto flex-col antialiased;
-  font-family: 'Inter', sans-serif;
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: var(--bg) !important;
 }
 
