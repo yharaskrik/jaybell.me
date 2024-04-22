@@ -15,7 +15,7 @@ import { filter } from 'rxjs';
     },
     template: `
         <nav class="navbar max-h-20 bg-primary text-primary-content">
-            <div class="navbar-start mr-3 lg:justify-end">
+            <div class="navbar-start mr-3 lg:justify-start">
                 <div #dropdownButton class="dropdown lg:hidden">
                     <label
                         (click)="toggleDropdown(dropdownButton)"
@@ -42,7 +42,7 @@ import { filter } from 'rxjs';
                     </label>
                     <ul
                         tabindex="0"
-                        class="menu dropdown-content rounded-box menu-sm z-[99] mt-3 w-52 bg-white p-2 shadow"
+                        class="menu dropdown-content rounded-box menu-sm z-[99] mt-1 w-52 bg-white p-2 shadow"
                         role="menu"
                     >
                         @for (link of links; track link.name) {
