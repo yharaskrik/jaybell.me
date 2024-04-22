@@ -42,7 +42,7 @@ import { filter } from 'rxjs';
                     </label>
                     <ul
                         tabindex="0"
-                        class="menu dropdown-content rounded-box menu-sm z-[99] mt-3 w-52 bg-base-100 p-2 shadow"
+                        class="menu dropdown-content rounded-box menu-sm z-[99] mt-3 w-52 bg-white p-2 shadow"
                         role="menu"
                     >
                         @for (link of links; track link.name) {
@@ -109,12 +109,7 @@ import { filter } from 'rxjs';
 export class NavbarComponent {
     protected readonly router = inject(Router);
 
-    protected readonly links = [
-        { name: 'Home', path: '/home' },
-        { name: 'Blog', path: '/blog' },
-        { name: 'About', path: '/about' },
-        { name: 'Contact', path: '/contact' },
-    ];
+    protected readonly links = [{ name: 'Home', path: '/home' }];
 
     protected activeLink = '';
 
