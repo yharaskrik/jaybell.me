@@ -11,16 +11,16 @@ import { FooterComponent } from './footer.component';
             <app-navbar />
             <div class="relative flex flex-auto">
                 <router-outlet />
-                <!-- Animated circles container -->
-                <div class="circle-container fixed">
-                    <ul class="circles">
-                        @for (number of numbers; track $index) {
-                            <li></li>
-                        }
-                    </ul>
-                </div>
             </div>
             <app-footer />
+            <!-- Animated circles container -->
+            <div class="circle-container fixed">
+                <ul class="circles">
+                    @for (number of numbers; track $index) {
+                        <li></li>
+                    }
+                </ul>
+            </div>
         </main>
     `,
     imports: [RouterOutlet, NavbarComponent, FooterComponent],
