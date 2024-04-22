@@ -15,7 +15,7 @@ import { filter } from 'rxjs';
     },
     template: `
         <nav class="navbar max-h-20 bg-primary text-primary-content">
-            <div class="navbar-start mr-3 lg:justify-start">
+            <div class="navbar-start lg:justify-start">
                 <div #dropdownButton class="dropdown lg:hidden">
                     <label
                         (click)="toggleDropdown(dropdownButton)"
@@ -84,7 +84,7 @@ import { filter } from 'rxjs';
             <div
                 class="navbar-center ml-4 mr-4 font-semibold text-primary-content sm:text-3xl"
             >
-                Jay Cooper Bell
+                Jay Bell
             </div>
             <div class="navbar-end">
                 <div class="avatar">
