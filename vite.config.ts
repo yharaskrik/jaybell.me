@@ -1,7 +1,7 @@
 /// <reference types="vitest" />
 
-import { defineConfig } from 'vite';
 import analog from '@analogjs/platform';
+import { defineConfig } from 'vite';
 
 import { Nitro } from 'nitropack';
 
@@ -21,9 +21,11 @@ export default defineConfig(({ mode }) => ({
     resolve: {
         mainFields: ['module'],
     },
+    ssr: {
+        noExternal: ['@tsparticles/angular'],
+    },
     plugins: [
         analog({
-            vite: { experimental: { supportAnalogFormat: true } },
             nitro: {
                 preset: 'cloudflare-pages',
                 modules: [devBindingsModule],

@@ -1,9 +1,24 @@
 {
     "singleQuote": true,
     "tabWidth": 4,
-    "semi": true,
-    "bracketSpacing": true,
+    "printWidth": 115,
+    "bracketSameLine": true,
     "trailingComma": "es5",
-    "printWidth": 80,
-    "plugins": ["prettier-plugin-tailwindcss"]
+    "htmlWhitespaceSensitivity": "ignore",
+    "overrides": [
+        {
+            "files": [
+                "*.prettierrc"
+            ],
+            "options": {
+                "parser": "json",
+                "tabWidth": 4
+            }
+        }
+    ],
+    "plugins": [
+        "prettier-plugin-organize-attributes",
+        "prettier-plugin-organize-imports",
+        "prettier-plugin-tailwindcss"
+    ]
 }
