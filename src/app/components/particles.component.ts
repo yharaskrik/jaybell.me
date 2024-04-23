@@ -18,7 +18,7 @@ export class ParticlesComponent implements AfterViewInit {
     async ngAfterViewInit(): Promise<void> {
         await tsParticles.load('tsparticles', {
             background: {
-                color: '#000', // the canvas background color
+                color: '#121824', // the canvas background color
             },
             interactivity: {
                 events: {

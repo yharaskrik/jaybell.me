@@ -5,9 +5,10 @@
 @import 'prismjs/themes/prism-tomorrow';
 
 :root {
-    --trellis-forest-green: #3b963e;
-    --trellis-green: #5bb25f;
-    --bg: white;
+    --auxiliary: #7cafd1;
+    --secondary: #b3aae2;
+    --primary: #bfd1e2;
+    --background: #ffffff;
 }
 
 html,
@@ -16,7 +17,7 @@ body {
     font-family: 'Sedan', serif;
     font-weight: 400;
     font-style: normal;
-    background-color: var(--bg) !important;
+    background-color: var(--background) !important;
     color: white;
 }
 

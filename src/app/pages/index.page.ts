@@ -22,21 +22,60 @@ import { Component } from '@angular/core';
                      before:bg-primary before:transition-all before:duration-500 after:absolute after:left-[-15px]
                      after:top-[70%] after:-z-10 after:h-5 after:w-5 after:translate-y-0 after:bg-primary after:transition-all
                      after:duration-500 hover:before:translate-y-[-20px] hover:after:translate-y-[-20px] md:text-5xl">
-                            Hello! I am Jay
+                            Hi there! I'm Jay Bell, CTO/Co-Founder of
+                            <a href="https://trellis.org/" target="_blank" rel="noreferrer noopener">
+                                Trellis.org
+                            </a>
                         </h1>
                         <p class="mb-5 text-lg md:text-2xl md:leading-8 lg:leading-[3rem]">
-                            I am an Entrepreneur, Open source contributor, Podcast host and speaker.
+                            With over 10 years of experience, I've been steering the technical direction of Trellis
+                            since its inception in 2018 alongside my friend Justin. Our mission is to Empower
+                            Global Collective Impact. Learn how we are doing that from our
+                            <a href="https://trellis.org/blog/" target="_blank" rel="noreferrer noopener">
+                                main blog
+                            </a>
+                            and our more
+                            <a href="https://tech.trellis.org/" target="_blank" rel="noreferrer noopener">
+                                technical focused blog
+                            </a>
                         </p>
                         <p class="mb-5 text-lg md:text-2xl md:leading-8 lg:leading-[3rem]">
-                            Born and raised in Canada, I have been involved in starting four startups over the
-                            course of my career but have been working on
-                            <a href="https://trellis.org" target="_blank" rel="noreferrer noopener">Trellis.org</a>
-                            for over six years now.
+                            Born and raised in Canada, I've dabbled in various entrepreneurial ventures, from
+                            drones to software and mobile apps. My passion for technology and innovation led me to
+                            co-found Trellis.org.
                         </p>
                         <p class="mb-5 text-lg md:text-2xl md:leading-8 lg:leading-[3rem]">
-                            In 2018 I Co-Founded
-                            <a href="https://trellis.org" target="_blank" rel="noreferrer noopener">Trellis.org</a>
-                            with my friend Justin and have been working to empower global collective impact since.
+                            I specialize in a range of technologies and domains, including Nx, Angular, Nest,
+                            DevOps, CI/CD, startups, entrepreneurship, TypeScript, GraphQL, and NgRx.
+                        </p>
+                        <p class="mb-5 text-lg md:text-2xl md:leading-8 lg:leading-[3rem]">
+                            I'm an active open-source contributor (checkout my contributions on my
+                            <a href="https://github.com/yharaskrik" target="_blank" rel="noreferrer noopener">
+                                Github
+                            </a>
+                            !), an
+                            <a
+                                href="https://developers.google.com/profile/u/jaycooperbell"
+                                target="_blank"
+                                rel="noreferrer noopener">
+                                Angular GDE
+                            </a>
+                            , and an
+                            <a href="https://nx.dev/community" target="_blank" rel="noreferrer noopener">
+                                Nx Champion
+                            </a>
+                            . You can catch me co-hosting
+                            <a href="https://twitter.com/AngularShow" target="_blank" rel="noreferrer noopener">
+                                The Angular Plus Show
+                            </a>
+                            and
+                            <a
+                                href="https://www.youtube.com/@ThisisTechTalks"
+                                target="_blank"
+                                rel="noreferrer noopener">
+                                This is Tech Talks
+                            </a>
+                            .
                         </p>
                         <p class="mb-5 text-lg md:text-2xl md:leading-8 lg:leading-[3rem]">
                             I am an
@@ -52,12 +91,32 @@ import { Component } from '@angular/core';
                             </a>
                             , Host of The
                             <a href="https://twitter.com/AngularShow" target="_blank" rel="noreferrer noopener">
-                                Angular Plus Show
+                                The Angular Plus Show
                             </a>
                             and
                             <a href="https://thisislearning.dev" target="_blank" rel="noreferrer noopener">
                                 This Is Learning
                             </a>
+                            . Occasionally I stream on Twitch/YouTube, you can find my previous streams
+                            <a
+                                href="https://www.youtube.com/channel/UCNSNsSjigIpbMwof4BjKmNA"
+                                target="_blank"
+                                rel="noreferrer noopener">
+                                here
+                            </a>
+                        </p>
+                        <p class="mb-5 text-lg md:text-2xl md:leading-8 lg:leading-[3rem]">
+                            I'm deeply involved in fostering communities. I've facilitated and planned numerous
+                            Startup Weekends and FuckUp nights, fostering innovation and learning among aspiring
+                            entrepreneurs and other community members.
+                        </p>
+                        <p class="mb-5 text-lg md:text-2xl md:leading-8 lg:leading-[3rem]">
+                            My academic journey includes a Diploma in Computer Systems: Operations and Management
+                            from
+                            <a href="https://www.tru.ca/">Thompson Rivers University</a>
+                            and a Bachelor of Science, Major in Computer Science, Minor in Data Science from the
+                            <a href="https://www.ubc.ca/">University of British Columbia</a>
+                            .
                         </p>
                         <div class="mb-5">
                             <h1 class="mb-5 w-fit text-3xl font-bold underline" id="angular-plus-show">
@@ -80,7 +139,12 @@ import { Component } from '@angular/core';
                         </div>
                         <div class="mb-5">
                             <h1 class="mb-2 w-fit text-3xl font-bold underline" id="this-is-tech-talks">
-                                <a href="https://www.youtube.com/@ThisisTechTalks">This is Tech Talks</a>
+                                <a
+                                    href="https://www.youtube.com/@ThisisTechTalks"
+                                    target="_blank"
+                                    rel="noreferrer noopener">
+                                    This is Tech Talks
+                                </a>
                             </h1>
                             <p class="mb-2 text-lg md:text-2xl md:leading-8 lg:leading-[3rem]">
                                 Check out the YouTube playlist below to watch the streams I have been a part of for

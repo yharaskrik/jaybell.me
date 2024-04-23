@@ -8,11 +8,11 @@ import { Router, RouterLink, RouterLinkActive } from '@angular/router';
         class: 'z-[100]',
     },
     template: `
-        <nav class="navbar max-h-20 bg-primary text-primary-content">
+        <nav class="navbar max-h-20 bg-primary">
             <div class="navbar-start lg:justify-start">
                 <div class="dropdown lg:hidden" #dropdownButton>
                     <label
-                        class="btn btn-circle btn-ghost"
+                        class="btn btn-circle btn-ghost text-black"
                         (click)="toggleDropdown(dropdownButton)"
                         tabindex="0"
                         aria-haspopup="true"
@@ -44,12 +44,11 @@ import { Router, RouterLink, RouterLinkActive } from '@angular/router';
                         }
                     </ul>
                 </div>
-                <ul class="menu menu-horizontal hidden px-1 text-base lg:flex xl:gap-8">
+                <ul class="menu menu-horizontal hidden px-1 text-base lg:flex xl:gap-4">
                     @for (link of links; track link.name) {
-                        <li
-                            class="relative block w-fit text-xl after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-black after:transition after:duration-300 after:content-[''] after:hover:[&:not(&:has(a.active))]:scale-x-100">
+                        <li>
                             <a
-                                class="hover:outline-none hover:[&:not(.active)]:bg-transparent"
+                                class="text-black hover:outline-none hover:[&:not(.active)]:bg-transparent"
                                 [routerLinkActiveOptions]="{ exact: true }"
                                 [fragment]="link.path"
                                 routerLink="."

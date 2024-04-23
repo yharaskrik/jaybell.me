@@ -10,8 +10,9 @@ import { githubIcon } from './svg/github';
 import { linkedinIcon } from './svg/linkedin';
 import { logoRegIcon } from './svg/logo_reg';
 import { twitterIcon } from './svg/twitter';
+import { youtubeIcon } from './svg/youtube';
 
-const svgIcons = [analogIcon, githubIcon, linkedinIcon, logoRegIcon, twitterIcon];
+const svgIcons = [analogIcon, githubIcon, linkedinIcon, logoRegIcon, twitterIcon, youtubeIcon];
 
 export const appConfig: ApplicationConfig = {
     providers: [
