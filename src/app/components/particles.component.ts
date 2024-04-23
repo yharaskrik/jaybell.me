@@ -61,6 +61,9 @@ export class ParticlesComponent implements AfterViewInit {
                 number: {
                     value: this.deviceService.isMobile() ? 50 : 100,
                 },
+                color: {
+                    value: '#7cafd1',
+                },
             },
         });
     }
