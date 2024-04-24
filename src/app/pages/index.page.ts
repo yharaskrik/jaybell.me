@@ -134,7 +134,7 @@ import { map } from 'rxjs';
                             <img
                                 class="my-5 w-full"
                                 src="https://pbs.twimg.com/profile_banners/3863308092/1694019270/1500x500" />
-                            <p class="mb-5 w-fit text-2xl font-bold">
+                            <p class="mb-5 text-lg md:text-2xl md:leading-8 lg:leading-[3rem]">
                                 The Angular Plus Show is the home of ng-conf's official all-Angular podcast. Come
                                 here to stay up to date on the latest changes in the Angular community. Expect to
                                 laugh and cry with us as we talk about our experiences as Angular developers. Come
