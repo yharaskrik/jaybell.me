@@ -20,28 +20,6 @@ export class ParticlesComponent implements AfterViewInit {
             background: {
                 color: '#121824', // the canvas background color
             },
-            interactivity: {
-                events: {
-                    onClick: {
-                        // this handles the mouse click event
-                        enable: true,
-                        mode: 'push', // this adds particles
-                    },
-                    onHover: {
-                        // this handles the mouse hover event
-                        enable: true,
-                        mode: 'repulse', // this make particles move away from the mouse
-                    },
-                },
-                modes: {
-                    push: {
-                        quantity: 6, // number of particles to add
-                    },
-                    repulse: {
-                        distance: 100, // the distance of the particles from the mouse
-                    },
-                },
-            },
             particles: {
                 links: {
                     enable: true, // this enables links between particles

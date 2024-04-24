@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { map } from 'rxjs';
 
 @Component({
     selector: 'app-home',
@@ -119,6 +122,22 @@ import { Component } from '@angular/core';
                             .
                         </p>
                         <div class="mb-5">
+                            <h1 class="mb-5 w-fit text-3xl font-bold underline" id="achat-mtg">
+                                <a href="https://chatmtg.app" target="_blank" rel="noreferrer noopener">ChatMTG</a>
+                            </h1>
+                            <p
+                                class="mb-5 text-lg md:text-2xl md:leading-8 lg:leading-[3rem]"
+                                style="white-space: pre-wrap">
+                                {{ chatMtgHelp() }}
+                            </p>
+                            <p class="mb-5 w-fit text-2xl font-bold underline" id="achat-mtg">
+                                <a href="https://chatmtg.app" target="_blank" rel="noreferrer noopener">
+                                    Try ChatMTG out now by joining our Discord!
+                                </a>
+                            </p>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="mb-5">
                             <h1 class="mb-5 w-fit text-3xl font-bold underline" id="angular-plus-show">
                                 <a
                                     href="https://open.spotify.com/show/1PrLErQHBqBhZsRV1KHhGM?si=9e07c59d5f454cb3"
@@ -167,4 +186,11 @@ import { Component } from '@angular/core';
         </section>
     `,
 })
-export default class HomePage {}
+export default class HomePage {
+    protected readonly chatMtgHelp = toSignal<string>(
+        inject(HttpClient)
+            .get<{ text: string }>(`https://chat-mtg-backend.fly.dev/beacon/help`)
+            .pipe(map((value) => value.text)),
+        { initialValue: null }
+    );
+}
