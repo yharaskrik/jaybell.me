@@ -10,40 +10,6 @@ import { Router, RouterLink, RouterLinkActive } from '@angular/router';
     template: `
         <nav class="navbar max-h-20 bg-primary">
             <div class="navbar-start lg:justify-start">
-                <div class="dropdown lg:hidden" #dropdownButton>
-                    <label
-                        class="btn btn-circle btn-ghost text-black"
-                        (click)="toggleDropdown(dropdownButton)"
-                        tabindex="0"
-                        aria-haspopup="true"
-                        aria-label="Open menu"
-                        aria-expanded="false">
-                        <svg
-                            class="h-5 w-5"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h7" />
-                        </svg>
-                    </label>
-                    <ul
-                        class="menu dropdown-content rounded-box menu-sm z-[99] mt-1 w-52 bg-black p-2 shadow"
-                        tabindex="0"
-                        role="menu">
-                        @for (link of links; track link.name) {
-                            <li>
-                                <a [fragment]="link.path" routerLink="." routerLinkActive="active">
-                                    {{ link.name }}
-                                </a>
-                            </li>
-                        }
-                    </ul>
-                </div>
                 <ul class="menu menu-horizontal hidden px-1 text-base lg:flex xl:gap-4">
                     @for (link of links; track link.name) {
                         <li>
@@ -59,7 +25,7 @@ import { Router, RouterLink, RouterLinkActive } from '@angular/router';
                     }
                 </ul>
             </div>
-            <div class="navbar-center ml-4 mr-4 font-semibold text-primary-content sm:text-3xl">Jay Bell</div>
+            <div class="navbar-center ml-4 mr-4 font-semibold text-primary-content sm:text-4xl">Jay Bell</div>
             <div class="navbar-end">
                 <div class="avatar">
                     <div
@@ -86,6 +52,7 @@ export class NavbarComponent {
         { name: 'Home', path: '' },
         { name: 'The Angular Plus Show', path: 'angular-plus-show' },
         { name: 'This is Tech Talks', path: 'this-is-tech-talks' },
+        { name: 'ChatMTG', path: 'chat-mtg' },
     ];
 
     protected toggleDropdown(button: HTMLDivElement) {

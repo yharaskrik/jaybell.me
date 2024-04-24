@@ -3,6 +3,7 @@ import { provideFileRouter } from '@analogjs/router';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { ApplicationConfig } from '@angular/core';
 import { provideClientHydration } from '@angular/platform-browser';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { withInMemoryScrolling, withViewTransitions } from '@angular/router';
 import { provideSvgIcons } from '@ngneat/svg-icon';
 import { analogIcon } from './svg/analog';
@@ -26,5 +27,6 @@ export const appConfig: ApplicationConfig = {
         provideClientHydration(),
         provideContent(withMarkdownRenderer()),
         provideSvgIcons([...svgIcons]),
+        provideAnimationsAsync(),
     ],
 };

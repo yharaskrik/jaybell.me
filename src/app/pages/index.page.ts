@@ -121,21 +121,6 @@ import { map } from 'rxjs';
                             <a href="https://www.ubc.ca/">University of British Columbia</a>
                             .
                         </p>
-                        <div class="mb-5">
-                            <h1 class="mb-5 w-fit text-3xl font-bold underline" id="achat-mtg">
-                                <a href="https://chatmtg.app" target="_blank" rel="noreferrer noopener">ChatMTG</a>
-                            </h1>
-                            <p
-                                class="mb-5 text-lg md:text-2xl md:leading-8 lg:leading-[3rem]"
-                                style="white-space: pre-wrap">
-                                {{ chatMtgHelp() }}
-                            </p>
-                            <p class="mb-5 w-fit text-2xl font-bold underline" id="achat-mtg">
-                                <a href="https://chatmtg.app" target="_blank" rel="noreferrer noopener">
-                                    Try ChatMTG out now by joining our Discord!
-                                </a>
-                            </p>
-                        </div>
                         <hr class="my-5" />
                         <div class="mb-5">
                             <h1 class="mb-5 w-fit text-3xl font-bold underline" id="angular-plus-show">
@@ -146,6 +131,16 @@ import { map } from 'rxjs';
                                     The Angular Plus Show
                                 </a>
                             </h1>
+                            <img
+                                class="my-5 w-full"
+                                src="https://pbs.twimg.com/profile_banners/3863308092/1694019270/1500x500" />
+                            <p class="mb-5 w-fit text-2xl font-bold">
+                                The Angular Plus Show is the home of ng-conf's official all-Angular podcast. Come
+                                here to stay up to date on the latest changes in the Angular community. Expect to
+                                laugh and cry with us as we talk about our experiences as Angular developers. Come
+                                join us to talk about all things Angular and Angular adjacent! With bonus episodes
+                                from The Dev Life podcast!
+                            </p>
                             <iframe
                                 style="border-radius:12px"
                                 src="https://open.spotify.com/embed/show/1PrLErQHBqBhZsRV1KHhGM?utm_source=generator&theme=0&t=0"
@@ -156,6 +151,23 @@ import { map } from 'rxjs';
                                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                                 loading="lazy"></iframe>
                         </div>
+                        <hr class="my-5" />
+                        <div class="mb-5">
+                            <h1 class="mb-5 w-fit text-3xl font-bold underline" id="chat-mtg">
+                                <a href="https://chatmtg.app" target="_blank" rel="noreferrer noopener">ChatMTG</a>
+                            </h1>
+                            <p
+                                class="mb-5 text-lg md:text-2xl md:leading-8 lg:leading-[3rem]"
+                                style="white-space: pre-wrap">
+                                {{ chatMtgHelp() }}
+                            </p>
+                            <p class="mb-5 w-fit text-2xl font-bold underline">
+                                <a href="https://chatmtg.app" target="_blank" rel="noreferrer noopener">
+                                    Try ChatMTG out now by joining our Discord!
+                                </a>
+                            </p>
+                        </div>
+                        <hr class="my-5" />
                         <div class="mb-5">
                             <h1 class="mb-2 w-fit text-3xl font-bold underline" id="this-is-tech-talks">
                                 <a

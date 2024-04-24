@@ -1,8 +1,76 @@
+@use '@angular/material' as mat;
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import 'prismjs/plugins/toolbar/prism-toolbar.css';
 @import 'prismjs/themes/prism-tomorrow';
+
+$primary-colors: (
+    50: #e5edf3,
+    100: #bfd1e2,
+    200: #94b5d5,
+    300: #689acb,
+    400: #4888c6,
+    500: #2a76bf,
+    600: #2669b3,
+    700: #1e59a2,
+    800: #164990,
+    900: #042e73,
+    contrast: (
+        50: rgba(black, 0.87),
+        100: rgba(black, 0.87),
+        200: rgba(black, 0.87),
+        300: white,
+        400: white,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+    )
+);
+
+$secondary-colors: (
+    50: #edeaf8,
+    100: #d1cced,
+    200: #b3aae2,
+    300: #9487d8,
+    400: #7c6cd1,
+    500: #6254ca,
+    600: #584ec3,
+    700: #4a46b9,
+    800: #3d40b1,
+    900: #2534a2,
+    contrast: (
+        50: rgba(black, 0.87),
+        100: rgba(black, 0.87),
+        200: rgba(black, 0.87),
+        300: white,
+        400: white,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+    )
+);
+
+$primary-palette: mat.define-palette($primary-colors, 100);
+$accent-palette: mat.define-palette($secondary-colors, 200, 100, 400);
+
+$theme: mat.define-light-theme((
+    color: (
+        primary: $primary-palette,
+        accent: $accent-palette,
+    ),
+    typography: mat.define-typography-config(),
+    density: 0,
+));
+
+@include mat.core-theme($theme);
+@include mat.button-theme($theme);
+@include mat.icon-theme($theme);
+@include mat.fab-theme($theme);
 
 :root {
     --auxiliary: #7cafd1;
