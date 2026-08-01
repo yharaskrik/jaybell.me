@@ -28,7 +28,7 @@ eleventyNavigation:
                         {% endif %}
                         <div class="mt-2.5 flex flex-wrap gap-1.5">
                             {% if item.platform %}
-                                <a class="inline-flex items-center gap-1.5 border border-[color-mix(in_srgb,var(--color-accent)_40%,var(--color-line))] bg-[color-mix(in_srgb,var(--color-accent)_14%,var(--color-surface))] px-2.5 py-0.5 font-mono text-[9px] tracking-[0.03em] text-accent no-underline transition-[background,color,border-color] duration-150 hover:border-accent hover:bg-accent hover:text-surface" href="{{ item.url }}" target="_blank" rel="noopener">{{ item.platform }}</a>
+                                <a class="pill text-[9px] no-underline" href="{{ item.url }}" target="_blank" rel="noopener">{{ item.platform }}</a>
                             {% endif %}
                             {% for tag in item.tags | head(4) %}
                                 <span class="pill text-[9px]">{{ tag }}</span>

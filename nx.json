@@ -13,7 +13,7 @@
         },
         "css": {
             "cache": true,
-            "inputs": ["{projectRoot}/styles/**/*"],
+            "inputs": ["{projectRoot}/styles/**/*", "{projectRoot}/**/*.{njk,md,html}"],
             "outputs": ["{projectRoot}/gen"]
         }
     },

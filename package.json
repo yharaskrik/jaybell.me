@@ -10,14 +10,15 @@
     "scripts": {
         "build": "eleventy",
         "build:ghpages": "eleventy --pathprefix=/",
-        "start": "eleventy --serve --quiet",
-        "dev": "eleventy --serve --quiet",
+        "start": "tailwindcss -i ./styles/main.css -o ./gen/main.css --watch & eleventy --serve --quiet",
+        "dev": "tailwindcss -i ./styles/main.css -o ./gen/main.css --watch & eleventy --serve --quiet",
         "serve": "eleventy --serve",
         "debug": "DEBUG=Eleventy* eleventy",
         "debugstart": "DEBUG=Eleventy* eleventy --serve --quiet",
         "benchmark": "DEBUG=Eleventy:Benchmark* eleventy",
         "deploy": "npm run build && gh-pages -d _site",
         "css": "tailwindcss -i ./styles/main.css -o ./gen/main.css",
+        "css:watch": "tailwindcss -i ./styles/main.css -o ./gen/main.css --watch",
         "format": "nx format:write",
         "format:check": "nx format:check"
     },
