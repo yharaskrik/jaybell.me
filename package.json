@@ -50,5 +50,8 @@
         "prettier-plugin-tailwindcss": "^0.8.1",
         "tailwindcss": "^4.1.0"
     },
-    "nx": {}
+    "nx": {},
+    "dependencies": {
+        "command-code": "^1.6.2"
+    }
 }
