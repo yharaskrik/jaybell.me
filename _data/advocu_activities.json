@@ -1,5 +1,17 @@
 [
     {
+        "title": "A+ Show S11E11 | Angular 22 Has Landed — And It's Built for the Future with Mark Techson",
+        "link": "https://open.spotify.com/episode/28Aac6L4xuoOVBtkNFcZMN",
+        "publishDate": "2026-06-03",
+        "type": "Podcasts",
+        "description": "In this episode of the Angular Plus Show, the hosts sit down with Mark Techson to unpack what's exciting in Angular 22, from signal forms, Angular Aria, error boundaries, and template improvements to the growing role of AI and agentic workflows in modern development. Find out where Angular is headed, how the framework is adapting for the next generation of web apps, and why developer expertise still matters in an AI-assisted world. Link to the new code: https://github.com/angular/angular/releases/tag/v22.0.0",
+        "platform": "Spotify",
+        "duration": "48 min 34 sec",
+        "tags": [
+            "Angular"
+        ]
+    },
+    {
         "title": "Surviving the (parsing) Storm",
         "link": "https://tech.trellis.org/blog/2026-05-20-Surviving-the-Parsing-Storm/",
         "submittedDate": "2026-06-22",
@@ -17,13 +29,52 @@
         ]
     },
     {
-        "title": "A+ Show S11 E1 | SignalStore Events - Have we come full circle?",
-        "link": "https://open.spotify.com/episode/0RQRNTj1KNmLXf3ESa8LDZ",
-        "submittedDate": "2026-04-01",
-        "publishDate": "2026-02-25",
+        "title": "A+ Show S11 E10 | AI, Engineering & the Future of Software with Doguhan Uluca",
+        "link": "https://open.spotify.com/episode/2N4rI46nlvTMGZLlOWL9Vn",
+        "publishDate": "2026-05-20",
         "type": "Podcasts",
-        "viewers": 346,
-        "description": "An episode of The Angular Plus Show featuring Marko Stanimirović, the creator of SignalStore. The discussion covers NgRx, SignalStore, and the new Events plugin, which is similar to NgRx Effects but designed specifically for NgRx SignalStore.",
+        "description": "In this episode of Angular Plus Show, the hosts sit down with Doguhan Uluca, Director of Software Engineering at Capital One and Angular author, for a candid conversation about how AI is reshaping software development. From vibe coding, multi-agent workflows, and AI-assisted architecture reviews to token economics, open-source models, and the future of engineering careers, the discussion explores both the excitement and uncertainty surrounding AI in tech. It's a thoughtful, funny, and occasionally existential deep dive into where the industry may be headed next.",
+        "platform": "Spotify",
+        "duration": "47 min 34 sec",
+        "tags": [
+            "Angular",
+            "AI"
+        ]
+    },
+    {
+        "title": "A+ Show S11 E8 | The cross-section of AI and mentoring with Lukas Ruebbelke",
+        "link": "https://open.spotify.com/episode/0d2EYYvEUzaepXcnF8Lfc3",
+        "publishDate": "2026-04-29",
+        "type": "Podcasts",
+        "description": "Lukas brings his expertise and passion for developer experience and learning to answer the big question, \"what does mentoring look like in the age of AI and coding agents?\" Lukas is a staff engineer at Weights & Biases. Coding agents are changing how software is being designed, built, and tested. On this episode we explore how engineering is still at the core of the disciplines of crafting software.",
+        "platform": "Spotify",
+        "duration": "48 min 35 sec",
+        "tags": [
+            "Angular",
+            "AI"
+        ]
+    },
+    {
+        "title": "A+ Show S11E6 | Fostering communities and knowledge sharing with Giovanni Rivas",
+        "link": "https://open.spotify.com/episode/4KemuIBRrQp4v13MdjeMjE",
+        "publishDate": "2026-04-08",
+        "type": "Podcasts",
+        "description": "Growing a developer community (or any community for that matter!) is harder than it looks. This week we welcome Giovanni Rivas to talk about the real obstacles and opportunities in community building, mentorship, open-source collaboration, and the importance of knowledge sharing. Show notes: https://npmx.dev/, https://cloud.google.com/blog/topics/training-certifications/join-a-google-developer-student-club/, https://gdg.community.dev/, https://www.meetup.com/angularcommunity/. Get in touch with Gio! https://www.linkedin.com/in/giovanni-rivas-flores/ X: @garf50",
+        "platform": "Spotify",
+        "duration": "1 hr 2 min",
+        "tags": [
+            "Angular",
+            "Community"
+        ]
+    },
+    {
+        "title": "The Updated 2026 Angular Roadmap with Jay Bell & Brian Love",
+        "link": "https://open.spotify.com/episode/56a9saYlYzLzVSMUTK4ygE",
+        "submittedDate": "2026-04-01",
+        "publishDate": "2026-03-11",
+        "type": "Podcasts",
+        "viewers": 306,
+        "description": "Jay Bell and Brian Love discuss the updated Angular Roadmap, including additions, removals, and areas of focus. They reference the official roadmap and related discussions.",
         "platform": "Spotify",
         "tags": [
             "Angular"
@@ -46,13 +97,13 @@
         ]
     },
     {
-        "title": "The Updated 2026 Angular Roadmap with Jay Bell & Brian Love",
-        "link": "https://open.spotify.com/episode/56a9saYlYzLzVSMUTK4ygE",
+        "title": "A+ Show S11 E1 | SignalStore Events - Have we come full circle?",
+        "link": "https://open.spotify.com/episode/0RQRNTj1KNmLXf3ESa8LDZ",
         "submittedDate": "2026-04-01",
-        "publishDate": "2026-03-11",
+        "publishDate": "2026-02-25",
         "type": "Podcasts",
-        "viewers": 306,
-        "description": "Jay Bell and Brian Love discuss the updated Angular Roadmap, including additions, removals, and areas of focus. They reference the official roadmap and related discussions.",
+        "viewers": 346,
+        "description": "An episode of The Angular Plus Show featuring Marko Stanimirović, the creator of SignalStore. The discussion covers NgRx, SignalStore, and the new Events plugin, which is similar to NgRx Effects but designed specifically for NgRx SignalStore.",
         "platform": "Spotify",
         "tags": [
             "Angular"
@@ -89,46 +140,59 @@
         ]
     },
     {
-        "title": "Meet the hosts + a sneak peak into Season 10!",
-        "link": "https://open.spotify.com/episode/4VCswEPgvIigwoYy9gFZn4",
+        "title": "Vite's Next Chapter: Alex Lichter on Rolldown, Oxc, and Beyond",
+        "link": "https://open.spotify.com/episode/1jMa5Xg4N6dmzm7mZ85R9C",
         "submittedDate": "2025-12-10",
-        "publishDate": "2025-09-03",
+        "publishDate": "2025-10-15",
         "type": "Podcasts",
-        "viewers": 399,
-        "description": "Season 10 of the Angular Plus Show introduces guest hosts Brooke Avery and Jay Bell. Topics range from software architecture and Angular signal forms to MFE and native federation.",
-        "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
-    },
-    {
-        "title": "The Human Side of Software: Leadership in Tech | James Spivey",
-        "link": "https://open.spotify.com/episode/7KsZnPimrtERE1sULCUX8c",
-        "submittedDate": "2025-12-10",
-        "publishDate": "2025-09-10",
-        "type": "Podcasts",
-        "viewers": 428,
-        "description": "Podcast episode featuring James Spivey from Capital One discussing software engineering leadership, career wisdom, and insights. Part of The Angular Plus Show.",
-        "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
-    },
-    {
-        "title": "Challenge Accepted: Thomas Laforge on Angular Challenges",
-        "link": "https://open.spotify.com/episode/2Tl1Qyo7pr4JaRFXdmv0D1",
-        "submittedDate": "2025-12-10",
-        "publishDate": "2025-09-17",
-        "type": "Podcasts",
-        "viewers": 461,
-        "description": "An episode of the Angular Plus Show featuring Thomas Laforge, creator of Angular Challenges, an open-source resource for Angular, Nx, RxJS, NgRx, and TypeScript learners. Thomas discusses the structure of Angular Challenges (60+ challenges covering state management, signals & reactive forms) and how solving them can improve skills for...",
+        "viewers": 337,
+        "description": "An episode of The Angular Plus Show podcast featuring Alex Lichter discussing the future of Vite and the impact of projects like Rolldown, Oxc, and VitePlus on web development, build speeds, linting, and framework integration (like Angular).",
         "platform": "Spotify",
         "tags": [
             "Angular",
-            "Open Source",
-            "Dart - Flutter",
             "Web",
-            "Web - CSS & UI"
+            "Web - Performance"
+        ]
+    },
+    {
+        "title": "Riding the AI Wave: Developer Philosophy with Jason Warner",
+        "link": "https://open.spotify.com/episode/5IjonFf2EL4CW19caAgCxF",
+        "submittedDate": "2025-12-10",
+        "publishDate": "2025-10-08",
+        "type": "Podcasts",
+        "viewers": 402,
+        "description": "Podcast episode featuring Jason Warner discussing how developers can position themselves for success in the new AI reality, along with developer philosophy.",
+        "platform": "Spotify",
+        "tags": [
+            "AI"
+        ]
+    },
+    {
+        "title": "Quality at Trellis: Our Vision for Testing and Automation",
+        "link": "https://tech.trellis.org/blog/2025-09-28-Quality-at-Trellis-Our-Vision-for-Testing-and-Automation/",
+        "submittedDate": "2025-10-24",
+        "publishDate": "2025-09-30",
+        "type": "Articles",
+        "viewers": 60,
+        "description": "An overview of Trellis's approach to software testing and automation, emphasizing the importance of quality and speed. It details the types of testing employed (unit, integration, E2E, smoke, load), the tools used, and how testing aligns with key engineering initiatives like performance optimization. The article also discusses the establishment...",
+        "platform": "Trellis Tech Blog",
+        "tags": [
+            "Web",
+            "Angular"
+        ]
+    },
+    {
+        "title": "MDN Web Docs: Web Developer Community",
+        "link": "https://www.youtube.com/watch?v=q3j_FaSKRp8",
+        "submittedDate": "2025-10-24",
+        "publishDate": "2025-09-27",
+        "type": "Podcasts",
+        "viewers": 31,
+        "description": "A YouTube video description highlighting MDN Web Docs as a central resource for the web developer community. It mentions copyright information and standard YouTube disclaimers.",
+        "platform": "YouTube",
+        "tags": [
+            "Web",
+            "Web - DevTools & Browser Automation"
         ]
     },
     {
@@ -149,88 +213,46 @@
         ]
     },
     {
-        "title": "Riding the AI Wave: Developer Philosophy with Jason Warner",
-        "link": "https://open.spotify.com/episode/5IjonFf2EL4CW19caAgCxF",
+        "title": "Challenge Accepted: Thomas Laforge on Angular Challenges",
+        "link": "https://open.spotify.com/episode/2Tl1Qyo7pr4JaRFXdmv0D1",
         "submittedDate": "2025-12-10",
-        "publishDate": "2025-10-08",
+        "publishDate": "2025-09-17",
         "type": "Podcasts",
-        "viewers": 402,
-        "description": "Podcast episode featuring Jason Warner discussing how developers can position themselves for success in the new AI reality, along with developer philosophy.",
+        "viewers": 461,
+        "description": "An episode of the Angular Plus Show featuring Thomas Laforge, creator of Angular Challenges, an open-source resource for Angular, Nx, RxJS, NgRx, and TypeScript learners. Thomas discusses the structure of Angular Challenges (60+ challenges covering state management, signals & reactive forms) and how solving them can improve skills for...",
         "platform": "Spotify",
-        "tags": [
-            "AI"
-        ]
-    },
-    {
-        "title": "Vite's Next Chapter: Alex Lichter on Rolldown, Oxc, and Beyond",
-        "link": "https://open.spotify.com/episode/1jMa5Xg4N6dmzm7mZ85R9C",
-        "submittedDate": "2025-12-10",
-        "publishDate": "2025-10-15",
-        "type": "Podcasts",
-        "viewers": 337,
-        "description": "An episode of The Angular Plus Show podcast featuring Alex Lichter discussing the future of Vite and the impact of projects like Rolldown, Oxc, and VitePlus on web development, build speeds, linting, and framework integration (like Angular).",
-        "platform": "Spotify",
-        "tags": [
-            "Angular",
-            "Web",
-            "Web - Performance"
-        ]
-    },
-    {
-        "title": "RsPack and future of build tools",
-        "link": "https://www.youtube.com/watch?v=5iVa3U0qZqM",
-        "submittedDate": "2025-10-24",
-        "publishDate": "2024-12-24",
-        "type": "Podcasts",
-        "viewers": 133,
-        "description": "A YouTube video discussing RsPack and the future of build tools. The video is presented by Google LLC.",
-        "platform": "YouTube",
-        "tags": [
-            "Web",
-            "Web - Performance"
-        ]
-    },
-    {
-        "title": "Langbase - Serverless AI developer platform",
-        "link": "https://www.youtube.com/watch?v=49ExnAFYPH4",
-        "submittedDate": "2025-10-24",
-        "publishDate": "2024-12-27",
-        "type": "Podcasts",
-        "viewers": 604,
-        "description": "A YouTube video introducing Langbase, a serverless AI developer platform. The video likely covers the platform's features, benefits, and how it can be used to build AI applications.",
-        "platform": "YouTube",
-        "tags": [
-            "AI",
-            "Cloud - Serverless & Containers"
-        ]
-    },
-    {
-        "title": "MDN Web Docs: Web Developer Community",
-        "link": "https://www.youtube.com/watch?v=q3j_FaSKRp8",
-        "submittedDate": "2025-10-24",
-        "publishDate": "2025-09-27",
-        "type": "Podcasts",
-        "viewers": 31,
-        "description": "A YouTube video description highlighting MDN Web Docs as a central resource for the web developer community. It mentions copyright information and standard YouTube disclaimers.",
-        "platform": "YouTube",
-        "tags": [
-            "Web",
-            "Web - DevTools & Browser Automation"
-        ]
-    },
-    {
-        "title": "Building at Scale: How Trellis Structures Our Nx Monorepo",
-        "link": "https://tech.trellis.org/blog/2025-08-04-Building-at-Scale-How-Trellis-Structures-Our-Nx-Monorepo/",
-        "submittedDate": "2025-10-24",
-        "publishDate": "2025-08-04",
-        "type": "Articles",
-        "viewers": 237,
-        "description": "An overview of how Trellis structures its Nx monorepo, including application architecture, library organization, module boundaries, custom Nx plugins, CI/CD, and developer experience. It covers the challenges of managing complexity at scale, the benefits of using Nx, and lessons learned.",
-        "platform": "Trellis Tech Blog",
         "tags": [
             "Angular",
             "Open Source",
-            "Web"
+            "Dart - Flutter",
+            "Web",
+            "Web - CSS & UI"
+        ]
+    },
+    {
+        "title": "The Human Side of Software: Leadership in Tech | James Spivey",
+        "link": "https://open.spotify.com/episode/7KsZnPimrtERE1sULCUX8c",
+        "submittedDate": "2025-12-10",
+        "publishDate": "2025-09-10",
+        "type": "Podcasts",
+        "viewers": 428,
+        "description": "Podcast episode featuring James Spivey from Capital One discussing software engineering leadership, career wisdom, and insights. Part of The Angular Plus Show.",
+        "platform": "Spotify",
+        "tags": [
+            "Angular"
+        ]
+    },
+    {
+        "title": "Meet the hosts + a sneak peak into Season 10!",
+        "link": "https://open.spotify.com/episode/4VCswEPgvIigwoYy9gFZn4",
+        "submittedDate": "2025-12-10",
+        "publishDate": "2025-09-03",
+        "type": "Podcasts",
+        "viewers": 399,
+        "description": "Season 10 of the Angular Plus Show introduces guest hosts Brooke Avery and Jay Bell. Topics range from software architecture and Angular signal forms to MFE and native federation.",
+        "platform": "Spotify",
+        "tags": [
+            "Angular"
         ]
     },
     {
@@ -249,17 +271,18 @@
         ]
     },
     {
-        "title": "Quality at Trellis: Our Vision for Testing and Automation",
-        "link": "https://tech.trellis.org/blog/2025-09-28-Quality-at-Trellis-Our-Vision-for-Testing-and-Automation/",
+        "title": "Building at Scale: How Trellis Structures Our Nx Monorepo",
+        "link": "https://tech.trellis.org/blog/2025-08-04-Building-at-Scale-How-Trellis-Structures-Our-Nx-Monorepo/",
         "submittedDate": "2025-10-24",
-        "publishDate": "2025-09-30",
+        "publishDate": "2025-08-04",
         "type": "Articles",
-        "viewers": 60,
-        "description": "An overview of Trellis's approach to software testing and automation, emphasizing the importance of quality and speed. It details the types of testing employed (unit, integration, E2E, smoke, load), the tools used, and how testing aligns with key engineering initiatives like performance optimization. The article also discusses the establishment...",
+        "viewers": 237,
+        "description": "An overview of how Trellis structures its Nx monorepo, including application architecture, library organization, module boundaries, custom Nx plugins, CI/CD, and developer experience. It covers the challenges of managing complexity at scale, the benefits of using Nx, and lessons learned.",
         "platform": "Trellis Tech Blog",
         "tags": [
-            "Web",
-            "Angular"
+            "Angular",
+            "Open Source",
+            "Web"
         ]
     },
     {
@@ -287,6 +310,49 @@
         "platform": "YouTube",
         "tags": [
             "Angular"
+        ]
+    },
+    {
+        "title": "Langbase - Serverless AI developer platform",
+        "link": "https://www.youtube.com/watch?v=49ExnAFYPH4",
+        "submittedDate": "2025-10-24",
+        "publishDate": "2024-12-27",
+        "type": "Podcasts",
+        "viewers": 604,
+        "description": "A YouTube video introducing Langbase, a serverless AI developer platform. The video likely covers the platform's features, benefits, and how it can be used to build AI applications.",
+        "platform": "YouTube",
+        "tags": [
+            "AI",
+            "Cloud - Serverless & Containers"
+        ]
+    },
+    {
+        "title": "RsPack and future of build tools",
+        "link": "https://www.youtube.com/watch?v=5iVa3U0qZqM",
+        "submittedDate": "2025-10-24",
+        "publishDate": "2024-12-24",
+        "type": "Podcasts",
+        "viewers": 133,
+        "description": "A YouTube video discussing RsPack and the future of build tools. The video is presented by Google LLC.",
+        "platform": "YouTube",
+        "tags": [
+            "Web",
+            "Web - Performance"
+        ]
+    },
+    {
+        "title": "Local Translations using Gemini Nano and Angular",
+        "link": "https://gdg.community.dev/events/details/google-gdg-surrey-presents-google-io-extended-2024-surrey/",
+        "submittedDate": "2024-09-18",
+        "publishDate": "2024-07-27",
+        "type": "Public speaking",
+        "viewers": null,
+        "description": "Using Gemini nano, Angular, Firebase and Signal Store to create a realtime cht app that live translated messages between users",
+        "platform": "Google Developer Groups",
+        "tags": [
+            "Angular",
+            "AI - Gemini",
+            "Chrome"
         ]
     },
     {
@@ -329,19 +395,6 @@
         ]
     },
     {
-        "title": "The Angular Feud - Live at ng-conf!",
-        "link": "https://open.spotify.com/episode/6ICll8n9EqDBkbvHFgafik?si=bAho-mz-TAqG1rsVG3CzUA",
-        "submittedDate": "2024-09-19",
-        "publishDate": "2024-03-13",
-        "type": "Podcasts",
-        "viewers": 374,
-        "description": "Listen to the Angular Plus show hosts match wits with a team of Angular GDEs and members of the Angular team. Join in the fun hosted by our very own Jay Bell and recorded live at ng-conf 2024! Special guests: Jason Warner, Matthieu Riegler, Doug Parker, & Jeremy Elbourn.",
-        "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
-    },
-    {
         "title": "How to get started with Angular today | Mateusz Łędzewicz",
         "link": "https://open.spotify.com/episode/5c8XwVEfvGl6qfrlvVzYgx?si=D7sg4o5DTQSDc56se0tQSQ",
         "submittedDate": "2024-09-19",
@@ -376,6 +429,19 @@
         "type": "Podcasts",
         "viewers": 455,
         "description": "In this episode we welcome Younes Jaaida to the Angular Plus Show to talk about Angular testing.",
+        "platform": "Spotify",
+        "tags": [
+            "Angular"
+        ]
+    },
+    {
+        "title": "The Angular Feud - Live at ng-conf!",
+        "link": "https://open.spotify.com/episode/6ICll8n9EqDBkbvHFgafik?si=bAho-mz-TAqG1rsVG3CzUA",
+        "submittedDate": "2024-09-19",
+        "publishDate": "2024-03-13",
+        "type": "Podcasts",
+        "viewers": 374,
+        "description": "Listen to the Angular Plus show hosts match wits with a team of Angular GDEs and members of the Angular team. Join in the fun hosted by our very own Jay Bell and recorded live at ng-conf 2024! Special guests: Jason Warner, Matthieu Riegler, Doug Parker, & Jeremy Elbourn.",
         "platform": "Spotify",
         "tags": [
             "Angular"
@@ -460,6 +526,17 @@
         ]
     },
     {
+        "title": "S3:E2 - Why Solidjs with Ryan Carniato",
+        "link": "https://www.youtube.com/watch?v=39NEsUlBsj0",
+        "submittedDate": "2024-02-06",
+        "publishDate": "2024-01-22",
+        "type": "",
+        "viewers": null,
+        "description": "",
+        "platform": "YouTube",
+        "tags": []
+    },
+    {
         "title": "Advanced TypeScript Workshop Preview | Craig Spence",
         "link": "https://open.spotify.com/episode/4lmH3k2nSKgWRGuqw8HQru?si=ZPslWdgqRUuaZaqL9cuNag",
         "submittedDate": "2024-09-19",
@@ -486,53 +563,30 @@
         ]
     },
     {
-        "title": "Local Translations using Gemini Nano and Angular",
-        "link": "https://gdg.community.dev/events/details/google-gdg-surrey-presents-google-io-extended-2024-surrey/",
-        "submittedDate": "2024-09-18",
-        "publishDate": "2024-07-27",
-        "type": "Public speaking",
-        "viewers": null,
-        "description": "Using Gemini nano, Angular, Firebase and Signal Store to create a realtime cht app that live translated messages between users",
-        "platform": "Google Developer Groups",
-        "tags": [
-            "Angular",
-            "AI - Gemini",
-            "Chrome"
-        ]
-    },
-    {
-        "title": "S3:E2 - Why Solidjs with Ryan Carniato",
-        "link": "https://www.youtube.com/watch?v=39NEsUlBsj0",
+        "title": "Mobile Developers Deserve Better! with Cecelia Martinez",
+        "link": "https://open.spotify.com/episode/2S8s7MDFVvEXFQZ3xYLMr9?si=_QoHVSBfTSO5FWCmC-fu-w",
         "submittedDate": "2024-02-06",
-        "publishDate": "2024-01-22",
-        "type": "",
-        "viewers": null,
-        "description": "",
-        "platform": "YouTube",
-        "tags": []
-    },
-    {
-        "title": "platform",
-        "link": "https://github.com/trellisorg/platform",
-        "submittedDate": "2024-02-06",
-        "publishDate": "2020-07-19",
-        "type": "",
-        "viewers": null,
-        "description": "",
-        "platform": "GitHub",
-        "tags": []
-    },
-    {
-        "title": "Spilling Beans with Emma Twersky",
-        "link": "https://open.spotify.com/episode/02wHpq96Fgz7oDpDNY4yBK?si=cS46HBmIR2WvE7wW2EeMuw",
-        "submittedDate": "2024-02-06",
-        "publishDate": "2023-11-06",
+        "publishDate": "2023-12-13",
         "type": "Podcasts",
-        "viewers": 448,
+        "viewers": 440,
         "description": "",
         "platform": "Spotify",
         "tags": [
+            "Android",
             "Angular"
+        ]
+    },
+    {
+        "title": "The Story About Storybook with Katarina Skroumpelou",
+        "link": "https://open.spotify.com/episode/7a7cAO2UsJ2zaxTEDDg3UI?si=149kwDKATu6KmNdmmKpHJQ",
+        "submittedDate": "2024-02-06",
+        "publishDate": "2023-11-22",
+        "type": "Podcasts",
+        "viewers": 475,
+        "description": "",
+        "platform": "Spotify",
+        "tags": [
+            "Web Technologies"
         ]
     },
     {
@@ -549,43 +603,16 @@
         ]
     },
     {
-        "title": "Mobile Developers Deserve Better! with Cecelia Martinez",
-        "link": "https://open.spotify.com/episode/2S8s7MDFVvEXFQZ3xYLMr9?si=_QoHVSBfTSO5FWCmC-fu-w",
+        "title": "Spilling Beans with Emma Twersky",
+        "link": "https://open.spotify.com/episode/02wHpq96Fgz7oDpDNY4yBK?si=cS46HBmIR2WvE7wW2EeMuw",
         "submittedDate": "2024-02-06",
-        "publishDate": "2023-12-13",
+        "publishDate": "2023-11-06",
         "type": "Podcasts",
-        "viewers": 440,
+        "viewers": 448,
         "description": "",
         "platform": "Spotify",
         "tags": [
-            "Android",
             "Angular"
-        ]
-    },
-    {
-        "title": "Build the Community You Want with Wayne Gakou",
-        "link": "https://open.spotify.com/episode/6L4zwawS33EQehToEcVh8X?si=HtZoAfKxSCW-P6CI2zRssQ",
-        "submittedDate": "2024-02-06",
-        "publishDate": "2018-05-24",
-        "type": "Podcasts",
-        "viewers": 345,
-        "description": "",
-        "platform": "Spotify",
-        "tags": [
-            "Community Leading"
-        ]
-    },
-    {
-        "title": "The Story About Storybook with Katarina Skroumpelou",
-        "link": "https://open.spotify.com/episode/7a7cAO2UsJ2zaxTEDDg3UI?si=149kwDKATu6KmNdmmKpHJQ",
-        "submittedDate": "2024-02-06",
-        "publishDate": "2023-11-22",
-        "type": "Podcasts",
-        "viewers": 475,
-        "description": "",
-        "platform": "Spotify",
-        "tags": [
-            "Web Technologies"
         ]
     },
     {
@@ -698,19 +725,6 @@
         ]
     },
     {
-        "title": "16/17 or Angular 3? Not only Signals- SSR, Svelte Syntax and More!",
-        "link": "https://twitter.com/i/spaces/1OwxWwLaMgpxQ?s=20",
-        "submittedDate": "2023-07-23",
-        "publishDate": "2023-06-20",
-        "type": "Podcasts",
-        "viewers": null,
-        "description": "",
-        "platform": "Twitter",
-        "tags": [
-            "Angular"
-        ]
-    },
-    {
         "title": "The Dev Life - Jay Cooper Bell on Going from Code to CEO: Mastering the Startup Stack",
         "link": "https://open.spotify.com/episode/42JxQZ8ent7QiaMFl4P46I?si=O-dsTR9sQaWVlEkVhgbdIA",
         "submittedDate": "2023-07-23",
@@ -724,12 +738,12 @@
         ]
     },
     {
-        "title": "The Angular Plus Show - Discussing Angular 16 and Beyond with Minko Gechev",
-        "link": "https://open.spotify.com/episode/4j6lwn2YEtSAMXbD65s7Ip?si=bHfvLK8MRuKxSeBmzt14Ag",
+        "title": "The Angular Plus Show - Live from NGConf",
+        "link": "https://open.spotify.com/episode/3Y6WhEKGuMzyyapirwAtbp?si=H5iT1foASQiV14Wzfj1nvA",
         "submittedDate": "2023-07-23",
-        "publishDate": "2023-05-22",
+        "publishDate": "2023-06-21",
         "type": "Podcasts",
-        "viewers": null,
+        "viewers": 550,
         "description": "",
         "platform": "Spotify",
         "tags": [
@@ -737,12 +751,25 @@
         ]
     },
     {
-        "title": "The Angular Plus Show - Live from NGConf",
-        "link": "https://open.spotify.com/episode/3Y6WhEKGuMzyyapirwAtbp?si=H5iT1foASQiV14Wzfj1nvA",
+        "title": "16/17 or Angular 3? Not only Signals- SSR, Svelte Syntax and More!",
+        "link": "https://twitter.com/i/spaces/1OwxWwLaMgpxQ?s=20",
         "submittedDate": "2023-07-23",
-        "publishDate": "2023-06-21",
+        "publishDate": "2023-06-20",
         "type": "Podcasts",
-        "viewers": 550,
+        "viewers": null,
+        "description": "",
+        "platform": "Twitter",
+        "tags": [
+            "Angular"
+        ]
+    },
+    {
+        "title": "The Angular Plus Show - Discussing Angular 16 and Beyond with Minko Gechev",
+        "link": "https://open.spotify.com/episode/4j6lwn2YEtSAMXbD65s7Ip?si=bHfvLK8MRuKxSeBmzt14Ag",
+        "submittedDate": "2023-07-23",
+        "publishDate": "2023-05-22",
+        "type": "Podcasts",
+        "viewers": null,
         "description": "",
         "platform": "Spotify",
         "tags": [
@@ -898,20 +925,6 @@
         ]
     },
     {
-        "title": "Building a configurable Angular package with Nx",
-        "link": "https://youtu.be/Vh0OcM0MoWA",
-        "submittedDate": "2022-07-15",
-        "publishDate": "2022-07-14",
-        "type": "Videos",
-        "viewers": 20,
-        "description": "",
-        "platform": "YouTube",
-        "tags": [
-            "Angular",
-            "Web Technologies"
-        ]
-    },
-    {
         "title": "Getting Started with dart",
         "link": "https://www.youtube.com/watch?v=PUkEHHexT7s",
         "submittedDate": "2022-07-15",
@@ -923,6 +936,20 @@
         "tags": [
             "Dart - Flutter",
             "Angular"
+        ]
+    },
+    {
+        "title": "Building a configurable Angular package with Nx",
+        "link": "https://youtu.be/Vh0OcM0MoWA",
+        "submittedDate": "2022-07-15",
+        "publishDate": "2022-07-14",
+        "type": "Videos",
+        "viewers": 20,
+        "description": "",
+        "platform": "YouTube",
+        "tags": [
+            "Angular",
+            "Web Technologies"
         ]
     },
     {
@@ -1129,20 +1156,6 @@
         ]
     },
     {
-        "title": "Exploring Blazor with Ankit",
-        "link": "https://www.youtube.com/watch?v=dSZOBhfEhQ8",
-        "submittedDate": "2022-02-17",
-        "publishDate": "2022-02-10",
-        "type": "Videos",
-        "viewers": 45,
-        "description": "",
-        "platform": "YouTube",
-        "tags": [
-            "Web Assembly",
-            "Angular"
-        ]
-    },
-    {
         "title": "Nodejs Security with Liran",
         "link": "https://www.youtube.com/watch?v=x6KMk2q9ZIs",
         "submittedDate": "2022-02-17",
@@ -1154,6 +1167,20 @@
         "tags": [
             "Web Security",
             "Cloud - Security",
+            "Angular"
+        ]
+    },
+    {
+        "title": "Exploring Blazor with Ankit",
+        "link": "https://www.youtube.com/watch?v=dSZOBhfEhQ8",
+        "submittedDate": "2022-02-17",
+        "publishDate": "2022-02-10",
+        "type": "Videos",
+        "viewers": 45,
+        "description": "",
+        "platform": "YouTube",
+        "tags": [
+            "Web Assembly",
             "Angular"
         ]
     },
@@ -1173,54 +1200,27 @@
         ]
     },
     {
-        "title": "A+ Show S11E11 | Angular 22 Has Landed — And It's Built for the Future with Mark Techson",
-        "link": "https://open.spotify.com/episode/28Aac6L4xuoOVBtkNFcZMN",
-        "publishDate": "2026-06-03",
-        "type": "Podcasts",
-        "description": "In this episode of the Angular Plus Show, the hosts sit down with Mark Techson to unpack what's exciting in Angular 22, from signal forms, Angular Aria, error boundaries, and template improvements to the growing role of AI and agentic workflows in modern development. Find out where Angular is headed, how the framework is adapting for the next generation of web apps, and why developer expertise still matters in an AI-assisted world. Link to the new code: https://github.com/angular/angular/releases/tag/v22.0.0",
-        "platform": "Spotify",
-        "duration": "48 min 34 sec",
-        "tags": [
-            "Angular"
-        ]
+        "title": "platform",
+        "link": "https://github.com/trellisorg/platform",
+        "submittedDate": "2024-02-06",
+        "publishDate": "2020-07-19",
+        "type": "",
+        "viewers": null,
+        "description": "",
+        "platform": "GitHub",
+        "tags": []
     },
     {
-        "title": "A+ Show S11 E10 | AI, Engineering & the Future of Software with Doguhan Uluca",
-        "link": "https://open.spotify.com/episode/2N4rI46nlvTMGZLlOWL9Vn",
-        "publishDate": "2026-05-20",
+        "title": "Build the Community You Want with Wayne Gakou",
+        "link": "https://open.spotify.com/episode/6L4zwawS33EQehToEcVh8X?si=HtZoAfKxSCW-P6CI2zRssQ",
+        "submittedDate": "2024-02-06",
+        "publishDate": "2018-05-24",
         "type": "Podcasts",
-        "description": "In this episode of Angular Plus Show, the hosts sit down with Doguhan Uluca, Director of Software Engineering at Capital One and Angular author, for a candid conversation about how AI is reshaping software development. From vibe coding, multi-agent workflows, and AI-assisted architecture reviews to token economics, open-source models, and the future of engineering careers, the discussion explores both the excitement and uncertainty surrounding AI in tech. It's a thoughtful, funny, and occasionally existential deep dive into where the industry may be headed next.",
+        "viewers": 345,
+        "description": "",
         "platform": "Spotify",
-        "duration": "47 min 34 sec",
         "tags": [
-            "Angular",
-            "AI"
-        ]
-    },
-    {
-        "title": "A+ Show S11 E8 | The cross-section of AI and mentoring with Lukas Ruebbelke",
-        "link": "https://open.spotify.com/episode/0d2EYYvEUzaepXcnF8Lfc3",
-        "publishDate": "2026-04-29",
-        "type": "Podcasts",
-        "description": "Lukas brings his expertise and passion for developer experience and learning to answer the big question, \"what does mentoring look like in the age of AI and coding agents?\" Lukas is a staff engineer at Weights & Biases. Coding agents are changing how software is being designed, built, and tested. On this episode we explore how engineering is still at the core of the disciplines of crafting software.",
-        "platform": "Spotify",
-        "duration": "48 min 35 sec",
-        "tags": [
-            "Angular",
-            "AI"
-        ]
-    },
-    {
-        "title": "A+ Show S11E6 | Fostering communities and knowledge sharing with Giovanni Rivas",
-        "link": "https://open.spotify.com/episode/4KemuIBRrQp4v13MdjeMjE",
-        "publishDate": "2026-04-08",
-        "type": "Podcasts",
-        "description": "Growing a developer community (or any community for that matter!) is harder than it looks. This week we welcome Giovanni Rivas to talk about the real obstacles and opportunities in community building, mentorship, open-source collaboration, and the importance of knowledge sharing. Show notes: https://npmx.dev/, https://cloud.google.com/blog/topics/training-certifications/join-a-google-developer-student-club/, https://gdg.community.dev/, https://www.meetup.com/angularcommunity/. Get in touch with Gio! https://www.linkedin.com/in/giovanni-rivas-flores/ X: @garf50",
-        "platform": "Spotify",
-        "duration": "1 hr 2 min",
-        "tags": [
-            "Angular",
-            "Community"
+            "Community Leading"
         ]
     }
 ]
