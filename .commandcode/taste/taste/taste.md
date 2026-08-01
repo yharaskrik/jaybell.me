@@ -6,7 +6,9 @@
 - Prefers consolidating small standalone pages into a section on an existing page (moved the Links page's content into a Links section on About) rather than maintaining separate single-purpose pages. Confidence: 0.5
 - Prefers content amalgamated into single unified "activity stream" views rather than separate silos: e.g., a Blog tab merging first-party repo posts with external posts (date-sorted, labeled by source site), and a Podcasts tab merging all episodes labeled by platform (Spotify/YouTube/etc.). Confidence: 0.8
 
-- Prefers a single source-of-truth data file driving site content pages (e.g., the scraped Advocu/GDE activity feed) with filters deriving per-page lists from it — and removing obsolete hand-maintained data files once the new source replaces them. Confidence: 0.7
+- Prefers a single source-of-truth data file driving site content pages (e.g., the scraped Advocu/GDE activity feed) with filters deriving per-page lists from it — and removing obsolete hand-maintained data files once the new source replaces them. Explicitly wants scraped/derived content merged straight into the canonical file with no reported/unreported status distinction (asked for "the unreported stuff in with all the other episodes... they should not be distinguished", separate status file removed). Confidence: 0.85
+
+- Wants the canonical activities data file sorted by publish date (newest first) rather than by Advocu's submitted-date order — ordering key is when content was published, not when it was added (asked to "sort them all by published date"). Confidence: 0.7
 - Communicates design direction by pointing at concrete example sites/URLs ("Example of a homepage I like: ...") rather than describing the aesthetic abstractly. Confidence: 0.6
 
 - Reports visual/styling issues by attaching a screenshot with a terse note (e.g., "the styling is off on the blog page", "these icons need some padding on the right hand side") rather than describing the layout problem in words — expect to inspect the image to diagnose. Confidence: 0.8
