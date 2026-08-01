@@ -40,3 +40,7 @@
 - Prefers progressive-enhancement gating for JS-dependent behavior: scroll-reveal hiding rules only apply under a `.js` class the bootstrap adds, so no-JS users see everything; IntersectionObserver reveals elements as they enter the viewport. Confidence: 0.6
 
 - Keeps motion sized to the site's calm editorial register and deliberately refuses to add motion for surfaces that don't exist (menus/dialogs/loaders) — calling such invented animation "theater". Confidence: 0.6
+
+- Delegates personal-branding/bio copy end-to-end: asks the agent to research him online (articles, bios, references about him) and write the bio grounded in what it finds, then update the site page directly rather than drafting for review first. When the agent's research comes up thin, he supplements it himself by pasting specific source URLs and attachments, expecting them fetched and folded in. Confidence: 0.7
+
+- Edits files directly in the working tree while the agent is mid-task (e.g., tweaked the About bio wording himself between agent turns) — expects the agent to notice the file changed, re-read it before editing, and merge new content around his manual edits rather than overwrite them. Confidence: 0.65

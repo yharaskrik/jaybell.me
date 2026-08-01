@@ -33,7 +33,7 @@ Functionality:
 The only info I want on their right now is:
 
 1. The Angular Plus Show
-2. Horde 40k app (../warhammer-horde)
+2. The Animus app (../warhammer-horde)
 3. Angular GDE/Nx Champion
 4. Trellis
 5. This is Tech Talks
