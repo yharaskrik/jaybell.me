@@ -45,6 +45,9 @@ testem.log
 # Playwright MCP screenshots
 .playwright-mcp/
 
+# Root-level screenshots / scratch images
+/*.png
+
 # System files
 .DS_Store
 Thumbs.db

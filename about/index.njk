@@ -7,9 +7,9 @@ eleventyNavigation:
     order: 3
 ---
 
-<section class="page">
-    <h1 class="page-title">About Me</h1>
-    <p class="page-lead">
+<section class="py-14 pb-[72px]">
+    <h1 class="mb-3 font-serif text-[clamp(30px,5vw,42px)] tracking-tight text-ink">About Me</h1>
+    <p class="mb-10 max-w-[560px] text-base leading-[1.65] text-ink2">
         Jay Bell — CTO &amp; Co-Founder of Trellis.org, Angular GDE, Nx Champion, podcaster.
     </p>
 
@@ -28,52 +28,52 @@ eleventyNavigation:
         </p>
     </div>
 
-    <div class="sec-header" id="things">
-        <span class="sec-title">Things I do</span>
-        <div class="sec-line"></div>
+    <div class="flex items-baseline gap-4 pb-7 pt-12 scroll-mt-20" id="things">
+        <span class="font-mono text-[11px] uppercase tracking-[0.1em] text-ink3">Things I do</span>
+        <div class="h-px flex-1 bg-line"></div>
     </div>
 
-    <div class="thing-grid">
-        <div class="thing-item">
-            <div class="thing-org">Podcast</div>
-            <div class="thing-title">The Angular Plus Show</div>
-            <div class="thing-detail">The home of ng-conf's official all-Angular podcast. Listen on Spotify.</div>
+    <div class="mb-12 mt-2 grid grid-cols-2 border border-line max-sm:grid-cols-1">
+        <div class="border-b border-r border-line p-5 max-sm:border-r-0">
+            <div class="mb-1.5 font-mono text-[10px] uppercase tracking-[0.07em] text-accent">Podcast</div>
+            <div class="mb-1 text-sm font-medium text-ink">The Angular Plus Show</div>
+            <div class="text-xs leading-[1.5] text-ink3">The home of ng-conf's official all-Angular podcast. Listen on Spotify.</div>
         </div>
-        <div class="thing-item">
-            <div class="thing-org">Hobby</div>
-            <div class="thing-title">Horde 40k app</div>
-            <div class="thing-detail">Warhammer 40k companion app built with Angular and Nx.</div>
+        <div class="border-b border-line p-5 max-sm:border-r-0">
+            <div class="mb-1.5 font-mono text-[10px] uppercase tracking-[0.07em] text-accent">Hobby</div>
+            <div class="mb-1 text-sm font-medium text-ink">Horde 40k app</div>
+            <div class="text-xs leading-[1.5] text-ink3">Warhammer 40k companion app built with Angular and Nx.</div>
         </div>
-        <div class="thing-item">
-            <div class="thing-org">Community</div>
-            <div class="thing-title">Angular GDE / Nx Champion</div>
-            <div class="thing-detail">Helping grow the Angular and Nx communities through talks and open source.</div>
+        <div class="border-b border-r border-line p-5 max-sm:border-r-0">
+            <div class="mb-1.5 font-mono text-[10px] uppercase tracking-[0.07em] text-accent">Community</div>
+            <div class="mb-1 text-sm font-medium text-ink">Angular GDE / Nx Champion</div>
+            <div class="text-xs leading-[1.5] text-ink3">Helping grow the Angular and Nx communities through talks and open source.</div>
         </div>
-        <div class="thing-item">
-            <div class="thing-org">Work</div>
-            <div class="thing-title">Trellis</div>
-            <div class="thing-detail">
+        <div class="border-b border-line p-5 max-sm:border-r-0">
+            <div class="mb-1.5 font-mono text-[10px] uppercase tracking-[0.07em] text-accent">Work</div>
+            <div class="mb-1 text-sm font-medium text-ink">Trellis</div>
+            <div class="text-xs leading-[1.5] text-ink3">
                 Building software that has to hold up when it matters most.
                 <a href="https://tech.trellis.org" target="_blank" rel="noreferrer noopener">Read the Trellis Tech Blog →</a>
             </div>
         </div>
-        <div class="thing-item">
-            <div class="thing-org">Show</div>
-            <div class="thing-title">This is Tech Talks</div>
-            <div class="thing-detail">A show about tech, software, and the people building it.</div>
+        <div class="border-b border-line p-5 max-sm:border-r-0 max-sm:border-b-0">
+            <div class="mb-1.5 font-mono text-[10px] uppercase tracking-[0.07em] text-accent">Show</div>
+            <div class="mb-1 text-sm font-medium text-ink">This is Tech Talks</div>
+            <div class="text-xs leading-[1.5] text-ink3">A show about tech, software, and the people building it.</div>
         </div>
     </div>
 
-    <div class="sec-header" id="links">
-        <span class="sec-title">Find me</span>
-        <div class="sec-line"></div>
+    <div class="flex items-baseline gap-4 pb-7 pt-12 scroll-mt-20" id="links">
+        <span class="font-mono text-[11px] uppercase tracking-[0.1em] text-ink3">Find me</span>
+        <div class="h-px flex-1 bg-line"></div>
     </div>
 
-    <div class="link-list">
+    <div class="mb-10 mt-2 flex flex-col border-t border-line">
         {% for link in links %}
-            <div class="link-list__item">
-                <span class="link-list__label">{{ link.label }}</span>
-                <span class="link-list__desc">
+            <div class="grid grid-cols-[140px_1fr] items-baseline gap-5 border-b border-line py-[18px] max-sm:grid-cols-1 max-sm:gap-1">
+                <span class="font-mono text-xs text-ink3">{{ link.label }}</span>
+                <span class="text-[13px] text-ink2">
                     <a href="{{ link.href }}" {% if link.href | isExternal %}target="_blank" rel="noreferrer noopener"{% endif %}>{{ link.text }}</a>
                     {% if link.note %} — {{ link.note }}{% endif %}
                 </span>

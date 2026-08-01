@@ -1,47 +1,44 @@
 ---
 layout: base.njk
-title: The Angular Plus Show
-description: Listen to The Angular Plus Show — the home of ng-conf's official all-Angular podcast.
+title: Podcasts
+description: All of my podcast episodes and videos — The Angular Plus Show and more, across Spotify, YouTube, and others.
 eleventyNavigation:
-    key: The Angular Plus Show
-    order: 5
+    key: Podcasts
+    order: 4
 ---
 
-<section class="page">
-    <h1 class="page-title">The Angular Plus Show</h1>
-    <p class="page-lead">
-        The Angular Plus Show is the home of ng-conf's official all-Angular podcast. Come here to stay up to
-        date on the latest changes in the Angular community — expect to laugh and cry with us as we talk
-        about our experiences as Angular developers. With bonus episodes from The Dev Life podcast!
+<section class="py-14 pb-[72px]">
+    <h1 class="mb-3 font-serif text-[clamp(30px,5vw,42px)] tracking-tight text-ink">Podcasts</h1>
+    <p class="mb-10 max-w-[560px] text-base leading-[1.65] text-ink2">
+        Every episode and video I'm a part of, all in one place — labeled by where you can watch or listen.
     </p>
 
-    <div class="podcast">
-        <iframe
-            class="podcast__embed"
-            src="https://open.spotify.com/embed/show/1PrLErQHBqBhZsRV1KHhGM?utm_source=generator&theme=0&t=0"
-            width="100%"
-            height="352"
-            frameborder="0"
-            allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"></iframe>
-
-        {% if episodes %}
-            <div class="sec-header" id="episodes">
-                <span class="sec-title">Latest Episodes</span>
-                <div class="sec-line"></div>
-            </div>
-            <div class="post-list">
-                {% for ep in episodes | head(5) %}
-                    <article class="post-list__item">
-                        <time class="post-list__date" datetime="{{ ep.date }}">{{ ep.date | formatDate }}</time>
-                        <a class="post-list__link" href="{{ ep.link }}" target="_blank" rel="noopener">{{ ep.title }}</a>
-                        {% if ep.description %}
-                            <p class="post-list__description">{{ ep.description }}</p>
+    {% set videos = advocu_activities | gdeVideos %}
+    {% if videos.length %}
+        <div class="flex flex-col border-t border-line">
+            {% for item in videos %}
+                <article class="grid grid-cols-[120px_1fr] items-baseline gap-6 border-b border-line py-[22px] max-sm:grid-cols-1 max-sm:gap-1.5">
+                    <time class="font-mono text-[11px] text-ink3" datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
+                    <div>
+                        <a class="font-serif text-xl text-ink no-underline hover:text-accent" href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
+                        {% if item.description %}
+                            <p class="mt-1.5 text-[13px] leading-[1.55] text-ink2">{{ item.description }}</p>
                         {% endif %}
-                    </article>
-                {% endfor %}
-            </div>
-        {% endif %}
-    </div>
+                        <div class="mt-2.5 flex flex-wrap gap-1.5">
+                            {% if item.platform %}
+                                <span class="inline-flex items-center gap-1.5 border border-[color-mix(in_srgb,var(--color-accent)_40%,var(--color-line))] bg-[color-mix(in_srgb,var(--color-accent)_14%,var(--color-surface))] px-2.5 py-0.5 font-mono text-[9px] tracking-[0.03em] text-accent transition-[background,color,border-color] duration-150 hover:bg-accent hover:text-surface hover:border-accent">
+                                    <a class="text-inherit no-underline" href="{{ item.url }}" target="_blank" rel="noopener">{{ item.platform }}</a>
+                                </span>
+                            {% endif %}
+                            {% for tag in item.tags | head(4) %}
+                                <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[9px] tracking-[0.03em] text-ink2">{{ tag }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>No episodes yet — check back soon!</p>
+    {% endif %}
 </section>

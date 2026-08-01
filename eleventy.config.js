@@ -53,13 +53,25 @@ export default function (eleventyConfig) {
             .reverse();
     });
 
-    // Date filters
+    // Date filters (accept JS Date or ISO string)
     eleventyConfig.addFilter('readableDate', (dateObj) => {
-        return DateTime.fromISO(dateObj, { zone: 'utc' }).toFormat('dd LLL yyyy');
+        if (!dateObj) return '';
+        const dt = DateTime.isDateTime(dateObj)
+            ? dateObj
+            : dateObj instanceof Date
+              ? DateTime.fromJSDate(dateObj, { zone: 'utc' })
+              : DateTime.fromISO(dateObj, { zone: 'utc' });
+        return dt.isValid ? dt.toFormat('dd LLL yyyy') : '';
     });
 
     eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-        return DateTime.fromISO(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
+        if (!dateObj) return '';
+        const dt = DateTime.isDateTime(dateObj)
+            ? dateObj
+            : dateObj instanceof Date
+              ? DateTime.fromJSDate(dateObj, { zone: 'utc' })
+              : DateTime.fromISO(dateObj, { zone: 'utc' });
+        return dt.isValid ? dt.toFormat('yyyy-LL-dd') : '';
     });
 
     // Format an ISO date string from JSON data (episodes) without JS Date parsing quirks
@@ -86,6 +98,73 @@ export default function (eleventyConfig) {
     // True for external URLs (used to decide target/rel on links)
     eleventyConfig.addFilter('isExternal', (href) => {
         return typeof href === 'string' && href.startsWith('http');
+    });
+
+    // Merge internal posts and external posts into a single date-sorted stream.
+    // Each internal item is normalized to { date, title, url, description, type, site, isExternal }.
+    eleventyConfig.addFilter('mergeStream', (internalPosts, externalPosts) => {
+        const internal = (internalPosts || []).map((post) => ({
+            date: DateTime.isDateTime(post.date)
+                ? post.date
+                : post.date instanceof Date
+                  ? DateTime.fromJSDate(post.date, { zone: 'utc' })
+                  : DateTime.fromISO(post.date, { zone: 'utc' }),
+            title: post.data.title,
+            url: post.url,
+            description: post.data.description || '',
+            type: 'post',
+            site: 'jaybell.me',
+            isExternal: false,
+        }));
+
+        const external = (externalPosts || []).map((post) => ({
+            date: DateTime.fromISO(post.publishDate || post.date || post.submittedDate, { zone: 'utc' }),
+            title: post.title,
+            url: post.link || post.url,
+            description: post.description || '',
+            type: 'post',
+            site: post.platform || post.site || 'External',
+            siteUrl: post.siteUrl || '',
+            isExternal: true,
+        }));
+
+        return internal
+            .concat(external)
+            .filter((item) => item.date.isValid)
+            .sort((a, b) => b.date - a.date);
+    });
+
+    // Posts from the GDE (Advocu) scraped data: items of type "Articles"
+    eleventyConfig.addFilter('gdePosts', (activities) => {
+        return (activities || [])
+            .filter((a) => a.type === 'Articles')
+            .map((a) => ({
+                title: a.title,
+                url: a.link,
+                date: a.publishDate || a.submittedDate,
+                description: a.description || '',
+                tags: a.tags || [],
+                platform: a.platform || 'Trellis Tech Blog',
+                viewers: a.viewers,
+                isExternal: true,
+            }));
+    });
+
+    // Videos from the GDE (Advocu) scraped data: Podcasts, Videos, Public speaking
+    eleventyConfig.addFilter('gdeVideos', (activities) => {
+        return (activities || [])
+            .filter((a) => ['Podcasts', 'Videos', 'Public speaking'].includes(a.type))
+            .map((a) => ({
+                title: a.title,
+                url: a.link,
+                date: a.publishDate || a.submittedDate,
+                description: a.description || '',
+                tags: a.tags || [],
+                platform: a.platform || '',
+                viewers: a.viewers,
+                type: a.type,
+                isExternal: true,
+            }));
     });
 
     eleventyConfig.addFilter('filterTagList', function filterTagList(tags) {

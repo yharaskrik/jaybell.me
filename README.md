@@ -34,10 +34,10 @@ The site is available at `http://localhost:8080` with hot reloading.
 ```
 ├── index.njk           # Homepage
 ├── about/              # About page (with Links section)
-├── blog/               # Blog index + posts (blog/*.md)
-├── podcast/            # The Angular Plus Show page
+├── blog/               # Blog index (merged stream) + posts (blog/*.md)
+├── podcast/            # Podcasts page (all videos/episodes)
 ├── _layouts/           # Nunjucks layouts (base, post)
-├── _data/              # Global data (site.json, authors.json, links.json)
+├── _data/              # Global data (site.json, authors.json, links.json, advocu-activities.json)
 ├── assets/             # Static assets (images, prism.css)
 ├── styles/             # Tailwind CSS source
 └── eleventy.config.js  # Eleventy configuration
@@ -59,6 +59,26 @@ tags:
 ```
 
 Posts marked `draft: true` are excluded from listings, RSS, and sitemap.
+
+## Blog & Podcasts (from Advocu / GDE data)
+
+`_data/advocu_activities.json` is the scraped activity feed from my Google
+Developer Experts profile (Advocu) — it's the source of truth for the Blog and
+Podcasts pages:
+
+- **Blog** (`blog/index.njk`) merges posts from this repo (`blog/*.md`) with the
+  `Articles` from the Advocu data, sorted by publish date (newest first).
+- **Podcasts** (`podcast/index.njk`) shows all `Podcasts`, `Videos`, and
+  `Public speaking` entries from the Advocu data, sorted by publish date, with a
+  platform badge (Spotify / YouTube / Twitter / etc.).
+
+Every Advocu item is treated as external and opens in a new tab
+(`target="_blank" rel="noopener"`). Each entry has: `title`, `link`,
+`submittedDate`, `publishDate`, `type`, `viewers`, `description`, `platform`,
+and `tags`.
+
+The `gdePosts` and `gdeVideos` filters in `eleventy.config.js` derive the
+per-page lists from this data.
 
 ## Deployment
 

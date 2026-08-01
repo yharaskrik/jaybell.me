@@ -2,36 +2,36 @@
 layout: base.njk
 ---
 
-<article class="post">
-    <header class="post__header">
-        <p class="post__meta">
+<article class="py-14 pb-[72px]">
+    <header class="mb-12 border-b border-line pb-8">
+        <p class="mb-4 font-mono text-[11px] uppercase tracking-[0.04em] text-ink3">
             <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
             {% if author %}
                 · {{ author }}
             {% endif %}
         </p>
-        <h1 class="post__title">{{ title }}</h1>
+        <h1 class="mb-3.5 font-serif text-[clamp(32px,5vw,46px)] leading-[1.12] text-ink">{{ title }}</h1>
         {% if description %}
-            <p class="post__description">{{ description }}</p>
+            <p class="max-w-[560px] text-base leading-[1.6] text-ink2">{{ description }}</p>
         {% endif %}
     </header>
 
     <div class="prose-jay">{{ content | safe }}</div>
 
     {% if tags %}
-        <div class="post-list__tags">
+        <div class="mt-2.5 flex flex-wrap gap-1.5">
             {% for tag in tags | filterTagList %}
-                <span class="tag">#{{ tag }}</span>
+                <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[9px] tracking-[0.03em] text-ink2">#{{ tag }}</span>
             {% endfor %}
         </div>
     {% endif %}
 
-    <nav class="post__nav">
+    <nav class="mt-14 flex justify-between gap-6 border-t border-line pt-6 font-mono text-xs">
         {% if page.previous %}
-            <a href="{{ page.previous.url }}">← {{ page.previous.data.title }}</a>
+            <a class="text-ink3 hover:text-accent" href="{{ page.previous.url }}">← {{ page.previous.data.title }}</a>
         {% endif %}
         {% if page.next %}
-            <a href="{{ page.next.url }}">{{ page.next.data.title }} →</a>
+            <a class="text-ink3 hover:text-accent" href="{{ page.next.url }}">{{ page.next.data.title }} →</a>
         {% endif %}
     </nav>
 </article>

@@ -18,6 +18,17 @@
         <meta name="description" content="{{ description or site.description }}" />
         <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ site.title }}" />
 
+        {#- Google Analytics (GA4) #}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-506R66WVXZ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-506R66WVXZ');
+        </script>
+
         {#- Dark mode bootstrap: no flash-of-wrong-theme before the page renders #}
         <script>
             (function () {
@@ -46,22 +57,42 @@
         <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
     </head>
     <body>
-        <a class="skip-link" href="#main">Skip to main content</a>
+        <a
+            class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-ink focus:text-surface focus:px-4 focus:py-2 focus:font-mono focus:text-xs"
+            href="#main"
+            >Skip to main content</a
+        >
 
-        <div class="site">
+        <div class="mx-auto max-w-[860px] px-7 max-sm:px-5">
             <header>
-                <nav class="site-nav" aria-label="Primary">
-                    <a class="brand" href="/">jaybell<span class="brand__dot">.</span>me</a>
-                    <div class="nav-links">
+                <nav
+                    class="sticky top-0 z-10 flex items-center justify-between gap-4 border-b border-line bg-[color-mix(in_srgb,var(--color-surface)_92%,transparent)] py-[22px] backdrop-blur-md"
+                    aria-label="Primary"
+                >
+                    <a class="font-mono text-[13px] tracking-[0.02em] text-ink2 whitespace-nowrap hover:text-accent" href="/"
+                        >jaybell<span class="text-accent">.</span>me</a
+                    >
+                    <div class="flex items-center gap-6 max-sm:gap-3.5">
                         {%- for entry in collections.all | eleventyNavigation %}
-                            <a href="{{ entry.url }}" {% if entry.url == page.url %}aria-current="page"{% endif %}>{{ entry.title }}</a>
+                            <a
+                                class="text-[13px] text-ink3 whitespace-nowrap hover:text-ink max-sm:text-xs {% if entry.url == page.url %}text-accent{% endif %}"
+                                href="{{ entry.url }}"
+                                {% if entry.url == page.url %}aria-current="page"{% endif %}
+                                >{{ entry.title }}</a
+                            >
                         {%- endfor %}
-                        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
-                            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <button
+                            id="theme-toggle"
+                            class="inline-flex cursor-pointer items-center gap-1.5 border border-line bg-transparent px-2.5 py-1.5 font-mono text-[11px] leading-none text-ink3 hover:text-ink hover:border-ink3"
+                            type="button"
+                            aria-label="Toggle dark mode"
+                            aria-pressed="false"
+                        >
+                            <svg class="icon-sun hidden h-3 w-3 dark:inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <circle cx="12" cy="12" r="4" />
                                 <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
                             </svg>
-                            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <svg class="icon-moon h-3 w-3 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
                             </svg>
                         </button>
@@ -71,15 +102,15 @@
 
             <main id="main">{{ content | safe }}</main>
 
-            <footer class="site-footer">
+            <footer class="mt-12 flex flex-wrap items-center justify-between gap-3 border-t border-line py-7 font-mono text-[11px] text-ink3">
                 <span>© {{ helpers.year() }} Jay Bell</span>
-                <div class="footer-links">
-                    <a href="https://github.com/yharaskrik" target="_blank" rel="noopener">GitHub</a>
-                    <a href="https://bsky.app/profile/jaycooperbell.dev" target="_blank" rel="noopener">Bluesky</a>
-                    <a href="https://www.linkedin.com/in/jay-bell-b7017681/" target="_blank" rel="noopener">LinkedIn</a>
-                    <a href="https://www.youtube.com/@jaybell7291" target="_blank" rel="noopener">YouTube</a>
-                    <a href="https://www.twitch.tv/yharaskrik" target="_blank" rel="noopener">Twitch</a>
-                    <a href="/feed.xml">RSS</a>
+                <div class="flex flex-wrap items-center gap-5">
+                    <a class="text-ink3 hover:text-ink" href="https://github.com/yharaskrik" target="_blank" rel="noopener">GitHub</a>
+                    <a class="text-ink3 hover:text-ink" href="https://bsky.app/profile/jaycooperbell.dev" target="_blank" rel="noopener">Bluesky</a>
+                    <a class="text-ink3 hover:text-ink" href="https://www.linkedin.com/in/jay-bell-b7017681/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a class="text-ink3 hover:text-ink" href="https://www.youtube.com/@jaybell7291" target="_blank" rel="noopener">YouTube</a>
+                    <a class="text-ink3 hover:text-ink" href="https://www.twitch.tv/yharaskrik" target="_blank" rel="noopener">Twitch</a>
+                    <a class="text-ink3 hover:text-ink" href="/feed.xml">RSS</a>
                 </div>
                 <span>Eleventy</span>
             </footer>

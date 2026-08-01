@@ -5,159 +5,174 @@ eleventyNavigation:
     order: 1
 ---
 
-<section class="hero">
-    <div class="hero-eyebrow">CTO · Angular GDE · Nx Champion</div>
-    <h1 class="hero-headline">
+<section class="py-[72px] pb-[60px]">
+    <div class="mb-5 flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.1em] text-accent before:block before:h-px before:w-6 before:bg-accent">
+        CTO · Angular GDE · Nx Champion
+    </div>
+    <h1 class="mb-7 font-serif text-[clamp(38px,6vw,56px)] leading-[1.08] tracking-tight text-ink">
         I build software that<br />
-        <em>makes a difference</em>.<br />
+        <em class="italic text-accent">makes a difference</em>.<br />
     </h1>
-    <p class="hero-sub">
+    <p class="mb-10 max-w-[540px] text-base leading-[1.65] text-ink2">
         I'm Jay Bell — CTO &amp; Co-Founder of
         <a href="https://trellis.org/" target="_blank" rel="noreferrer noopener">Trellis.org</a>, a social
         enterprise empowering global collective impact. With over 10 years of experience steering Trellis's
         technical direction, I specialize in Nx, Angular, Nest, TypeScript, and building open source that
         the community runs on.
     </p>
-    <div class="hero-actions">
-        <a href="/about/" class="btn-primary">About me →</a>
-        <a href="https://github.com/yharaskrik" target="_blank" rel="noreferrer noopener" class="btn-ghost">GitHub / Open Source</a>
+    <div class="flex flex-wrap items-center gap-3.5">
+        <a
+            class="inline-block bg-ink px-6 py-3 font-mono text-xs tracking-[0.04em] text-surface hover:bg-accent hover:text-surface"
+            href="/about/"
+            >About me →</a
+        >
+        <a
+            class="inline-block border border-line bg-transparent px-6 py-3 font-mono text-xs tracking-[0.04em] text-ink hover:border-ink3 hover:text-ink"
+            href="https://github.com/yharaskrik"
+            target="_blank"
+            rel="noreferrer noopener"
+            >GitHub / Open Source</a
+        >
     </div>
 </section>
 
-<div class="sec-header" id="things">
-    <span class="sec-title">Things I'm up to</span>
-    <div class="sec-line"></div>
+<div class="flex items-baseline gap-4 pb-7 pt-12 scroll-mt-20" id="things">
+    <span class="font-mono text-[11px] uppercase tracking-[0.1em] text-ink3">Things I'm up to</span>
+    <div class="h-px flex-1 bg-line"></div>
 </div>
 
-<div class="project-list">
-    <div class="project-item">
+<div class="flex flex-col border-t border-line">
+    <div class="grid grid-cols-[1fr_auto] items-start gap-6 border-b border-line py-7 transition-[background,padding-left] duration-100 hover:bg-surface2 hover:pl-3 max-sm:grid-cols-1">
         <div>
-            <div class="proj-number">01 — Podcast</div>
-            <div class="proj-title">The Angular Plus Show</div>
-            <div class="proj-desc">
+            <div class="mb-2 font-mono text-[10px] tracking-[0.05em] text-ink3">01 — Podcast</div>
+            <div class="mb-2 font-serif text-2xl text-ink">The Angular Plus Show</div>
+            <div class="mb-3.5 max-w-[480px] text-[13px] leading-[1.6] text-ink2">
                 The home of ng-conf's official all-Angular podcast. Stay up to date on the latest in the
                 Angular community, with bonus episodes from The Dev Life podcast.
             </div>
-            <div class="proj-tags">
-                <span class="tag">Angular</span>
-                <span class="tag">ng-conf</span>
-                <span class="tag">Podcast</span>
+            <div class="flex flex-wrap gap-1.5">
+                <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[10px] tracking-[0.03em] text-ink2">Angular</span>
+                <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[10px] tracking-[0.03em] text-ink2">ng-conf</span>
+                <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[10px] tracking-[0.03em] text-ink2">Podcast</span>
             </div>
         </div>
-        <div class="proj-stat">
-            <span class="proj-stat-label">Listen</span>
-            <a href="/podcast/" class="proj-visit">Podcast page →</a>
+        <div class="min-w-[120px] pr-4 text-right max-sm:pr-0 max-sm:text-left">
+            <span class="font-mono text-[10px] uppercase tracking-[0.05em] text-ink3">Listen</span>
+            <a class="mt-2.5 block font-mono text-[10px] tracking-[0.03em] text-ink3 hover:text-accent" href="/podcast/">Podcasts →</a>
         </div>
     </div>
 
-    <div class="project-item">
+    <div class="grid grid-cols-[1fr_auto] items-start gap-6 border-b border-line py-7 transition-[background,padding-left] duration-100 hover:bg-surface2 hover:pl-3 max-sm:grid-cols-1">
         <div>
-            <div class="proj-number">02 — Hobby</div>
-            <div class="proj-title">Horde 40k</div>
-            <div class="proj-desc">
+            <div class="mb-2 font-mono text-[10px] tracking-[0.05em] text-ink3">02 — Hobby</div>
+            <div class="mb-2 font-serif text-2xl text-ink">Horde 40k</div>
+            <div class="mb-3.5 max-w-[480px] text-[13px] leading-[1.6] text-ink2">
                 A Warhammer 40k companion app built with Angular and Nx — my playground for big-monorepo
                 architecture, performance, and modern Angular.
             </div>
-            <div class="proj-tags">
-                <span class="tag">Angular</span>
-                <span class="tag">Nx</span>
-                <span class="tag">Warhammer 40k</span>
+            <div class="flex flex-wrap gap-1.5">
+                <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[10px] tracking-[0.03em] text-ink2">Angular</span>
+                <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[10px] tracking-[0.03em] text-ink2">Nx</span>
+                <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[10px] tracking-[0.03em] text-ink2">Warhammer 40k</span>
             </div>
         </div>
-        <div class="proj-stat">
-            <span class="proj-stat-label">Try it</span>
-            <a href="https://horde-40k.web.app" target="_blank" rel="noreferrer noopener" class="proj-visit">Horde →</a>
+        <div class="min-w-[120px] pr-4 text-right max-sm:pr-0 max-sm:text-left">
+            <span class="font-mono text-[10px] uppercase tracking-[0.05em] text-ink3">Try it</span>
+            <a class="mt-2.5 block font-mono text-[10px] tracking-[0.03em] text-ink3 hover:text-accent" href="https://horde-40k.web.app" target="_blank" rel="noreferrer noopener">Horde →</a>
         </div>
     </div>
 
-    <div class="project-item">
+    <div class="grid grid-cols-[1fr_auto] items-start gap-6 border-b border-line py-7 transition-[background,padding-left] duration-100 hover:bg-surface2 hover:pl-3 max-sm:grid-cols-1">
         <div>
-            <div class="proj-number">03 — Community</div>
-            <div class="proj-title">Angular GDE &amp; Nx Champion</div>
-            <div class="proj-desc">
+            <div class="mb-2 font-mono text-[10px] tracking-[0.05em] text-ink3">03 — Community</div>
+            <div class="mb-2 font-serif text-2xl text-ink">Angular GDE &amp; Nx Champion</div>
+            <div class="mb-3.5 max-w-[480px] text-[13px] leading-[1.6] text-ink2">
                 I help grow the Angular and Nx communities through talks, streams, open source, and
                 mentoring. Check my contributions on GitHub.
             </div>
-            <div class="proj-tags">
-                <span class="tag">Angular</span>
-                <span class="tag">Nx</span>
-                <span class="tag">Community</span>
+            <div class="flex flex-wrap gap-1.5">
+                <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[10px] tracking-[0.03em] text-ink2">Angular</span>
+                <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[10px] tracking-[0.03em] text-ink2">Nx</span>
+                <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[10px] tracking-[0.03em] text-ink2">Community</span>
             </div>
         </div>
-        <div class="proj-stat">
-            <span class="proj-stat-label">Profile</span>
-            <a href="https://developers.google.com/profile/u/jaycooperbell" target="_blank" rel="noreferrer noopener" class="proj-visit">Google →</a>
+        <div class="min-w-[120px] pr-4 text-right max-sm:pr-0 max-sm:text-left">
+            <span class="font-mono text-[10px] uppercase tracking-[0.05em] text-ink3">Profile</span>
+            <a class="mt-2.5 block font-mono text-[10px] tracking-[0.03em] text-ink3 hover:text-accent" href="https://developers.google.com/profile/u/jaycooperbell" target="_blank" rel="noreferrer noopener">Google →</a>
         </div>
     </div>
 
-    <div class="project-item">
+    <div class="grid grid-cols-[1fr_auto] items-start gap-6 border-b border-line py-7 transition-[background,padding-left] duration-100 hover:bg-surface2 hover:pl-3 max-sm:grid-cols-1">
         <div>
-            <div class="proj-number">04 — Work</div>
-            <div class="proj-title">Trellis</div>
-            <div class="proj-desc">
+            <div class="mb-2 font-mono text-[10px] tracking-[0.05em] text-ink3">04 — Work</div>
+            <div class="mb-2 font-serif text-2xl text-ink">Trellis</div>
+            <div class="mb-3.5 max-w-[480px] text-[13px] leading-[1.6] text-ink2">
                 Building software that has to hold up when it matters most — empowering global collective
                 impact for charities and their donors.
             </div>
-            <div class="proj-tags">
-                <span class="tag">Startup</span>
-                <span class="tag">Social Enterprise</span>
+            <div class="flex flex-wrap gap-1.5">
+                <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[10px] tracking-[0.03em] text-ink2">Startup</span>
+                <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[10px] tracking-[0.03em] text-ink2">Social Enterprise</span>
             </div>
         </div>
-        <div class="proj-stat">
-            <span class="proj-stat-label">Company</span>
-            <a href="https://trellis.org/" target="_blank" rel="noreferrer noopener" class="proj-visit">trellis.org →</a>
-            <a href="https://tech.trellis.org" target="_blank" rel="noreferrer noopener" class="proj-visit">Tech blog →</a>
+        <div class="min-w-[120px] pr-4 text-right max-sm:pr-0 max-sm:text-left">
+            <span class="font-mono text-[10px] uppercase tracking-[0.05em] text-ink3">Company</span>
+            <a class="mt-2.5 block font-mono text-[10px] tracking-[0.03em] text-ink3 hover:text-accent" href="https://trellis.org/" target="_blank" rel="noreferrer noopener">trellis.org →</a>
+            <a class="mt-2.5 block font-mono text-[10px] tracking-[0.03em] text-ink3 hover:text-accent" href="https://tech.trellis.org" target="_blank" rel="noreferrer noopener">Tech blog →</a>
         </div>
     </div>
 
-    <div class="project-item">
+    <div class="grid grid-cols-[1fr_auto] items-start gap-6 border-b border-line py-7 transition-[background,padding-left] duration-100 hover:bg-surface2 hover:pl-3 max-sm:grid-cols-1">
         <div>
-            <div class="proj-number">05 — Show</div>
-            <div class="proj-title">This is Tech Talks</div>
-            <div class="proj-desc">
+            <div class="mb-2 font-mono text-[10px] tracking-[0.05em] text-ink3">05 — Show</div>
+            <div class="mb-2 font-serif text-2xl text-ink">This is Tech Talks</div>
+            <div class="mb-3.5 max-w-[480px] text-[13px] leading-[1.6] text-ink2">
                 A show about tech, software, and the people building it — watch the streams I've been a
                 part of on YouTube.
             </div>
-            <div class="proj-tags">
-                <span class="tag">Tech</span>
-                <span class="tag">Talks</span>
-                <span class="tag">YouTube</span>
+            <div class="flex flex-wrap gap-1.5">
+                <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[10px] tracking-[0.03em] text-ink2">Tech</span>
+                <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[10px] tracking-[0.03em] text-ink2">Talks</span>
+                <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[10px] tracking-[0.03em] text-ink2">YouTube</span>
             </div>
         </div>
-        <div class="proj-stat">
-            <span class="proj-stat-label">Watch</span>
-            <a href="https://www.youtube.com/@jaybell7291" target="_blank" rel="noreferrer noopener" class="proj-visit">YouTube →</a>
+        <div class="min-w-[120px] pr-4 text-right max-sm:pr-0 max-sm:text-left">
+            <span class="font-mono text-[10px] uppercase tracking-[0.05em] text-ink3">Watch</span>
+            <a class="mt-2.5 block font-mono text-[10px] tracking-[0.03em] text-ink3 hover:text-accent" href="https://www.youtube.com/@jaybell7291" target="_blank" rel="noreferrer noopener">YouTube →</a>
         </div>
     </div>
 </div>
 
-<div class="sec-header" id="blog">
-    <span class="sec-title">Blog</span>
-    <div class="sec-line"></div>
+<div class="flex items-baseline gap-4 pb-7 pt-12 scroll-mt-20" id="blog">
+    <span class="font-mono text-[11px] uppercase tracking-[0.1em] text-ink3">Blog</span>
+    <div class="h-px flex-1 bg-line"></div>
 </div>
 
-<div class="blog-list">
+<div class="mt-5 flex flex-col gap-2.5">
     {% set posts = collections.posts | head(3) %}
     {% if posts.length %}
         {% for post in posts %}
-            <a class="blog-teaser" href="{{ post.url }}">
+            <a
+                class="flex flex-wrap items-center justify-between gap-6 border border-line border-l-[3px] border-l-accent bg-surface p-[26px_30px] text-inherit no-underline transition-[background,border-color] duration-150 hover:bg-surface2 hover:border-ink3"
+                href="{{ post.url }}"
+            >
                 <div>
-                    <div class="blog-teaser-eyebrow">{{ post.date | readableDate }}</div>
-                    <div class="blog-teaser-title">{{ post.data.title }}</div>
+                    <div class="mb-2 font-mono text-[10px] uppercase tracking-[0.08em] text-accent">{{ post.date | readableDate }}</div>
+                    <div class="mb-1.5 max-w-[520px] font-serif text-[clamp(20px,3.5vw,26px)] leading-[1.18] text-ink">{{ post.data.title }}</div>
                     {% if post.data.description %}
-                        <div class="blog-teaser-sub">{{ post.data.description }}</div>
+                        <div class="max-w-[520px] text-[13px] leading-[1.55] text-ink3">{{ post.data.description }}</div>
                     {% endif %}
                 </div>
-                <span class="blog-teaser-arrow">Read →</span>
+                <span class="flex-shrink-0 font-mono text-xs tracking-[0.04em] text-accent transition-[transform,color] duration-150 group-hover:translate-x-1 hover:translate-x-1 hover:text-ink">Read →</span>
             </a>
         {% endfor %}
-        <a class="blog-teaser-more" href="/blog/">Browse the archive →</a>
+        <a class="mt-4 block text-right font-mono text-[11px] tracking-[0.04em] text-ink3 hover:text-accent" href="/blog/">Browse the full stream →</a>
     {% else %}
-        <div class="blog-teaser">
+        <div class="flex flex-wrap items-center justify-between gap-6 border border-line border-l-[3px] border-l-accent bg-surface p-[26px_30px]">
             <div>
-                <div class="blog-teaser-eyebrow">Coming soon</div>
-                <div class="blog-teaser-title">First post is on its way</div>
-                <div class="blog-teaser-sub">Check back soon for writing on Angular, Nx, open source, and startups.</div>
+                <div class="mb-2 font-mono text-[10px] uppercase tracking-[0.08em] text-accent">Coming soon</div>
+                <div class="mb-1.5 max-w-[520px] font-serif text-[clamp(20px,3.5vw,26px)] leading-[1.18] text-ink">First post is on its way</div>
+                <div class="max-w-[520px] text-[13px] leading-[1.55] text-ink3">Check back soon for writing on Angular, Nx, open source, and startups.</div>
             </div>
         </div>
     {% endif %}
