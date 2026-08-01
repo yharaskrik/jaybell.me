@@ -7,16 +7,12 @@
     "htmlWhitespaceSensitivity": "ignore",
     "overrides": [
         {
-            "files": [
-                "*.prettierrc"
-            ],
+            "files": ["*.prettierrc"],
             "options": {
                 "parser": "json",
                 "tabWidth": 4
             }
         }
     ],
-    "plugins": [
-        "prettier-plugin-tailwindcss"
-    ]
+    "plugins": ["prettier-plugin-tailwindcss"]
 }

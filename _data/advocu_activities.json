@@ -7,9 +7,7 @@
         "description": "In this episode of the Angular Plus Show, the hosts sit down with Mark Techson to unpack what's exciting in Angular 22, from signal forms, Angular Aria, error boundaries, and template improvements to the growing role of AI and agentic workflows in modern development. Find out where Angular is headed, how the framework is adapting for the next generation of web apps, and why developer expertise still matters in an AI-assisted world. Link to the new code: https://github.com/angular/angular/releases/tag/v22.0.0",
         "platform": "Spotify",
         "duration": "48 min 34 sec",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Surviving the (parsing) Storm",
@@ -36,10 +34,7 @@
         "description": "In this episode of Angular Plus Show, the hosts sit down with Doguhan Uluca, Director of Software Engineering at Capital One and Angular author, for a candid conversation about how AI is reshaping software development. From vibe coding, multi-agent workflows, and AI-assisted architecture reviews to token economics, open-source models, and the future of engineering careers, the discussion explores both the excitement and uncertainty surrounding AI in tech. It's a thoughtful, funny, and occasionally existential deep dive into where the industry may be headed next.",
         "platform": "Spotify",
         "duration": "47 min 34 sec",
-        "tags": [
-            "Angular",
-            "AI"
-        ]
+        "tags": ["Angular", "AI"]
     },
     {
         "title": "A+ Show S11 E8 | The cross-section of AI and mentoring with Lukas Ruebbelke",
@@ -49,10 +44,7 @@
         "description": "Lukas brings his expertise and passion for developer experience and learning to answer the big question, \"what does mentoring look like in the age of AI and coding agents?\" Lukas is a staff engineer at Weights & Biases. Coding agents are changing how software is being designed, built, and tested. On this episode we explore how engineering is still at the core of the disciplines of crafting software.",
         "platform": "Spotify",
         "duration": "48 min 35 sec",
-        "tags": [
-            "Angular",
-            "AI"
-        ]
+        "tags": ["Angular", "AI"]
     },
     {
         "title": "A+ Show S11E6 | Fostering communities and knowledge sharing with Giovanni Rivas",
@@ -62,10 +54,7 @@
         "description": "Growing a developer community (or any community for that matter!) is harder than it looks. This week we welcome Giovanni Rivas to talk about the real obstacles and opportunities in community building, mentorship, open-source collaboration, and the importance of knowledge sharing. Show notes: https://npmx.dev/, https://cloud.google.com/blog/topics/training-certifications/join-a-google-developer-student-club/, https://gdg.community.dev/, https://www.meetup.com/angularcommunity/. Get in touch with Gio! https://www.linkedin.com/in/giovanni-rivas-flores/ X: @garf50",
         "platform": "Spotify",
         "duration": "1 hr 2 min",
-        "tags": [
-            "Angular",
-            "Community"
-        ]
+        "tags": ["Angular", "Community"]
     },
     {
         "title": "The Updated 2026 Angular Roadmap with Jay Bell & Brian Love",
@@ -76,9 +65,7 @@
         "viewers": 306,
         "description": "Jay Bell and Brian Love discuss the updated Angular Roadmap, including additions, removals, and areas of focus. They reference the official roadmap and related discussions.",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Flint - Linting Reimagined with Josh Goldberg",
@@ -89,12 +76,7 @@
         "viewers": 283,
         "description": "An episode of The Angular Plus Show featuring Josh Goldberg discussing Flint, a fast and friendly linter for JavaScript, TypeScript, and more. Josh shares insights into linting and his work on Flint.",
         "platform": "Spotify",
-        "tags": [
-            "Angular",
-            "Web",
-            "Web - CSS & UI",
-            "Web - DevTools & Browser Automation"
-        ]
+        "tags": ["Angular", "Web", "Web - CSS & UI", "Web - DevTools & Browser Automation"]
     },
     {
         "title": "A+ Show S11 E1 | SignalStore Events - Have we come full circle?",
@@ -105,9 +87,7 @@
         "viewers": 346,
         "description": "An episode of The Angular Plus Show featuring Marko Stanimirović, the creator of SignalStore. The discussion covers NgRx, SignalStore, and the new Events plugin, which is similar to NgRx Effects but designed specifically for NgRx SignalStore.",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Trellis 2025 (Technical) Year in Review",
@@ -118,11 +98,7 @@
         "viewers": 48,
         "description": "A review of Trellis's technical achievements in 2025, focusing on improvements in DevOps automation, testing, and infrastructure. Key highlights include implementing DORA metrics, automating the release pipeline, migrating to AWS EKS and PostgreSQL, and introducing a Model Cache. The review also covers codebase growth, issue tracking, and future...",
         "platform": "Trellis Tech Blog",
-        "tags": [
-            "Angular",
-            "Web",
-            "AI"
-        ]
+        "tags": ["Angular", "Web", "AI"]
     },
     {
         "title": "The Magic We Are Losing But Also The Magic We Are Gathering",
@@ -133,11 +109,7 @@
         "viewers": 375,
         "description": "An exploration of how AI and AI agents are impacting software development at Trellis. It discusses the benefits of using AI to automate tasks and improve efficiency, while also acknowledging the potential downsides, such as the feeling of losing the 'magic' of coding and the need for developers to adapt and distinguish themselves. The author...",
         "platform": "Trellis Tech Blog",
-        "tags": [
-            "AI",
-            "AI - Agents",
-            "Build with AI"
-        ]
+        "tags": ["AI", "AI - Agents", "Build with AI"]
     },
     {
         "title": "Vite's Next Chapter: Alex Lichter on Rolldown, Oxc, and Beyond",
@@ -148,11 +120,7 @@
         "viewers": 337,
         "description": "An episode of The Angular Plus Show podcast featuring Alex Lichter discussing the future of Vite and the impact of projects like Rolldown, Oxc, and VitePlus on web development, build speeds, linting, and framework integration (like Angular).",
         "platform": "Spotify",
-        "tags": [
-            "Angular",
-            "Web",
-            "Web - Performance"
-        ]
+        "tags": ["Angular", "Web", "Web - Performance"]
     },
     {
         "title": "Riding the AI Wave: Developer Philosophy with Jason Warner",
@@ -163,9 +131,7 @@
         "viewers": 402,
         "description": "Podcast episode featuring Jason Warner discussing how developers can position themselves for success in the new AI reality, along with developer philosophy.",
         "platform": "Spotify",
-        "tags": [
-            "AI"
-        ]
+        "tags": ["AI"]
     },
     {
         "title": "Quality at Trellis: Our Vision for Testing and Automation",
@@ -176,10 +142,7 @@
         "viewers": 60,
         "description": "An overview of Trellis's approach to software testing and automation, emphasizing the importance of quality and speed. It details the types of testing employed (unit, integration, E2E, smoke, load), the tools used, and how testing aligns with key engineering initiatives like performance optimization. The article also discusses the establishment...",
         "platform": "Trellis Tech Blog",
-        "tags": [
-            "Web",
-            "Angular"
-        ]
+        "tags": ["Web", "Angular"]
     },
     {
         "title": "MDN Web Docs: Web Developer Community",
@@ -190,10 +153,7 @@
         "viewers": 31,
         "description": "A YouTube video description highlighting MDN Web Docs as a central resource for the web developer community. It mentions copyright information and standard YouTube disclaimers.",
         "platform": "YouTube",
-        "tags": [
-            "Web",
-            "Web - DevTools & Browser Automation"
-        ]
+        "tags": ["Web", "Web - DevTools & Browser Automation"]
     },
     {
         "title": "Validation Via ArkType | David Blass - The Angular Plus Show",
@@ -204,13 +164,7 @@
         "viewers": 414,
         "description": "David Blass discusses ArkType, a tool that enhances TypeScript validation by utilizing native type syntax. He explains how ArkType identifies data errors early, leverages AI in its development and application, and highlights features that streamline workflows. The episode also covers building developer tools and the community benefits of...",
         "platform": "Spotify",
-        "tags": [
-            "AI",
-            "Angular",
-            "Open Source",
-            "Web",
-            "Web - Performance"
-        ]
+        "tags": ["AI", "Angular", "Open Source", "Web", "Web - Performance"]
     },
     {
         "title": "Challenge Accepted: Thomas Laforge on Angular Challenges",
@@ -221,13 +175,7 @@
         "viewers": 461,
         "description": "An episode of the Angular Plus Show featuring Thomas Laforge, creator of Angular Challenges, an open-source resource for Angular, Nx, RxJS, NgRx, and TypeScript learners. Thomas discusses the structure of Angular Challenges (60+ challenges covering state management, signals & reactive forms) and how solving them can improve skills for...",
         "platform": "Spotify",
-        "tags": [
-            "Angular",
-            "Open Source",
-            "Dart - Flutter",
-            "Web",
-            "Web - CSS & UI"
-        ]
+        "tags": ["Angular", "Open Source", "Dart - Flutter", "Web", "Web - CSS & UI"]
     },
     {
         "title": "The Human Side of Software: Leadership in Tech | James Spivey",
@@ -238,9 +186,7 @@
         "viewers": 428,
         "description": "Podcast episode featuring James Spivey from Capital One discussing software engineering leadership, career wisdom, and insights. Part of The Angular Plus Show.",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Meet the hosts + a sneak peak into Season 10!",
@@ -251,9 +197,7 @@
         "viewers": 399,
         "description": "Season 10 of the Angular Plus Show introduces guest hosts Brooke Avery and Jay Bell. Topics range from software architecture and Angular signal forms to MFE and native federation.",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Productivity at Trellis: Thank you, Nx.",
@@ -264,11 +208,7 @@
         "viewers": 108,
         "description": "An article detailing how Trellis leverages Nx to manage their monorepo, focusing on the task graph and the time savings achieved through Nx Cloud. It highlights the efficiency gains in builds, tests, and other tasks, leading to improved developer productivity and reduced 'Time to Green'.",
         "platform": "Trellis Tech Blog",
-        "tags": [
-            "Angular",
-            "Web",
-            "Web - Performance"
-        ]
+        "tags": ["Angular", "Web", "Web - Performance"]
     },
     {
         "title": "Building at Scale: How Trellis Structures Our Nx Monorepo",
@@ -279,11 +219,7 @@
         "viewers": 237,
         "description": "An overview of how Trellis structures its Nx monorepo, including application architecture, library organization, module boundaries, custom Nx plugins, CI/CD, and developer experience. It covers the challenges of managing complexity at scale, the benefits of using Nx, and lessons learned.",
         "platform": "Trellis Tech Blog",
-        "tags": [
-            "Angular",
-            "Open Source",
-            "Web"
-        ]
+        "tags": ["Angular", "Open Source", "Web"]
     },
     {
         "title": "Web Vital API",
@@ -294,10 +230,7 @@
         "viewers": 320,
         "description": "A YouTube video discussing the Web Vitals API. The video is about understanding and improving website performance metrics for a better user experience. It covers aspects of web development related to speed, responsiveness, and visual stability.",
         "platform": "YouTube",
-        "tags": [
-            "Web",
-            "Web - Performance"
-        ]
+        "tags": ["Web", "Web - Performance"]
     },
     {
         "title": "S9E12 | GraphQL for Angular Developers | Jay Bell",
@@ -308,9 +241,7 @@
         "viewers": 300,
         "description": "Our beloved former host, Jay Bell, stopped by this week to share what he's learned about using GraphQL to speed up development and keep code quality on point. Always a blast having him back!",
         "platform": "YouTube",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Langbase - Serverless AI developer platform",
@@ -321,10 +252,7 @@
         "viewers": 604,
         "description": "A YouTube video introducing Langbase, a serverless AI developer platform. The video likely covers the platform's features, benefits, and how it can be used to build AI applications.",
         "platform": "YouTube",
-        "tags": [
-            "AI",
-            "Cloud - Serverless & Containers"
-        ]
+        "tags": ["AI", "Cloud - Serverless & Containers"]
     },
     {
         "title": "RsPack and future of build tools",
@@ -335,10 +263,7 @@
         "viewers": 133,
         "description": "A YouTube video discussing RsPack and the future of build tools. The video is presented by Google LLC.",
         "platform": "YouTube",
-        "tags": [
-            "Web",
-            "Web - Performance"
-        ]
+        "tags": ["Web", "Web - Performance"]
     },
     {
         "title": "Local Translations using Gemini Nano and Angular",
@@ -349,11 +274,7 @@
         "viewers": null,
         "description": "Using Gemini nano, Angular, Firebase and Signal Store to create a realtime cht app that live translated messages between users",
         "platform": "Google Developer Groups",
-        "tags": [
-            "Angular",
-            "AI - Gemini",
-            "Chrome"
-        ]
+        "tags": ["Angular", "AI - Gemini", "Chrome"]
     },
     {
         "title": "Angular Plus Air | Alyssa Nicoll, Jeff Whelpy, Justin Schwartzenberger",
@@ -364,9 +285,7 @@
         "viewers": 693,
         "description": "The hosts of the Angular Air show join us and quickly takeover the show as hosts themselves! This episode is all about the joys and challenges of podcasting. Whether you would like to be a guest on one or start your own, tune in to learn all the tips and tricks from veterans of podcasting within the Angular community!",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "¿En español? Angularidades has you covered! | Alejandro Cuba Ruiz",
@@ -377,9 +296,7 @@
         "viewers": 370,
         "description": "Covering the Angularidades meetup!",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Update! Angular Version 18! | Minko Gechev",
@@ -390,9 +307,7 @@
         "viewers": 654,
         "description": "It's that time again! The Angular team just released the next version of Angular. Version 18 graduates several very popular developer preview features to stable release, adds some very interesting new features and even offers experimental support for zoneless change detection. Join us as Minko walks us through the new features and gets us...",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "How to get started with Angular today | Mateusz Łędzewicz",
@@ -403,9 +318,7 @@
         "viewers": 521,
         "description": "The Angular Renascence is bringing new developers to the Angular ecosystem! In this episode we sit down with Mateusz to learn how he teaches and mentors new Angular developers.",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Building a Toolchain with Biome | Emanuele Stoppa",
@@ -416,10 +329,7 @@
         "viewers": 392,
         "description": "Biome started as a fork of Rome but has grown into a robust open-source toolchain that provides lightning-fast Rust-driven formatting, linting, import sorting, and a built-in LSP. Join us as we interview Emanuele Stoppa about Biome's current abilities, how Ema and the open-source community resurrected it from the ashes of Rome, and what we can...",
         "platform": "Spotify",
-        "tags": [
-            "Web - DevTools & Browser Automation",
-            "Angular"
-        ]
+        "tags": ["Web - DevTools & Browser Automation", "Angular"]
     },
     {
         "title": "The landscape of Angular testing | Younes Jaaidi",
@@ -430,9 +340,7 @@
         "viewers": 455,
         "description": "In this episode we welcome Younes Jaaida to the Angular Plus Show to talk about Angular testing.",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "The Angular Feud - Live at ng-conf!",
@@ -443,9 +351,7 @@
         "viewers": 374,
         "description": "Listen to the Angular Plus show hosts match wits with a team of Angular GDEs and members of the Angular team. Join in the fun hosted by our very own Jay Bell and recorded live at ng-conf 2024! Special guests: Jason Warner, Matthieu Riegler, Doug Parker, & Jeremy Elbourn.",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Networking in Tech | Tracy Lee",
@@ -456,9 +362,7 @@
         "viewers": 353,
         "description": "Networking can be very intimidating! In this episode Tracy Lee shares tips and tricks to overcome anxiety and get the most out of conferences, meetups and other social events.",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Remixing Web Development | Kent C. Dodds",
@@ -469,9 +373,7 @@
         "viewers": 446,
         "description": "In this episode we chat with Kent C. Dodds, the creator of educational sites like, EpicWeb.dev, EpicReact.dev and TestingJavaScript.com, about Remix. Where it came from, what it is all about and its differentiators from other meta-frameworks. This is a must-listen episode for any developer wanting to expand their web development horizon or...",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Low-Code/No-code - Future or Fad? | Q Ray & Peter Vogt",
@@ -482,9 +384,7 @@
         "viewers": 422,
         "description": "On this episode of The Angular Plus Show Q Ray joins us and brings along a special guest, Peter Vogt, to talk about low/no code, tools to help developers build products, design UIs, generate code (both visual and otherwise) and all around make the full stack dev experience easier for solo devs and teams alike!",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "What's Hot at ng-conf 2024 | Joe Eames & Aaron Frost",
@@ -495,9 +395,7 @@
         "viewers": 409,
         "description": "Kicking off season 7 of the Angular Plus Show - the O.G. Angular Podcasters - Joe Eames & Aaron Frost! They are hard at work prepping for ng-conf 2024 coming up March 18-22, 2024. They took time out of their busy schedules to tell us some of what they have planned. Take a listen and let them talk you into getting tickets for ng-conf. It may...",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Scalable Angular Workshop Preview | Michael Hladkey",
@@ -508,9 +406,7 @@
         "viewers": 434,
         "description": "Michael Hladky joins us today to talk about his 2 upcoming workshops at ng-conf 2024. We discuss how to utilize Nx as a powerful tool for a scalable architecture and how to scale big Angular apps to be fast and efficient. Of course, we are just talkng about it here.",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Could .ng be the new authoring format for Angular?",
@@ -521,9 +417,7 @@
         "viewers": 442,
         "description": "In this episode Lara, Ankita and Jay talk to Brandon Roberts, the creator of Analog, and Chau Tran, nerd sniper extraordinaire, about a new component authoring for Angular leveraging a Vite plugin that makes it simple and easy to build single file components and directives.",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "S3:E2 - Why Solidjs with Ryan Carniato",
@@ -545,9 +439,7 @@
         "viewers": 502,
         "description": "Are you an Angular Engineer looking to level up your TypeScript game? If you're currently working on an Angular application and working with TypeScript everyday, this is your chance to take your knowledge up a notch with Craig Spence, currently Architect @ HeroDevs - ex-Spotify, ex-Trade Me, Google Developer Expert (Angular), International...",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "True to Form: A Guide to Reactive Forms | Preston Lamb",
@@ -558,9 +450,7 @@
         "viewers": 485,
         "description": "Reactive Forms are great! Right? Well yeah, until they are not! This week Preston Lamb joined us and we talked about common pitfalls and shortcomings of reactive forms!",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Mobile Developers Deserve Better! with Cecelia Martinez",
@@ -571,10 +461,7 @@
         "viewers": 440,
         "description": "",
         "platform": "Spotify",
-        "tags": [
-            "Android",
-            "Angular"
-        ]
+        "tags": ["Android", "Angular"]
     },
     {
         "title": "The Story About Storybook with Katarina Skroumpelou",
@@ -585,9 +472,7 @@
         "viewers": 475,
         "description": "",
         "platform": "Spotify",
-        "tags": [
-            "Web Technologies"
-        ]
+        "tags": ["Web Technologies"]
     },
     {
         "title": "Back Stage Pass to Angular 17! with Mark Thompson",
@@ -598,9 +483,7 @@
         "viewers": 613,
         "description": "",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Spilling Beans with Emma Twersky",
@@ -611,9 +494,7 @@
         "viewers": 448,
         "description": "",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "TypeScript 5 and Blink-182 with Craig Spence",
@@ -624,9 +505,7 @@
         "viewers": 504,
         "description": "",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Angular for Enterprise with Alex Okrushko",
@@ -637,9 +516,7 @@
         "viewers": 624,
         "description": "",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Tesing Accessibility with Sandi Barr",
@@ -650,10 +527,7 @@
         "viewers": 481,
         "description": "",
         "platform": "Spotify",
-        "tags": [
-            "Angular",
-            "Web Technologies"
-        ]
+        "tags": ["Angular", "Web Technologies"]
     },
     {
         "title": "Prisma: Unveiling the Magic",
@@ -664,10 +538,7 @@
         "viewers": 458,
         "description": "",
         "platform": "Spotify",
-        "tags": [
-            "Web Technologies",
-            "Angular"
-        ]
+        "tags": ["Web Technologies", "Angular"]
     },
     {
         "title": "Hydration the Easy Way",
@@ -678,9 +549,7 @@
         "viewers": 540,
         "description": "",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Settings Some Boundaries with AI Prompt Engineering | Mike Ryan",
@@ -691,11 +560,7 @@
         "viewers": 479,
         "description": "",
         "platform": "Spotify",
-        "tags": [
-            "Web Technologies",
-            "AI - Generative AI",
-            "Angular"
-        ]
+        "tags": ["Web Technologies", "AI - Generative AI", "Angular"]
     },
     {
         "title": "TanStack - Inside Out",
@@ -706,10 +571,7 @@
         "viewers": 493,
         "description": "",
         "platform": "Spotify",
-        "tags": [
-            "Web Technologies",
-            "Angular"
-        ]
+        "tags": ["Web Technologies", "Angular"]
     },
     {
         "title": "Season 6 Kickoff!",
@@ -720,9 +582,7 @@
         "viewers": 497,
         "description": "",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "The Dev Life - Jay Cooper Bell on Going from Code to CEO: Mastering the Startup Stack",
@@ -733,9 +593,7 @@
         "viewers": 307,
         "description": "",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "The Angular Plus Show - Live from NGConf",
@@ -746,9 +604,7 @@
         "viewers": 550,
         "description": "",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "16/17 or Angular 3? Not only Signals- SSR, Svelte Syntax and More!",
@@ -759,9 +615,7 @@
         "viewers": null,
         "description": "",
         "platform": "Twitter",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "The Angular Plus Show - Discussing Angular 16 and Beyond with Minko Gechev",
@@ -772,9 +626,7 @@
         "viewers": null,
         "description": "",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "It's as simple as src to ngSrc",
@@ -785,9 +637,7 @@
         "viewers": 100,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Mastering Nest: Building an API from Scratch with Jay Cooper Bell",
@@ -798,10 +648,7 @@
         "viewers": 125,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Javascript",
-            "Angular"
-        ]
+        "tags": ["Javascript", "Angular"]
     },
     {
         "title": "SurrealDB the ultimate cloud database",
@@ -812,10 +659,7 @@
         "viewers": 494,
         "description": "",
         "platform": "Twitter",
-        "tags": [
-            "Storage",
-            "Angular"
-        ]
+        "tags": ["Storage", "Angular"]
     },
     {
         "title": "Building communities",
@@ -826,9 +670,7 @@
         "viewers": 134,
         "description": "",
         "platform": "Twitter",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "How to become a DevOps Champion",
@@ -839,10 +681,7 @@
         "viewers": 464,
         "description": "",
         "platform": "Twitter",
-        "tags": [
-            "Dev Ops",
-            "Angular"
-        ]
+        "tags": ["Dev Ops", "Angular"]
     },
     {
         "title": "Cypress Component Testing",
@@ -853,9 +692,7 @@
         "viewers": 70,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Angular: The Light and Fun Way",
@@ -866,9 +703,7 @@
         "viewers": null,
         "description": "",
         "platform": "Google Developer Groups",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Talking Standalone Components Together with Jay Bell",
@@ -879,9 +714,7 @@
         "viewers": 500,
         "description": "",
         "platform": "Spotify",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "This is Tech Talks Anniversary",
@@ -892,10 +725,7 @@
         "viewers": 100,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Javascript",
-            "Angular"
-        ]
+        "tags": ["Javascript", "Angular"]
     },
     {
         "title": "Maintaining Open Source Full-time",
@@ -906,10 +736,7 @@
         "viewers": 310,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Web Technologies",
-            "Angular"
-        ]
+        "tags": ["Web Technologies", "Angular"]
     },
     {
         "title": "Setting up Angular libraries with partial Ivy compilation and peer deps",
@@ -920,9 +747,7 @@
         "viewers": 30,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Getting Started with dart",
@@ -933,10 +758,7 @@
         "viewers": 30,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Dart - Flutter",
-            "Angular"
-        ]
+        "tags": ["Dart - Flutter", "Angular"]
     },
     {
         "title": "Building a configurable Angular package with Nx",
@@ -947,10 +769,7 @@
         "viewers": 20,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Angular",
-            "Web Technologies"
-        ]
+        "tags": ["Angular", "Web Technologies"]
     },
     {
         "title": "What goes behind building a Tech Start up?",
@@ -961,9 +780,7 @@
         "viewers": 115,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Lets explore Google Cloud",
@@ -974,10 +791,7 @@
         "viewers": 20,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Google Cloud",
-            "Angular"
-        ]
+        "tags": ["Google Cloud", "Angular"]
     },
     {
         "title": "Code Review Best Practices",
@@ -988,9 +802,7 @@
         "viewers": 75,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Lets Talk NestJs and Prisma",
@@ -1001,9 +813,7 @@
         "viewers": 125,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Voice of developer at PayPal",
@@ -1014,9 +824,7 @@
         "viewers": 25,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Let's Explore Nx DevTools",
@@ -1027,9 +835,7 @@
         "viewers": 120,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "CA 0:01 / 30:38 Capture bugs early with Replay.io - Cecelia Martinez",
@@ -1040,10 +846,7 @@
         "viewers": 50,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Web Technologies",
-            "Angular"
-        ]
+        "tags": ["Web Technologies", "Angular"]
     },
     {
         "title": "How to create engaging Tech Content for the community?",
@@ -1054,9 +857,7 @@
         "viewers": 100,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Angular Community Meetup | March 2022 | Jay Bell, Aristeidis Bampakos, & Lars Gyrup Brink Nielsen",
@@ -1067,10 +868,7 @@
         "viewers": null,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Javascript",
-            "Angular"
-        ]
+        "tags": ["Javascript", "Angular"]
     },
     {
         "title": "Exploring SuperTokens with Ankur",
@@ -1081,10 +879,7 @@
         "viewers": 20,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Javascript",
-            "Angular"
-        ]
+        "tags": ["Javascript", "Angular"]
     },
     {
         "title": "Deep Dive Into ObserverSpy with Shai Reznik",
@@ -1095,11 +890,7 @@
         "viewers": 60,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Web Technologies",
-            "Javascript",
-            "Angular"
-        ]
+        "tags": ["Web Technologies", "Javascript", "Angular"]
     },
     {
         "title": "Demystifying System Design with Manthan Cupta",
@@ -1110,9 +901,7 @@
         "viewers": 68,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "Let's explore Postman with Aanchal",
@@ -1123,10 +912,7 @@
         "viewers": 50,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Web Technologies",
-            "Angular"
-        ]
+        "tags": ["Web Technologies", "Angular"]
     },
     {
         "title": "Lets discuss e2e testing using Cypress with Jordon",
@@ -1137,9 +923,7 @@
         "viewers": 35,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Angular"
-        ]
+        "tags": ["Angular"]
     },
     {
         "title": "How to build a serverless app platform on Kubernetes with Peter Mbanugo",
@@ -1150,10 +934,7 @@
         "viewers": 55,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Kubernetes",
-            "Angular"
-        ]
+        "tags": ["Kubernetes", "Angular"]
     },
     {
         "title": "Nodejs Security with Liran",
@@ -1164,11 +945,7 @@
         "viewers": 30,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Web Security",
-            "Cloud - Security",
-            "Angular"
-        ]
+        "tags": ["Web Security", "Cloud - Security", "Angular"]
     },
     {
         "title": "Exploring Blazor with Ankit",
@@ -1179,10 +956,7 @@
         "viewers": 45,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "Web Assembly",
-            "Angular"
-        ]
+        "tags": ["Web Assembly", "Angular"]
     },
     {
         "title": "Exploring Flexbox with Dzhavat Ushev",
@@ -1193,11 +967,7 @@
         "viewers": 33,
         "description": "",
         "platform": "YouTube",
-        "tags": [
-            "CSS",
-            "Javascript",
-            "Angular"
-        ]
+        "tags": ["CSS", "Javascript", "Angular"]
     },
     {
         "title": "platform",
@@ -1219,8 +989,6 @@
         "viewers": 345,
         "description": "",
         "platform": "Spotify",
-        "tags": [
-            "Community Leading"
-        ]
+        "tags": ["Community Leading"]
     }
 ]

@@ -136,11 +136,11 @@
         @apply text-ink2 text-[15px] leading-relaxed;
 
         h2 {
-            @apply text-ink mt-12 mb-4 font-display text-[28px] tracking-tight;
+            @apply text-ink font-display mt-12 mb-4 text-[28px] tracking-tight;
         }
 
         h3 {
-            @apply text-ink mt-10 mb-3 font-display text-[22px];
+            @apply text-ink font-display mt-10 mb-3 text-[22px];
         }
 
         p {
