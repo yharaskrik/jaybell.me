@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#9487d8" />
+        <title>
+            {% set isHome = page.url == '/' %}
+            {% set pageTitle = title or (eleventyNavigation and (eleventyNavigation.title or eleventyNavigation.key)) %}
+            {% if isHome %}
+                {{ site.title }}
+            {% elseif pageTitle %}
+                {{ pageTitle }} - {{ site.title }}
+            {% else %}
+                {{ site.title }}
+            {% endif %}
+        </title>
+        <meta name="description" content="{{ description or site.description }}" />
+        <link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ site.title }}" />
+
+        {#- Dark mode bootstrap: no flash-of-wrong-theme before the page renders #}
+        <script>
+            (function () {
+                try {
+                    var stored = localStorage.getItem('theme');
+                    var dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+                    if (dark) document.documentElement.classList.add('dark');
+                } catch (e) {}
+            })();
+        </script>
+
+        {#- Fonts #}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+
+        {#- Styles #}
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/assets/css/prism.css" />
+
+        {#- Favicon #}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Skip to main content</a>
+
+        <div class="site">
+            <header>
+                <nav class="site-nav" aria-label="Primary">
+                    <a class="brand" href="/">jaybell<span class="brand__dot">.</span>me</a>
+                    <div class="nav-links">
+                        {%- for entry in collections.all | eleventyNavigation %}
+                            <a href="{{ entry.url }}" {% if entry.url == page.url %}aria-current="page"{% endif %}>{{ entry.title }}</a>
+                        {%- endfor %}
+                        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+                            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="4" />
+                                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+                            </svg>
+                            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                            </svg>
+                        </button>
+                    </div>
+                </nav>
+            </header>
+
+            <main id="main">{{ content | safe }}</main>
+
+            <footer class="site-footer">
+                <span>© {{ helpers.year() }} Jay Bell</span>
+                <div class="footer-links">
+                    <a href="https://github.com/yharaskrik" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://twitter.com/JayCooperBell" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://www.linkedin.com/in/jaycooperbell/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="/feed.xml">RSS</a>
+                </div>
+                <span>Eleventy</span>
+            </footer>
+        </div>
+
+        <script>
+            (function () {
+                var toggle = document.getElementById('theme-toggle');
+                var html = document.documentElement;
+                function isDark() {
+                    return html.classList.contains('dark');
+                }
+                function sync() {
+                    var dark = isDark();
+                    toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+                }
+                sync();
+                toggle.addEventListener('click', function () {
+                    var dark = !isDark();
+                    html.classList.toggle('dark', dark);
+                    try {
+                        localStorage.setItem('theme', dark ? 'dark' : 'light');
+                    } catch (e) {}
+                    sync();
+                });
+            })();
+        </script>
+    </body>
+</html>

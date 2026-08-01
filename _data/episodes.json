@@ -1,0 +1,32 @@
+[
+    {
+        "title": "A+ Show S11E11 | Angular 22 Has Landed — And It's Built for the Future with Mark Techson",
+        "date": "2026-06-03",
+        "link": "https://open.spotify.com/show/1PrLErQHBqBhZsRV1KHhGM",
+        "description": "Angular 22 has landed — Mark Techson joins the show to talk about what's new and built for the future."
+    },
+    {
+        "title": "S11 E3 | The Updated 2026 Angular Roadmap with Jay Bell & Brian Love",
+        "date": "2026-07-08",
+        "link": "https://open.spotify.com/show/1PrLErQHBqBhZsRV1KHhGM",
+        "description": "Brian hosts Jay and Jay hosts Brian as the two of them discuss the updated Angular Roadmap, what was added, what was removed and where the focus is going."
+    },
+    {
+        "title": "S9 E14 | Playwright Takes Center Stage | Debbie O'Brien",
+        "date": "2025-07-08",
+        "link": "https://open.spotify.com/show/1PrLErQHBqBhZsRV1KHhGM",
+        "description": "Google Developer Expert and Principal Technical PM at Microsoft Debbie O'Brien explores the current state of Playwright and how AI is being integrated into testing."
+    },
+    {
+        "title": "S9 E13 | Angular SEO 2025 | Jeff Whelpley",
+        "date": "2025-06-24",
+        "link": "https://open.spotify.com/show/1PrLErQHBqBhZsRV1KHhGM",
+        "description": "Google Developer Expert Jeff Whelpley breaks down how Angular with SSR is an excellent technical choice for optimizing your web app for search engines."
+    },
+    {
+        "title": "S9E12 | GraphQL for Angular Developers | Jay Bell",
+        "date": "2025-06-17",
+        "link": "https://open.spotify.com/show/1PrLErQHBqBhZsRV1KHhGM",
+        "description": "Our beloved former host, Jay Bell, stopped by to share what he's learned about using GraphQL to speed up development and keep code quality on point."
+    }
+]

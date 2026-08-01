@@ -1,0 +1,47 @@
+---
+layout: base.njk
+title: The Angular Plus Show
+description: Listen to The Angular Plus Show — the home of ng-conf's official all-Angular podcast.
+eleventyNavigation:
+    key: The Angular Plus Show
+    order: 5
+---
+
+<section class="page">
+    <h1 class="page-title">The Angular Plus Show</h1>
+    <p class="page-lead">
+        The Angular Plus Show is the home of ng-conf's official all-Angular podcast. Come here to stay up to
+        date on the latest changes in the Angular community — expect to laugh and cry with us as we talk
+        about our experiences as Angular developers. With bonus episodes from The Dev Life podcast!
+    </p>
+
+    <div class="podcast">
+        <iframe
+            class="podcast__embed"
+            src="https://open.spotify.com/embed/show/1PrLErQHBqBhZsRV1KHhGM?utm_source=generator&theme=0&t=0"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+
+        {% if episodes %}
+            <div class="sec-header" id="episodes">
+                <span class="sec-title">Latest Episodes</span>
+                <div class="sec-line"></div>
+            </div>
+            <div class="post-list">
+                {% for ep in episodes | head(5) %}
+                    <article class="post-list__item">
+                        <time class="post-list__date" datetime="{{ ep.date }}">{{ ep.date | readableDate }}</time>
+                        <a class="post-list__link" href="{{ ep.link }}" target="_blank" rel="noopener">{{ ep.title }}</a>
+                        {% if ep.description %}
+                            <p class="post-list__description">{{ ep.description }}</p>
+                        {% endif %}
+                    </article>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</section>

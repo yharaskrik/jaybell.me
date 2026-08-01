@@ -1,0 +1,10 @@
+allowBuilds:
+    '@parcel/watcher': false
+    esbuild: false
+    nice-napi: false
+    nx: true
+    protobufjs: false
+    sharp: false
+    workerd: false
+    tailwindcss: true
+    '@tailwindcss/oxide': true

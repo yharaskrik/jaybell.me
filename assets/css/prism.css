@@ -1,0 +1,178 @@
+/**
+ * Jay Bell site Prism theme — light/dark aware, lavender accent.
+ * Based on Prism Tomorrow Night, token colors tuned for the site tokens.
+ */
+code[class*='language-'],
+pre[class*='language-'] {
+    color: #f8f8f2;
+    background: none;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.6;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+/* Code blocks */
+pre[class*='language-'] {
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    overflow: auto;
+    border-radius: 0.5rem;
+    background: #18181b;
+    border: 1px solid var(--border);
+}
+
+/* Inline code */
+:not(pre) > code[class*='language-'] {
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    white-space: normal;
+    color: var(--accent-strong);
+}
+
+/* Syntax tokens (Tomorrow Night palette) */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #8292a2;
+    font-style: italic;
+}
+
+.token.punctuation {
+    color: #f8f8f2;
+}
+
+.token.namespace {
+    opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+    color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+    color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+    color: #e6db74;
+}
+
+.token.keyword {
+    color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+    color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+/* Language-specific tweaks */
+.language-json .token.property {
+    color: #66d9ef;
+}
+
+.language-json .token.string {
+    color: #a6e22e;
+}
+
+.language-html .token.tag .token.tag,
+.language-html .token.tag .token.punctuation {
+    color: #f92672;
+}
+
+.language-html .token.attr-name {
+    color: #a6e22e;
+}
+
+.language-html .token.attr-value {
+    color: #e6db74;
+}
+
+.language-css .token.selector {
+    color: #f92672;
+}
+
+.language-css .token.property {
+    color: #66d9ef;
+}
+
+.language-javascript .token.keyword,
+.language-typescript .token.keyword {
+    color: #66d9ef;
+}
+
+.language-javascript .token.function,
+.language-typescript .token.function {
+    color: #a6e22e;
+}
+
+.language-javascript .token.class-name,
+.language-typescript .token.class-name {
+    color: #a6e22e;
+}
+
+.language-bash .token.function {
+    color: #a6e22e;
+}
+
+.language-bash .token.string {
+    color: #e6db74;
+}
+
+.language-bash .token.builtin {
+    color: #66d9ef;
+}

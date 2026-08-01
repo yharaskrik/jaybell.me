@@ -1,0 +1,163 @@
+---
+layout: base.njk
+eleventyNavigation:
+    key: Home
+    order: 1
+---
+
+<section class="hero">
+    <div class="hero-eyebrow">CTO · Angular GDE · Nx Champion</div>
+    <h1 class="hero-headline">
+        I build software that<br />
+        <em>makes a difference</em>.<br />
+    </h1>
+    <p class="hero-sub">
+        I'm Jay Bell — CTO &amp; Co-Founder of
+        <a href="https://trellis.org/" target="_blank" rel="noreferrer noopener">Trellis.org</a>, a social
+        enterprise empowering global collective impact. With over 10 years of experience steering Trellis's
+        technical direction, I specialize in Nx, Angular, Nest, TypeScript, and building open source that
+        the community runs on.
+    </p>
+    <div class="hero-actions">
+        <a href="/about/" class="btn-primary">About me →</a>
+        <a href="https://github.com/yharaskrik" target="_blank" rel="noreferrer noopener" class="btn-ghost">GitHub / Open Source</a>
+    </div>
+</section>
+
+<div class="sec-header" id="things">
+    <span class="sec-title">Things I'm up to</span>
+    <div class="sec-line"></div>
+</div>
+
+<div class="project-list">
+    <div class="project-item">
+        <div>
+            <div class="proj-number">01 — Podcast</div>
+            <div class="proj-title">The Angular Plus Show</div>
+            <div class="proj-desc">
+                The home of ng-conf's official all-Angular podcast. Stay up to date on the latest in the
+                Angular community, with bonus episodes from The Dev Life podcast.
+            </div>
+            <div class="proj-tags">
+                <span class="tag">Angular</span>
+                <span class="tag">ng-conf</span>
+                <span class="tag">Podcast</span>
+            </div>
+        </div>
+        <div class="proj-stat">
+            <span class="proj-stat-label">Listen</span>
+            <a href="/podcast/" class="proj-visit">Podcast page →</a>
+        </div>
+    </div>
+
+    <div class="project-item">
+        <div>
+            <div class="proj-number">02 — Hobby</div>
+            <div class="proj-title">Horde 40k</div>
+            <div class="proj-desc">
+                A Warhammer 40k companion app built with Angular and Nx — my playground for big-monorepo
+                architecture, performance, and modern Angular.
+            </div>
+            <div class="proj-tags">
+                <span class="tag">Angular</span>
+                <span class="tag">Nx</span>
+                <span class="tag">Warhammer 40k</span>
+            </div>
+        </div>
+        <div class="proj-stat">
+            <span class="proj-stat-label">Try it</span>
+            <a href="https://horde-40k.web.app" target="_blank" rel="noreferrer noopener" class="proj-visit">Horde →</a>
+        </div>
+    </div>
+
+    <div class="project-item">
+        <div>
+            <div class="proj-number">03 — Community</div>
+            <div class="proj-title">Angular GDE &amp; Nx Champion</div>
+            <div class="proj-desc">
+                I help grow the Angular and Nx communities through talks, streams, open source, and
+                mentoring. Check my contributions on GitHub.
+            </div>
+            <div class="proj-tags">
+                <span class="tag">Angular</span>
+                <span class="tag">Nx</span>
+                <span class="tag">Community</span>
+            </div>
+        </div>
+        <div class="proj-stat">
+            <span class="proj-stat-label">Profile</span>
+            <a href="https://developers.google.com/profile/u/jaycooperbell" target="_blank" rel="noreferrer noopener" class="proj-visit">Google →</a>
+        </div>
+    </div>
+
+    <div class="project-item">
+        <div>
+            <div class="proj-number">04 — Work</div>
+            <div class="proj-title">Trellis</div>
+            <div class="proj-desc">
+                Building software that has to hold up when it matters most — empowering global collective
+                impact for charities and their donors.
+            </div>
+            <div class="proj-tags">
+                <span class="tag">Startup</span>
+                <span class="tag">Social Enterprise</span>
+            </div>
+        </div>
+        <div class="proj-stat">
+            <span class="proj-stat-label">Company</span>
+            <a href="https://trellis.org/" target="_blank" rel="noreferrer noopener" class="proj-visit">trellis.org →</a>
+        </div>
+    </div>
+
+    <div class="project-item">
+        <div>
+            <div class="proj-number">05 — Show</div>
+            <div class="proj-title">This is Tech Talks</div>
+            <div class="proj-desc">
+                A show about tech, software, and the people building it — watch the streams I've been a
+                part of on YouTube.
+            </div>
+            <div class="proj-tags">
+                <span class="tag">Tech</span>
+                <span class="tag">Talks</span>
+                <span class="tag">YouTube</span>
+            </div>
+        </div>
+        <div class="proj-stat">
+            <span class="proj-stat-label">Watch</span>
+            <a href="https://www.youtube.com/@ThisisTechTalks" target="_blank" rel="noreferrer noopener" class="proj-visit">YouTube →</a>
+        </div>
+    </div>
+</div>
+
+<div class="sec-header" id="blog">
+    <span class="sec-title">Blog</span>
+    <div class="sec-line"></div>
+</div>
+
+<div class="blog-list">
+    {% set posts = collections.posts | head(3) %}
+    {% if posts.length %}
+        {% for post in posts %}
+            <a class="blog-teaser" href="{{ post.url }}">
+                <div>
+                    <div class="blog-teaser-eyebrow">{{ post.date | readableDate }}</div>
+                    <div class="blog-teaser-title">{{ post.data.title }}</div>
+                    {% if post.data.description %}
+                        <div class="blog-teaser-sub">{{ post.data.description }}</div>
+                    {% endif %}
+                </div>
+                <span class="blog-teaser-arrow">Read →</span>
+            </a>
+        {% endfor %}
+        <a class="blog-teaser-more" href="/blog/">Browse the archive →</a>
+    {% else %}
+        <div class="blog-teaser">
+            <div>
+                <div class="blog-teaser-eyebrow">Coming soon</div>
+                <div class="blog-teaser-title">First post is on its way</div>
+                <div class="blog-teaser-sub">Check back soon for writing on Angular, Nx, open source, and startups.</div>
+            </div>
+        </div>
+    {% endif %}
+</div>

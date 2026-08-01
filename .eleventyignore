@@ -1,0 +1,11 @@
+# Root docs / config that are not pages
+AGENTS.md
+README.md
+REFACTOR.md
+CHANGELOG.md
+# Command Code internals
+.commandcode/
+# Build output
+_site/
+gen/
+node_modules/

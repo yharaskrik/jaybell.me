@@ -1,0 +1,19 @@
+{
+    "name": "Jay Bell",
+    "title": "Jay Bell",
+    "description": "Jay Bell is a CTO, co-founder of Trellis.org, Angular GDE, and Nx Champion. He co-hosts The Angular Plus Show and This is Tech Talks.",
+    "url": "https://jaybell.me",
+    "author": {
+        "name": "Jay Bell",
+        "email": "jay@jaybell.me",
+        "url": "https://jaybell.me/"
+    },
+    "social": {
+        "github": "https://github.com/yharaskrik",
+        "twitter": "https://twitter.com/JayCooperBell",
+        "linkedin": "https://www.linkedin.com/in/jaycooperbell/",
+        "youtube": "https://www.youtube.com/@ThisisTechTalks",
+        "twitch": "https://www.twitch.tv/jaycooperbell",
+        "rss": "/feed.xml"
+    }
+}

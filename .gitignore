@@ -6,6 +6,10 @@
 /out-tsc
 /bazel-out
 
+# Eleventy output + generated CSS intermediate
+/_site
+/gen
+
 # Node
 /node_modules
 npm-debug.log
@@ -29,8 +33,8 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
-/.angular/cache
 /.nx/cache
+/.nx/workspace-data
 .sass-cache/
 /connect.lock
 /coverage
@@ -38,13 +42,15 @@ yarn-error.log
 testem.log
 /typings
 
+# Playwright MCP screenshots
+.playwright-mcp/
+
 # System files
 .DS_Store
 Thumbs.db
 
-# wrangler files
-.wrangler
-.dev.vars
-
-# Vite
-vite.config.ts*.mjs
+.claude/worktrees
+.claude/settings.local.json
+.nx/polygraph
+.nx/self-healing
+.nx/migrate-runs
