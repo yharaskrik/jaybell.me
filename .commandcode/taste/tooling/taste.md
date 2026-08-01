@@ -10,7 +10,7 @@
 
 ## Git workflow
 
-- Wraps up work sessions by asking to "format, commit and push everything" — expects the agent to run the repo's formatter (Prettier via `pnpm format`) before committing, then commit all pending changes and push to the remote. Confidence: 0.7
+- Wraps up work sessions by asking to "format, commit and push everything" — expects the agent to run the repo's formatter (Prettier via `pnpm format`) before committing, then commit all pending changes and push to the remote. Confidence: 0.8
 
 - Keeps repos clean of generated/scratch artifacts: deletes stray testing screenshots rather than committing them, and adds gitignore rules (e.g., `/*.png`) so the same artifact type can't get committed again. Confidence: 0.6
 
