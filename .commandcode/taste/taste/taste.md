@@ -16,3 +16,7 @@
 - Scopes technical tasks by pasting the relevant official documentation link and asking a focused yes/no question (e.g., a GitHub Pages custom-domain verification doc + "do i need to set something?") — expects the agent to consult the linked docs and answer with a clear necessary-vs-optional breakdown rather than following the docs blindly. Confidence: 0.5
 
 - Attends to fine-grained UI spacing/padding polish — e.g., interactive elements (icons/arrows in list rows) need breathing room so they don't hug edges, especially where a hover highlight makes the cramping obvious. Confidence: 0.6
+
+- Wants no em dashes (—) anywhere in hand-written site copy — HTML template copy (index/about/blog/podcast templates) and blog markdown posts; em dashes should be replaced with plain hyphens. Confidence: 0.9
+
+- Scopes copy/punctuation cleanups to hand-written templates and blog posts only, explicitly excluding data-driven content (e.g., episode titles/descriptions in the advocu activities JSON) — data files stay untouched even if they contain the same characters. Confidence: 0.8
