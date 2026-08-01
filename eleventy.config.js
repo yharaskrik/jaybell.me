@@ -24,7 +24,7 @@ export default function (eleventyConfig) {
             base: 'https://jaybell.me/',
             author: {
                 name: 'Jay Bell',
-                email: 'jay@trellis.org',
+                email: 'jay@jaybell.me',
             },
         },
     });
@@ -55,11 +55,18 @@ export default function (eleventyConfig) {
 
     // Date filters
     eleventyConfig.addFilter('readableDate', (dateObj) => {
-        return DateTime.fromJSDate(new Date(dateObj), { zone: 'utc' }).toFormat('dd LLL yyyy');
+        return DateTime.fromISO(dateObj, { zone: 'utc' }).toFormat('dd LLL yyyy');
     });
 
     eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-        return DateTime.fromJSDate(new Date(dateObj), { zone: 'utc' }).toFormat('yyyy-LL-dd');
+        return DateTime.fromISO(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
+    });
+
+    // Format an ISO date string from JSON data (episodes) without JS Date parsing quirks
+    eleventyConfig.addFilter('formatDate', (isoString, fmt = 'dd LLL yyyy') => {
+        if (!isoString) return '';
+        const dt = DateTime.fromISO(isoString, { zone: 'utc' });
+        return dt.isValid ? dt.toFormat(fmt) : isoString;
     });
 
     // Excerpt filter (reads up to the <!--more--> marker, falls back to a length cap)
@@ -74,6 +81,11 @@ export default function (eleventyConfig) {
         if (!Array.isArray(array) || array.length === 0) return [];
         if (n < 0) return array.slice(n);
         return array.slice(0, n);
+    });
+
+    // True for external URLs (used to decide target/rel on links)
+    eleventyConfig.addFilter('isExternal', (href) => {
+        return typeof href === 'string' && href.startsWith('http');
     });
 
     eleventyConfig.addFilter('filterTagList', function filterTagList(tags) {

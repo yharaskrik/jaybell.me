@@ -34,7 +34,7 @@ eleventyNavigation:
             <div class="post-list">
                 {% for ep in episodes | head(5) %}
                     <article class="post-list__item">
-                        <time class="post-list__date" datetime="{{ ep.date }}">{{ ep.date | readableDate }}</time>
+                        <time class="post-list__date" datetime="{{ ep.date }}">{{ ep.date | formatDate }}</time>
                         <a class="post-list__link" href="{{ ep.link }}" target="_blank" rel="noopener">{{ ep.title }}</a>
                         {% if ep.description %}
                             <p class="post-list__description">{{ ep.description }}</p>

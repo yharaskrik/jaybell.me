@@ -52,7 +52,10 @@ eleventyNavigation:
         <div class="thing-item">
             <div class="thing-org">Work</div>
             <div class="thing-title">Trellis</div>
-            <div class="thing-detail">Building software that has to hold up when it matters most.</div>
+            <div class="thing-detail">
+                Building software that has to hold up when it matters most.
+                <a href="https://tech.trellis.org" target="_blank" rel="noreferrer noopener">Read the Trellis Tech Blog →</a>
+            </div>
         </div>
         <div class="thing-item">
             <div class="thing-org">Show</div>
@@ -67,36 +70,14 @@ eleventyNavigation:
     </div>
 
     <div class="link-list">
-        <div class="link-list__item">
-            <span class="link-list__label">GitHub</span>
-            <span class="link-list__desc">
-                <a href="https://github.com/yharaskrik" target="_blank" rel="noreferrer noopener">github.com/yharaskrik</a>
-                — open source contributions
-            </span>
-        </div>
-        <div class="link-list__item">
-            <span class="link-list__label">Twitter</span>
-            <span class="link-list__desc">
-                <a href="https://twitter.com/JayCooperBell" target="_blank" rel="noreferrer noopener">@JayCooperBell</a>
-            </span>
-        </div>
-        <div class="link-list__item">
-            <span class="link-list__label">LinkedIn</span>
-            <span class="link-list__desc">
-                <a href="https://www.linkedin.com/in/jaycooperbell/" target="_blank" rel="noreferrer noopener">in/jaycooperbell</a>
-            </span>
-        </div>
-        <div class="link-list__item">
-            <span class="link-list__label">YouTube</span>
-            <span class="link-list__desc">
-                <a href="https://www.youtube.com/@ThisisTechTalks" target="_blank" rel="noreferrer noopener">This is Tech Talks</a>
-            </span>
-        </div>
-        <div class="link-list__item">
-            <span class="link-list__label">RSS</span>
-            <span class="link-list__desc">
-                <a href="/feed.xml">Subscribe to my blog</a>
-            </span>
-        </div>
+        {% for link in links %}
+            <div class="link-list__item">
+                <span class="link-list__label">{{ link.label }}</span>
+                <span class="link-list__desc">
+                    <a href="{{ link.href }}" {% if link.href | isExternal %}target="_blank" rel="noreferrer noopener"{% endif %}>{{ link.text }}</a>
+                    {% if link.note %} — {{ link.note }}{% endif %}
+                </span>
+            </div>
+        {% endfor %}
     </div>
 </section>

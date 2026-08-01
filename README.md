@@ -33,12 +33,11 @@ The site is available at `http://localhost:8080` with hot reloading.
 
 ```
 ├── index.njk           # Homepage
-├── about/              # About page
+├── about/              # About page (with Links section)
 ├── blog/               # Blog index + posts (blog/*.md)
-├── links/              # Links page
 ├── podcast/            # The Angular Plus Show page
 ├── _layouts/           # Nunjucks layouts (base, post)
-├── _data/              # Global data (site.json, authors.json)
+├── _data/              # Global data (site.json, authors.json, links.json)
 ├── assets/             # Static assets (images, prism.css)
 ├── styles/             # Tailwind CSS source
 └── eleventy.config.js  # Eleventy configuration

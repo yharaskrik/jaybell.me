@@ -1,0 +1,56 @@
+[
+    {
+        "label": "GitHub",
+        "href": "https://github.com/yharaskrik",
+        "text": "github.com/yharaskrik",
+        "note": "open source contributions"
+    },
+    {
+        "label": "Twitter",
+        "href": "https://twitter.com/JayCooperBell",
+        "text": "@JayCooperBell",
+        "note": ""
+    },
+    {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/jay-bell-b7017681/",
+        "text": "in/jay-bell-b7017681",
+        "note": "Trellis Engineering Dispatch newsletter"
+    },
+    {
+        "label": "YouTube",
+        "href": "https://www.youtube.com/@jaybell7291",
+        "text": "@jaybell7291",
+        "note": "The Angular Plus Show & streams"
+    },
+    {
+        "label": "Twitch",
+        "href": "https://www.twitch.tv/yharaskrik",
+        "text": "yharaskrik",
+        "note": "occasional streams"
+    },
+    {
+        "label": "Bluesky",
+        "href": "https://bsky.app/profile/jaycooperbell.dev",
+        "text": "@jaycooperbell.dev",
+        "note": ""
+    },
+    {
+        "label": "Nx Champion",
+        "href": "https://nx.dev/community",
+        "text": "nx.dev/community",
+        "note": "Nx Champion profile"
+    },
+    {
+        "label": "Newsletter",
+        "href": "https://www.linkedin.com/newsletters/trellis-engineering-dispatch-7482227961551593472/",
+        "text": "Trellis Engineering Dispatch",
+        "note": "my LinkedIn newsletter"
+    },
+    {
+        "label": "RSS",
+        "href": "/feed.xml",
+        "text": "Subscribe to my blog",
+        "note": ""
+    }
+]
