@@ -8,30 +8,30 @@ eleventyNavigation:
 ---
 
 <section class="py-14 pb-[72px]">
-    <h1 class="mb-3 font-serif text-[clamp(30px,5vw,42px)] tracking-tight text-ink">Podcasts</h1>
-    <p class="mb-10 max-w-[560px] text-base leading-[1.65] text-ink2">
-        Every episode and video I'm a part of, all in one place - labeled by where you can watch or listen.
-    </p>
+    <div class="animate-rise">
+        <h1 class="mb-3 font-display text-[clamp(30px,5vw,42px)] tracking-tight text-ink">Podcasts</h1>
+        <p class="mb-10 max-w-[560px] text-base leading-[1.65] text-ink2">
+            Every episode and video I'm a part of, all in one place - labeled by where you can watch or listen.
+        </p>
+    </div>
 
     {% set videos = advocu_activities | gdeVideos %}
     {% if videos.length %}
         <div class="flex flex-col border-t border-line">
             {% for item in videos %}
-                <article class="grid grid-cols-[120px_1fr] items-baseline gap-6 border-b border-line py-[22px] max-sm:grid-cols-1 max-sm:gap-1.5">
+                <article class="grid grid-cols-[120px_1fr] items-baseline gap-6 border-b border-line py-[22px] max-sm:grid-cols-1 max-sm:gap-1.5" data-reveal>
                     <time class="font-mono text-[11px] text-ink3" datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
                     <div>
-                        <a class="font-serif text-xl text-ink no-underline hover:text-accent" href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
+                        <a class="font-display text-xl text-ink no-underline hover:text-accent" href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
                         {% if item.description %}
                             <p class="mt-1.5 text-[13px] leading-[1.55] text-ink2">{{ item.description }}</p>
                         {% endif %}
                         <div class="mt-2.5 flex flex-wrap gap-1.5">
                             {% if item.platform %}
-                                <span class="inline-flex items-center gap-1.5 border border-[color-mix(in_srgb,var(--color-accent)_40%,var(--color-line))] bg-[color-mix(in_srgb,var(--color-accent)_14%,var(--color-surface))] px-2.5 py-0.5 font-mono text-[9px] tracking-[0.03em] text-accent transition-[background,color,border-color] duration-150 hover:bg-accent hover:text-surface hover:border-accent">
-                                    <a class="text-inherit no-underline" href="{{ item.url }}" target="_blank" rel="noopener">{{ item.platform }}</a>
-                                </span>
+                                <a class="inline-flex items-center gap-1.5 border border-[color-mix(in_srgb,var(--color-accent)_40%,var(--color-line))] bg-[color-mix(in_srgb,var(--color-accent)_14%,var(--color-surface))] px-2.5 py-0.5 font-mono text-[9px] tracking-[0.03em] text-accent no-underline transition-[background,color,border-color] duration-150 hover:border-accent hover:bg-accent hover:text-surface" href="{{ item.url }}" target="_blank" rel="noopener">{{ item.platform }}</a>
                             {% endif %}
                             {% for tag in item.tags | head(4) %}
-                                <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[9px] tracking-[0.03em] text-ink2">{{ tag }}</span>
+                                <span class="pill text-[9px]">{{ tag }}</span>
                             {% endfor %}
                         </div>
                     </div>
@@ -39,6 +39,6 @@ eleventyNavigation:
             {% endfor %}
         </div>
     {% else %}
-        <p>No episodes yet - check back soon!</p>
+        <p>No episodes yet. New episodes, streams, and talks land here as they go out.</p>
     {% endif %}
 </section>

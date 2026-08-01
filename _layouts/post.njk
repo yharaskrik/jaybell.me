@@ -3,14 +3,14 @@ layout: base.njk
 ---
 
 <article class="py-14 pb-[72px]">
-    <header class="mb-12 border-b border-line pb-8">
+    <header class="animate-rise mb-12 border-b border-line pb-8">
         <p class="mb-4 font-mono text-[11px] uppercase tracking-[0.04em] text-ink3">
             <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
             {% if author %}
                 · {{ author }}
             {% endif %}
         </p>
-        <h1 class="mb-3.5 font-serif text-[clamp(32px,5vw,46px)] leading-[1.12] text-ink">{{ title }}</h1>
+        <h1 class="mb-3.5 font-display text-[clamp(32px,5vw,46px)] leading-[1.12] text-ink">{{ title }}</h1>
         {% if description %}
             <p class="max-w-[560px] text-base leading-[1.6] text-ink2">{{ description }}</p>
         {% endif %}
@@ -21,7 +21,7 @@ layout: base.njk
     {% if tags %}
         <div class="mt-2.5 flex flex-wrap gap-1.5">
             {% for tag in tags | filterTagList %}
-                <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[9px] tracking-[0.03em] text-ink2">#{{ tag }}</span>
+                <span class="pill text-[9px]">#{{ tag }}</span>
             {% endfor %}
         </div>
     {% endif %}

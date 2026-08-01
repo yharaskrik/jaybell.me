@@ -8,6 +8,8 @@
 
 - Wants scraped data checked into the repo under `_data/` and treated as the canonical source of truth for site content — not left in a gitignored scratch area (e.g. `gen/`). Confidence: 0.9
 
+- Verifies UI/behavior changes end-to-end in a real browser rather than trusting the diff: build → dev server → Playwright checks of rendered state (computed styles, IntersectionObserver state, emulated `prefers-reduced-motion`, theme toggle transitions) → production build → cleanup (temp screenshots deleted, dev server stopped). Confidence: 0.7
+
 ## Git workflow
 
 - Wraps up work sessions by asking to "format, commit and push everything" — expects the agent to run the repo's formatter (Prettier via `pnpm format`) before committing, then commit all pending changes and push to the remote. Confidence: 0.8

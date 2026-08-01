@@ -20,3 +20,23 @@
 - Wants no em dashes (—) anywhere in hand-written site copy — HTML template copy (index/about/blog/podcast templates) and blog markdown posts; em dashes should be replaced with plain hyphens. Confidence: 0.9
 
 - Scopes copy/punctuation cleanups to hand-written templates and blog posts only, explicitly excluding data-driven content (e.g., episode titles/descriptions in the advocu activities JSON) — data files stay untouched even if they contain the same characters. Confidence: 0.8
+
+- Wants a real face/identity on his personal site: a photo of himself in the hero and on the About page, not an anonymous avatar-less design. Confidence: 0.6
+
+- Prefers "futuristic"-tagged Google Fonts for the site's display and mono type (Audiowide for headings, Chakra Petch for mono labels) over the reference site's borrowed stack (Geist / Instrument Serif / DM Mono) — deliberately killing the biggest "clone tell" flagged in the design review. Confidence: 0.6
+
+- Wants the design-inspiration source explicitly credited (footer: "Design inspired by Murat Kirazkaya") rather than presenting a borrowed design as original. Confidence: 0.6
+
+- Wants a complete, properly-engineered dark mode: class-based tokens, localStorage persistence, and a no-flash inline bootstrap so the wrong theme never flashes before first paint. Confidence: 0.7
+
+- Wants the site to be distinctly his own rather than a recolor of the reference site it was modeled on — accepts and prioritizes differentiation work (own photo, own fonts, credit) after a review flags clone tells. Confidence: 0.6
+
+- Values accessibility and honest interaction on the site: WCAG AA text contrast, custom `:focus-visible` rings in the accent color, `prefers-reduced-motion` guards, and truthful link affordances (no fake row hovers, adequate hit areas). Confidence: 0.5
+
+- Prefers a cohesive motion vocabulary that animates only `transform`/`opacity` (no layout-affecting properties, no scroll-jacking) with one consistent easing (expo-out) and choreographed staggers — hero entrance at 0/70/140/210ms, row cascades at 40ms — plus quick micro-interactions (active scale, hover arrow nudge). Confidence: 0.6
+
+- Prefers meaning-preserving `prefers-reduced-motion` variants — fade in place instead of spatial movement, keep the meaning, drop the motion — over a blanket global kill-all guard; reduced-motion handling should be per-element, not `* { animation-duration: 0.01ms !important }`. Confidence: 0.6
+
+- Prefers progressive-enhancement gating for JS-dependent behavior: scroll-reveal hiding rules only apply under a `.js` class the bootstrap adds, so no-JS users see everything; IntersectionObserver reveals elements as they enter the viewport. Confidence: 0.6
+
+- Keeps motion sized to the site's calm editorial register and deliberately refuses to add motion for surfaces that don't exist (menus/dialogs/loaders) — calling such invented animation "theater". Confidence: 0.6

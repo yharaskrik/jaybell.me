@@ -8,30 +8,32 @@ eleventyNavigation:
 ---
 
 <section class="py-14 pb-[72px]">
-    <h1 class="mb-3 font-serif text-[clamp(30px,5vw,42px)] tracking-tight text-ink">Blog</h1>
-    <p class="mb-10 max-w-[560px] text-base leading-[1.65] text-ink2">
-        A single stream of my writing - everything published on this site plus my posts around the web.
-    </p>
+    <div class="animate-rise">
+        <h1 class="mb-3 font-display text-[clamp(30px,5vw,42px)] tracking-tight text-ink">Blog</h1>
+        <p class="mb-10 max-w-[560px] text-base leading-[1.65] text-ink2">
+            A single stream of my writing - everything published on this site plus my posts around the web.
+        </p>
+    </div>
 
     {% set stream = collections.posts | mergeStream(advocu_activities | gdePosts) %}
     {% if stream.length %}
         <div class="flex flex-col border-t border-line">
             {% for item in stream %}
-                <article class="grid grid-cols-[120px_1fr] items-baseline gap-6 border-b border-line py-[22px] max-sm:grid-cols-1 max-sm:gap-1.5">
+                <article class="grid grid-cols-[120px_1fr] items-baseline gap-6 border-b border-line py-[22px] max-sm:grid-cols-1 max-sm:gap-1.5" data-reveal>
                     <time class="font-mono text-[11px] text-ink3" datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
                     <div>
-                        <a class="font-serif text-xl text-ink no-underline hover:text-accent" href="{{ item.url }}" {% if item.isExternal %}target="_blank" rel="noopener"{% endif %}>{{ item.title }}</a>
+                        <a class="font-display text-xl text-ink no-underline hover:text-accent" href="{{ item.url }}" {% if item.isExternal %}target="_blank" rel="noopener"{% endif %}>{{ item.title }}</a>
                         {% if item.description %}
                             <p class="mt-1.5 text-[13px] leading-[1.55] text-ink2">{{ item.description }}</p>
                         {% endif %}
                         <div class="mt-2.5 flex flex-wrap gap-1.5">
-                            <span class="inline-flex items-center gap-1.5 bg-surface3 px-2 py-0.5 font-mono text-[9px] tracking-[0.03em] text-ink2">{{ item.site }}{% if item.isExternal %} ↦{% endif %}</span>
+                            <span class="pill">{{ item.site }}{% if item.isExternal %} ↦{% endif %}</span>
                         </div>
                     </div>
                 </article>
             {% endfor %}
         </div>
     {% else %}
-        <p>No posts yet - check back soon!</p>
+        <p>No posts yet. Writing on Angular, Nx, and open source lands here - grab the <a href="/feed.xml">RSS feed</a> to catch it.</p>
     {% endif %}
 </section>
