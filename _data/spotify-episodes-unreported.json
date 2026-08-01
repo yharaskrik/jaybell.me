@@ -1,0 +1,62 @@
+[
+  {
+    "title": "A+ Show S11E11 | Angular 22 Has Landed — And It's Built for the Future with Mark Techson",
+    "link": "https://open.spotify.com/episode/28Aac6L4xuoOVBtkNFcZMN",
+    "publishDate": "2026-06-03",
+    "type": "Podcasts",
+    "description": "In this episode of the Angular Plus Show, the hosts sit down with Mark Techson to unpack what's exciting in Angular 22, from signal forms, Angular Aria, error boundaries, and template improvements to the growing role of AI and agentic workflows in modern development. Find out where Angular is headed, how the framework is adapting for the next generation of web apps, and why developer expertise still matters in an AI-assisted world. Link to the new code: https://github.com/angular/angular/releases/tag/v22.0.0",
+    "platform": "Spotify",
+    "duration": "48 min 34 sec",
+    "tags": ["Angular"]
+  },
+  {
+    "title": "A+ Show S11 E10 | AI, Engineering & the Future of Software with Doguhan Uluca",
+    "link": "https://open.spotify.com/episode/2N4rI46nlvTMGZLlOWL9Vn",
+    "publishDate": "2026-05-20",
+    "type": "Podcasts",
+    "description": "In this episode of Angular Plus Show, the hosts sit down with Doguhan Uluca, Director of Software Engineering at Capital One and Angular author, for a candid conversation about how AI is reshaping software development. From vibe coding, multi-agent workflows, and AI-assisted architecture reviews to token economics, open-source models, and the future of engineering careers, the discussion explores both the excitement and uncertainty surrounding AI in tech. It's a thoughtful, funny, and occasionally existential deep dive into where the industry may be headed next.",
+    "platform": "Spotify",
+    "duration": "47 min 34 sec",
+    "tags": ["Angular", "AI"]
+  },
+  {
+    "title": "A+ Show S11 E8 | The cross-section of AI and mentoring with Lukas Ruebbelke",
+    "link": "https://open.spotify.com/episode/0d2EYYvEUzaepXcnF8Lfc3",
+    "publishDate": "2026-04-29",
+    "type": "Podcasts",
+    "description": "Lukas brings his expertise and passion for developer experience and learning to answer the big question, \"what does mentoring look like in the age of AI and coding agents?\" Lukas is a staff engineer at Weights & Biases. Coding agents are changing how software is being designed, built, and tested. On this episode we explore how engineering is still at the core of the disciplines of crafting software.",
+    "platform": "Spotify",
+    "duration": "48 min 35 sec",
+    "tags": ["Angular", "AI"]
+  },
+  {
+    "title": "A+ Show S11E6 | Fostering communities and knowledge sharing with Giovanni Rivas",
+    "link": "https://open.spotify.com/episode/4KemuIBRrQp4v13MdjeMjE",
+    "publishDate": "2026-04-08",
+    "type": "Podcasts",
+    "description": "Growing a developer community (or any community for that matter!) is harder than it looks. This week we welcome Giovanni Rivas to talk about the real obstacles and opportunities in community building, mentorship, open-source collaboration, and the importance of knowledge sharing. Show notes: https://npmx.dev/, https://cloud.google.com/blog/topics/training-certifications/join-a-google-developer-student-club/, https://gdg.community.dev/, https://www.meetup.com/angularcommunity/. Get in touch with Gio! https://www.linkedin.com/in/giovanni-rivas-flores/ X: @garf50",
+    "platform": "Spotify",
+    "duration": "1 hr 2 min",
+    "tags": ["Angular", "Community"]
+  },
+  {
+    "title": "A+ show S11E3 | The Updated 2026 Angular Roadmap with Jay Bell & Brian Love",
+    "link": "https://open.spotify.com/episode/56a9saYlYzLzVSMUTK4ygE",
+    "publishDate": "2026-03-11",
+    "type": "Podcasts",
+    "description": "On this episode, Brian hosts Jay and Jay hosts Brian as the two of them discuss the updated Angular Roadmap, what was added, what was removed and where the focus is! https://angular.dev/roadmap https://github.com/angular/angular/discussions/66779",
+    "platform": "Spotify",
+    "duration": "36 min 42 sec",
+    "tags": ["Angular"]
+  },
+  {
+    "title": "A+ show S11E2 | Flint - Linting Reimagined with Josh Goldberg",
+    "link": "https://open.spotify.com/episode/5aR7KKTMM09tcuKtn4BniY",
+    "publishDate": "2026-03-04",
+    "type": "Podcasts",
+    "description": "There's probably no one that knows more about Linting than Josh Goldberg. Today we sat down to talk about his most recent work \"flint\" - a fast, friendly linter for JavaScript, TypeScript, and more. Learn more about Josh on https://www.joshuakgoldberg.com/ — Bluesky, GitHub, Mastodon. https://typescript-eslint.io https://flint.fyi",
+    "platform": "Spotify",
+    "duration": "1 hr 2 min",
+    "tags": ["Angular", "Web", "Web - CSS & UI", "Web - DevTools & Browser Automation"]
+  }
+]

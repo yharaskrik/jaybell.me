@@ -2,11 +2,17 @@
 
 ## Browser automation
 
-- Prefers browser scraping/automation to be done via the Playwright MCP server (explicitly directs the agent to "use the playwright mcp") rather than curl/HTML parsing. Confidence: 0.8
+- Prefers browser scraping/automation to be done via the Playwright MCP server (explicitly directs the agent to "use the playwright mcp" / "use playwrigth") rather than curl/HTML parsing. Confidence: 0.9
 
 - For scraping tasks, wants exhaustive collection rather than samples: scroll the entire list until a specified endpoint item is reached and capture every item with its full field set (title, name, date, description, link, platform, tags). Confidence: 0.6
 
 - Wants scraped data checked into the repo under `_data/` and treated as the canonical source of truth for site content — not left in a gitignored scratch area (e.g. `gen/`). Confidence: 0.9
+
+## Git workflow
+
+- Wraps up work sessions by asking to "format, commit and push everything" — expects the agent to run the repo's formatter (Prettier via `pnpm format`) before committing, then commit all pending changes and push to the remote. Confidence: 0.7
+
+- Keeps repos clean of generated/scratch artifacts: deletes stray testing screenshots rather than committing them, and adds gitignore rules (e.g., `/*.png`) so the same artifact type can't get committed again. Confidence: 0.6
 
 ## Build pipeline
 

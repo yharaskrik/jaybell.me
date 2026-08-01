@@ -11,4 +11,6 @@
 
 - Reports visual/styling issues by attaching a screenshot with a terse note (e.g., "the styling is off on the blog page", "these icons need some padding on the right hand side") rather than describing the layout problem in words — expect to inspect the image to diagnose. Confidence: 0.8
 
+- Scopes technical tasks by pasting the relevant official documentation link and asking a focused yes/no question (e.g., a GitHub Pages custom-domain verification doc + "do i need to set something?") — expects the agent to consult the linked docs and answer with a clear necessary-vs-optional breakdown rather than following the docs blindly. Confidence: 0.5
+
 - Attends to fine-grained UI spacing/padding polish — e.g., interactive elements (icons/arrows in list rows) need breathing room so they don't hug edges, especially where a hover highlight makes the cramping obvious. Confidence: 0.6
