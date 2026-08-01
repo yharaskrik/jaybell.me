@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: Blog
-description: Posts from Jay Bell — everything published here plus my writing around the web.
+description: Posts from Jay Bell - everything published here plus my writing around the web.
 eleventyNavigation:
     key: Blog
     order: 2
@@ -10,7 +10,7 @@ eleventyNavigation:
 <section class="py-14 pb-[72px]">
     <h1 class="mb-3 font-serif text-[clamp(30px,5vw,42px)] tracking-tight text-ink">Blog</h1>
     <p class="mb-10 max-w-[560px] text-base leading-[1.65] text-ink2">
-        A single stream of my writing — everything published on this site plus my posts around the web.
+        A single stream of my writing - everything published on this site plus my posts around the web.
     </p>
 
     {% set stream = collections.posts | mergeStream(advocu_activities | gdePosts) %}
@@ -32,6 +32,6 @@ eleventyNavigation:
             {% endfor %}
         </div>
     {% else %}
-        <p>No posts yet — check back soon!</p>
+        <p>No posts yet - check back soon!</p>
     {% endif %}
 </section>

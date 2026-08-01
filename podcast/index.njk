@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: Podcasts
-description: All of my podcast episodes and videos — The Angular Plus Show and more, across Spotify, YouTube, and others.
+description: All of my podcast episodes and videos - The Angular Plus Show and more, across Spotify, YouTube, and others.
 eleventyNavigation:
     key: Podcasts
     order: 4
@@ -10,7 +10,7 @@ eleventyNavigation:
 <section class="py-14 pb-[72px]">
     <h1 class="mb-3 font-serif text-[clamp(30px,5vw,42px)] tracking-tight text-ink">Podcasts</h1>
     <p class="mb-10 max-w-[560px] text-base leading-[1.65] text-ink2">
-        Every episode and video I'm a part of, all in one place — labeled by where you can watch or listen.
+        Every episode and video I'm a part of, all in one place - labeled by where you can watch or listen.
     </p>
 
     {% set videos = advocu_activities | gdeVideos %}
@@ -39,6 +39,6 @@ eleventyNavigation:
             {% endfor %}
         </div>
     {% else %}
-        <p>No episodes yet — check back soon!</p>
+        <p>No episodes yet - check back soon!</p>
     {% endif %}
 </section>
