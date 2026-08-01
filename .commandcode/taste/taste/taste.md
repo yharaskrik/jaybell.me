@@ -11,7 +11,7 @@
 - Wants the canonical activities data file sorted by publish date (newest first) rather than by Advocu's submitted-date order — ordering key is when content was published, not when it was added (asked to "sort them all by published date"). Confidence: 0.7
 - Communicates design direction by pointing at concrete example sites/URLs ("Example of a homepage I like: ...") rather than describing the aesthetic abstractly. Confidence: 0.6
 
-- Reports visual/styling issues by attaching a screenshot with a terse note (e.g., "the styling is off on the blog page", "these icons need some padding on the right hand side") rather than describing the layout problem in words — expect to inspect the image to diagnose. Confidence: 0.8
+- Reports visual/styling issues by attaching a screenshot with a terse note (e.g., "the styling is off on the blog page", "these icons need some padding on the right hand side", "there is a weird border around it") rather than describing the layout problem in words — expect to inspect the image to diagnose. Confidence: 0.85
 
 - Scopes technical tasks by pasting the relevant official documentation link and asking a focused yes/no question (e.g., a GitHub Pages custom-domain verification doc + "do i need to set something?") — expects the agent to consult the linked docs and answer with a clear necessary-vs-optional breakdown rather than following the docs blindly. Confidence: 0.5
 
