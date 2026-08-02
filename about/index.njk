@@ -4,8 +4,10 @@ title: About
 description: About Jay Bell - CTO of Trellis.org, Angular GDE, Nx Champion, host of The Angular Plus Show.
 eleventyNavigation:
     key: About
-    order: 3
+    order: 5
 ---
+
+{% from "icons.njk" import typescript, angular, nestjs, express, nx, graphql, ngrx, webstorm, circleci %}
 
 <section class="py-14 pb-[72px]">
     <div class="animate-rise mb-10 flex items-center gap-5">
@@ -34,18 +36,50 @@ eleventyNavigation:
         <p>
             I'm born and raised in Canada and call Kamloops, B.C. home. I've been shipping software for
             over a decade, and have been chasing entrepreneurial ventures from drones to software and mobile apps on the
-            way to co-founding Trellis. My toolkit is TypeScript, Angular, Nest, Nx, GraphQL, NgRx,
-            DevOps and CI/CD through Nx Agents and CircleCI.
+            way to co-founding Trellis.
         </p>
+        <p class="mb-4">My favorite stack and tools to build with are:</p>
+        <div class="stack-icons mb-5 flex flex-wrap items-center gap-x-3 gap-y-2.5">
+            <span class="inline-flex items-center gap-1.5 text-[13px] text-ink2">
+                {{ typescript('h-4 w-4') }}TypeScript
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-[13px] text-ink2">
+                {{ angular('h-4 w-4') }}Angular
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-[13px] text-ink2">
+                {{ nestjs('h-4 w-4') }}Nest
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-[13px] text-ink2">
+                {{ express('h-4 w-4') }}Express
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-[13px] text-ink2">
+                {{ nx('h-4 w-4') }}Nx
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-[13px] text-ink2">
+                {{ graphql('h-4 w-4') }}GraphQL
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-[13px] text-ink2">
+                {{ ngrx('h-4 w-4') }}NgRx
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-[13px] text-ink2">
+                {{ nx('h-4 w-4') }}Nx Cloud/Agents
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-[13px] text-ink2">
+                {{ webstorm('h-4 w-4') }}WebStorm
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-[13px] text-ink2">
+                {{ circleci('h-4 w-4') }}CircleCI
+            </span>
+        </div>
         <p>
             Community is where I spend a lot of my energy. I'm an Angular Google Developer Expert, an Nx
-            Champion, and an active open-source maintainer and contributor - you'll find me around Nx,
-            Angular, NgRx, and Nest. I co-host The Angular Plus Show, write the Trellis Engineering Dispatch newsletter, and share
+            Champion, and an active open-source maintainer and contributor - you'll find me around the same packages and tools I used in my job and hobby projects.
+            I co-host The Angular Plus Show, write the <a href="https://www.linkedin.com/newsletters/trellis-engineering-dispatch-7482227961551593472/" target="_blank">Trellis Engineering Dispatch newsletter</a>, and share
             what we're learning on the
-            <a href="https://tech.trellis.org" target="_blank" rel="noreferrer noopener">Trellis Tech Blog</a>.
+            <a href="https://tech.trellis.org" target="_blank">Trellis Tech Blog</a>.
         </p>
         <p>
-            Off the clock, I'm probably building The Animus, a Warhammer 40k companion app that helps players play the Horde game mode for Warhammer 40k.
+            Off the clock, I'm probably building The Animus, a Warhammer 40k companion app that helps players play the Horde game mode for Warhammer 40k, mountain biking, or just coding for fun.
         </p>
     </div>
 

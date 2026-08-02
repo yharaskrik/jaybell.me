@@ -21,6 +21,7 @@
     --color-surface3: #e6e3dc;
     --color-accent: #6a5aae;
     --color-accent-soft: #b3aae2;
+    --color-accent-strong: #54458f;
     --color-line: rgba(22, 21, 29, 0.12);
     --color-code-bg: #16151d;
 }
@@ -37,6 +38,7 @@
     --color-surface3: #24222b;
     --color-accent: #b3aae2;
     --color-accent-soft: #9487d8;
+    --color-accent-strong: #9487d8;
     --color-line: rgba(232, 230, 238, 0.14);
     --color-code-bg: #0d0c10;
 }
@@ -134,7 +136,6 @@
 
     .prose-jay {
         @apply text-ink2 text-[15px] leading-relaxed;
-
         h2 {
             @apply text-ink font-display mt-12 mb-4 text-[28px] tracking-tight;
         }
@@ -208,6 +209,12 @@
         .tag {
             @apply text-[10px];
         }
+    }
+
+    /* Stack icons on the About page: keep brand logos at their natural shape */
+    .stack-icons img {
+        margin: 0;
+        border-radius: 0;
     }
 }
 
