@@ -1,0 +1,19 @@
+{
+    "kettanaito": {
+        "name": "Artem Zakharchenko",
+        "website": "https://kettanaito.com/",
+        "bluesky": "https://bsky.app/profile/kettanaito.com",
+        "twitter": "https://x.com/kettanaito",
+        "github": "https://github.com/kettanaito",
+        "note": "Creator of Mock Service Worker, teaches automated testing at EpicWeb.dev"
+    },
+    "yjaaidi": {
+        "name": "Younes Jaaidi",
+        "website": "https://marmicode.io/",
+        "bluesky": "https://bsky.app/profile/younes.marmico.de",
+        "twitter": "https://x.com/yjaaidi",
+        "github": "https://github.com/yjaaidi",
+        "linkedin": "https://fr.linkedin.com/in/yjaaidi",
+        "note": "Software Cook behind Marmicode, Angular GDE and Nx Champion"
+    }
+}

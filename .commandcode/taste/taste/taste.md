@@ -4,7 +4,7 @@
 - Likes the site's accent color (lavender) to be used liberally across UI elements — labels, numbers, dates, tags, hover states, focus rings — rather than reserved for just one or two spots. Confidence: 0.7
 - Wants solid/primary buttons to use the accent (lavender) color in both light and dark modes rather than mode-adaptive black/white ink, with a distinct lavender shade on hover that reads as darker/deeper than the base. Confidence: 0.8
 - Uses arrow glyphs with directional semantics in UI copy: a link/button that navigates should show a right arrow (→), not a down arrow (↓, which reads as scroll/dropdown). Confidence: 0.7
-- Prefers consolidating small standalone pages into a section on an existing page (moved the Links page's content into a Links section on About) rather than maintaining separate single-purpose pages. Confidence: 0.5
+- Prefers consolidating small standalone pages into a section on an existing page (moved the Links page's content into a Links section on About) rather than maintaining separate single-purpose pages — e.g., explicitly declined a dedicated authors page, asking instead for author info inline as a subsection in each resource row. Confidence: 0.7
 - Prefers content amalgamated into single unified "activity stream" views rather than separate silos: e.g., a Blog tab merging first-party repo posts with external posts (date-sorted, labeled by source site), and a Podcasts tab merging all episodes labeled by platform (Spotify/YouTube/etc.). Confidence: 0.8
 
 - Prefers a single source-of-truth data file driving site content pages (e.g., the scraped Advocu/GDE activity feed) with filters deriving per-page lists from it — and removing obsolete hand-maintained data files once the new source replaces them. Explicitly wants scraped/derived content merged straight into the canonical file with no reported/unreported status distinction (asked for "the unreported stuff in with all the other episodes... they should not be distinguished", separate status file removed). Confidence: 0.85
@@ -43,6 +43,7 @@
 - Keeps motion sized to the site's calm editorial register and deliberately refuses to add motion for surfaces that don't exist (menus/dialogs/loaders) — calling such invented animation "theater". Confidence: 0.6
 
 - Delegates personal-branding/bio copy end-to-end: asks the agent to research him online (articles, bios, references about him) and write the bio grounded in what it finds, then update the site page directly rather than drafting for review first. When the agent's research comes up thin, he supplements it himself by pasting specific source URLs and attachments, expecting them fetched and folded in. Confidence: 0.7
+- Supplies seed example links and expects the agent to "fan out" and research the rest of the data — e.g., given a couple of author profile URLs, find their Bluesky, LinkedIn, X, GitHub links and fill in the structured data file rather than asking which links to include. Confidence: 0.6
 
 - Edits files directly in the working tree while the agent is mid-task (e.g., tweaked the About bio wording himself between agent turns) — expects the agent to notice the file changed, re-read it before editing, and merge new content around his manual edits rather than overwrite them. Confidence: 0.65
 
@@ -57,7 +58,6 @@
 - Wants interactive/motion patterns applied consistently site-wide: once a hover animation exists for one listing type (e.g., home-page blog cards), the same treatment (background/border transition + arrow nudge) should be reused on the analogous rows on every other page (blog, podcast, home sections) — "Add the same animation to the Podcast and Blog page rows as in #3" — rather than inventing per-page variations. Confidence: 0.7
 
 - Treats arrow glyphs (→/↦) as a clickability signal: non-clickable pills/elements must not carry arrows — asked to "remove any arrows from pills that are not clickable across the site", keeping arrows only on actual links. Confidence: 0.75
-
+- Wants entire listing rows clickable, not just the link text: on the home, blog and podcast pages the full row (title, description, pills) should be wrapped in the anchor — keeping a small arrow affordance on the side — so the whole row is the hit target. Confidence: 0.85
 - Expects responsive spacing tuned per breakpoint rather than one size for all: over-generous desktop paddings (e.g., `py-[72px]`) should be reduced on mobile (e.g., `py-10 md:py-[72px]`) so sections don't leave awkward gaps on small screens. Confidence: 0.6
 - Pitfalls with Tailwind shorthand-vs-responsive utilities: `py-10 md:py-[72px]` overrides a bottom padding set elsewhere at the `md` breakpoint — when top and bottom need different responsive treatment, split into explicit `pt-*`/`pb-*` utilities rather than combining `py-*` with a second responsive `py-*`. Confidence: 0.6
-  s with Tailwind shorthand-vs-responsive utilities: `py-10 md:py-[72px]` overrides a bottom padding set elsewhere at the `md` breakpoint — when top and bottom need different responsive treatment, split into explicit `pt-*`/`pb-*` utilities rather than combining `py-*` with a second responsive `py-*`. Confidence: 0.6

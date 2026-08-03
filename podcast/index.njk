@@ -4,7 +4,7 @@ title: Podcasts
 description: All of my podcast episodes and videos - The Angular Plus Show and more, across Spotify, YouTube, and others.
 eleventyNavigation:
     key: Podcasts
-    order: 4
+    order: 5
 ---
 
 <section class="py-14 pb-[72px]">
@@ -22,18 +22,20 @@ eleventyNavigation:
                 <article class="group grid grid-cols-[120px_1fr] items-baseline gap-6 border-b border-line py-[22px] max-sm:grid-cols-1 max-sm:gap-1.5 transition-[background,border-color] duration-150 hover:bg-surface2 hover:border-ink3 max-sm:px-3 max-sm:-mx-3" data-reveal>
                     <time class="font-mono text-[11px] text-ink3" datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
                     <div>
-                        <a class="font-display text-xl text-ink no-underline hover:text-accent" href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
-                        {% if item.description %}
-                            <p class="mt-1.5 text-[13px] leading-[1.55] text-ink2">{{ item.description }}</p>
-                        {% endif %}
-                        <div class="mt-2.5 flex flex-wrap gap-1.5">
-                            {% if item.platform %}
-                                <a class="pill text-[9px] no-underline" href="{{ item.url }}" target="_blank" rel="noopener">{{ item.platform }}</a>
+                        <a class="block text-inherit no-underline" href="{{ item.url }}" target="_blank" rel="noopener">
+                            <div class="font-display text-xl text-ink group-hover:text-accent">{{ item.title }}</div>
+                            {% if item.description %}
+                                <p class="mt-1.5 text-[13px] leading-[1.55] text-ink2">{{ item.description }}</p>
                             {% endif %}
-                            {% for tag in item.tags | head(4) %}
-                                <span class="pill text-[9px]">{{ tag }}</span>
-                            {% endfor %}
-                        </div>
+                            <div class="mt-2.5 flex flex-wrap gap-1.5">
+                                {% if item.platform %}
+                                    <span class="pill text-[9px]">{{ item.platform }}</span>
+                                {% endif %}
+                                {% for tag in item.tags | head(4) %}
+                                    <span class="pill text-[9px]">{{ tag }}</span>
+                                {% endfor %}
+                            </div>
+                        </a>
                     </div>
                 </article>
             {% endfor %}

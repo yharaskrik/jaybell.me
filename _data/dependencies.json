@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Angular Testing Cookbook",
+        "url": "https://cookbook.marmicode.io/angular/testing",
+        "description": "A pragmatic Angular testing cookbook - the companion resource to the Pragmatic Angular Testing course. Covers component testing, harnesses, mocks, and more, with a focus on fast, maintainable tests over dogmatic rules.",
+        "platform": "Marmicode",
+        "type": "Cookbook",
+        "tags": ["Angular", "Testing"],
+        "datePosted": "2024-01-01",
+        "dateShared": "2026-08-03",
+        "author": "yjaaidi"
+    },
+    {
+        "title": "EpicWeb - Artem Zakharchenko",
+        "url": "https://www.epicweb.dev/contributors/artem-zakharchenko",
+        "description": "Artem's contributor page on EpicWeb - best practices and pragmatic automated testing guidance from the creator of Mock Service Worker.",
+        "platform": "EpicWeb",
+        "type": "Articles",
+        "tags": ["Testing", "Best Practices"],
+        "datePosted": "2024-01-01",
+        "dateShared": "2026-08-03",
+        "author": "kettanaito"
+    }
+]

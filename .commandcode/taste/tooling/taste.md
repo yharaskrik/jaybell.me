@@ -27,3 +27,7 @@
 - Diagnoses an "invisible"/missing styled element by first checking whether the compiled CSS is stale before assuming a markup bug — an invisible-but-clickable "About me" button turned out to be Tailwind utilities (`bg-accent`) not regenerated into `gen/main.css`, confirmed via computed styles and served CSS before editing code. Confidence: 0.6
 
 - Reuses existing site infrastructure/snippets rather than introducing new ones: when adding Google Analytics, reuses the GA4 measurement ID from the old Angular app already present in the repo (G-506R66WVXZ) and places the standard gtag snippet in the shared base layout `<head>`, then verifies it in rendered output and checks browser console for errors. Confidence: 0.6
+
+## Data file conventions
+
+- Names `_data/` JSON files with underscores matching the Nunjucks identifier they map to (e.g., `dependency_authors.json` → `dependency_authors`), following the repo's existing convention — a hyphenated filename (`dependency-authors.json`) silently fails to expose the data to templates, and the fix was renaming the file rather than changing template code. Confidence: 0.75

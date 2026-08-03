@@ -1,0 +1,78 @@
+---
+layout: base.njk
+title: Dependencies
+description: People, blogs, articles, videos, podcasts and other resources I enjoyed reading and may provide value to others.
+eleventyNavigation:
+    key: Dependencies
+    order: 3
+---
+
+<section class="py-14 pb-[72px]">
+    <div class="animate-rise">
+        <h1 class="mb-3 font-display text-[clamp(30px,5vw,42px)] tracking-tight text-ink">Dependencies</h1>
+        <p class="mb-10 max-w-[560px] text-base leading-[1.65] text-ink2">
+            People, blogs, articles, videos, podcasts and other resources I enjoyed reading and may provide value to others.
+        </p>
+    </div>
+
+    {% if dependencies.length %}
+        <div class="flex flex-col border-t border-line">
+            {% for item in dependencies %}
+                {% set author = dependency_authors[item.author] %}
+                <article class="group border-b border-line py-6 transition-[background,border-color] duration-150 hover:bg-surface2 hover:border-ink3 max-sm:px-3 max-sm:-mx-3" data-reveal>
+                    <div class="flex flex-wrap items-start justify-between gap-6 pl-5 pr-4 max-sm:pl-0 max-sm:pr-0">
+                        <div class="min-w-0">
+                            <div class="mb-2 flex flex-wrap items-center gap-2 font-mono text-[10px] tracking-[0.05em] text-ink3">
+                                <span class="text-accent">{{ item.platform }}</span>
+                                <span>·</span>
+                                <span>{{ item.type }}</span>
+                                <span>·</span>
+                                <time datetime="{{ item.dateShared | htmlDateString }}">shared {{ item.dateShared | formatDate }}</time>
+                            </div>
+                            <a class="font-display text-xl text-ink no-underline hover:text-accent" href="{{ item.url }}" target="_blank" rel="noreferrer noopener">{{ item.title }}</a>
+                            {% if item.description %}
+                                <p class="mt-1.5 max-w-[560px] text-[13px] leading-[1.55] text-ink2">{{ item.description }}</p>
+                            {% endif %}
+                            {% if item.tags %}
+                                <div class="mt-2.5 flex flex-wrap gap-1.5">
+                                    {% for tag in item.tags %}
+                                        <span class="pill">{{ tag }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        <a class="mt-1 -my-2 flex-shrink-0 py-2 font-mono text-[10px] tracking-[0.03em] text-ink3 transition-transform duration-150 group-hover:translate-x-0.5 hover:translate-x-0.5 hover:text-accent" href="{{ item.url }}" target="_blank" rel="noreferrer noopener">Visit →</a>
+                    </div>
+
+                    {% if author %}
+                        <div class="mt-5 border-t border-line/60 pt-4 pl-5 pr-4 max-sm:pl-0 max-sm:pr-0">
+                            <div class="mb-1.5 font-mono text-[10px] uppercase tracking-[0.08em] text-ink3">Author · {{ author.name }}</div>
+                            {% if author.note %}
+                                <p class="mb-2.5 text-[13px] leading-[1.55] text-ink2">{{ author.note }}</p>
+                            {% endif %}
+                            <div class="flex flex-wrap gap-x-4 gap-y-1.5">
+                                {% if author.website %}
+                                    <a class="font-mono text-[10px] tracking-[0.03em] text-ink3 hover:text-accent" href="{{ author.website }}" target="_blank" rel="noreferrer noopener">Website</a>
+                                {% endif %}
+                                {% if author.bluesky %}
+                                    <a class="font-mono text-[10px] tracking-[0.03em] text-ink3 hover:text-accent" href="{{ author.bluesky }}" target="_blank" rel="noreferrer noopener">Bluesky</a>
+                                {% endif %}
+                                {% if author.linkedin %}
+                                    <a class="font-mono text-[10px] tracking-[0.03em] text-ink3 hover:text-accent" href="{{ author.linkedin }}" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+                                {% endif %}
+                                {% if author.twitter %}
+                                    <a class="font-mono text-[10px] tracking-[0.03em] text-ink3 hover:text-accent" href="{{ author.twitter }}" target="_blank" rel="noreferrer noopener">X</a>
+                                {% endif %}
+                                {% if author.github %}
+                                    <a class="font-mono text-[10px] tracking-[0.03em] text-ink3 hover:text-accent" href="{{ author.github }}" target="_blank" rel="noreferrer noopener">GitHub</a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endif %}
+                </article>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>Nothing shared yet - check back soon.</p>
+    {% endif %}
+</section>

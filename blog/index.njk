@@ -4,7 +4,7 @@ title: Blog
 description: Posts from Jay Bell - everything published here plus my writing around the web.
 eleventyNavigation:
     key: Blog
-    order: 2
+    order: 4
 ---
 
 <section class="py-14 pb-[72px]">
@@ -22,13 +22,15 @@ eleventyNavigation:
                 <article class="group grid grid-cols-[120px_1fr] items-baseline gap-6 border-b border-line py-[22px] max-sm:grid-cols-1 max-sm:gap-1.5 transition-[background,border-color] duration-150 hover:bg-surface2 hover:border-ink3 max-sm:px-3 max-sm:-mx-3" data-reveal>
                     <time class="font-mono text-[11px] text-ink3" datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
                     <div>
-                        <a class="font-display text-xl text-ink no-underline hover:text-accent" href="{{ item.url }}" {% if item.isExternal %}target="_blank" rel="noopener"{% endif %}>{{ item.title }}</a>
-                        {% if item.description %}
-                            <p class="mt-1.5 text-[13px] leading-[1.55] text-ink2">{{ item.description }}</p>
-                        {% endif %}
-                        <div class="mt-2.5 flex flex-wrap gap-1.5">
-                            <span class="pill">{{ item.site }}</span>
-                        </div>
+                        <a class="block text-inherit no-underline" href="{{ item.url }}" {% if item.isExternal %}target="_blank" rel="noopener"{% endif %}>
+                            <div class="font-display text-xl text-ink group-hover:text-accent">{{ item.title }}</div>
+                            {% if item.description %}
+                                <p class="mt-1.5 text-[13px] leading-[1.55] text-ink2">{{ item.description }}</p>
+                            {% endif %}
+                            <div class="mt-2.5 flex flex-wrap gap-1.5">
+                                <span class="pill">{{ item.site }}</span>
+                            </div>
+                        </a>
                     </div>
                 </article>
             {% endfor %}
