@@ -26,6 +26,13 @@ I was particularly impressed when using it with Matt Pocock's [Wayfinder skill](
 I didn't even stop it, I don't know what Command Code/Deepseeks compaction is like (or if there is any), but I used Wayfinder
 to do a big application wide refactor and I completed the entire multistep plan in a single chat session without ever explicitly compacting the context.
 
+With the right guidance it was able to help me completely rebuild and bring up to standards my Angular tests thanks to
+
+1. The [Angular Testing Cookbook](https://cookbook.marmicode.io/angular/testing)
+2. High quality articles on testing best practices thanks to Artem Zakharchenko's [EpicWeb articles](https://www.epicweb.dev/contributors/artem-zakharchenko) on testing
+3. Official [Playwright Best Practices](https://playwright.dev/docs/best-practices)
+4. and, the [RxDB Angular Signals](https://rxdb.info/articles/angular-database.html) integration guide
+
 If you haven't tried it yet, I would highly recommend it. Unfortunately, due to the overwhelming demand for the model due
 to seemingly how good of a job Deepseek did re-post training the flash model, there are currently capacity issues. But if you can
 use it, I suggest it! It is a great model, especially when you consider the price!
