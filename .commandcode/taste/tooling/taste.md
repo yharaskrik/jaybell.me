@@ -14,6 +14,8 @@
 
 - Wraps up work sessions by asking to "format, commit and push everything" — expects the agent to run the repo's formatter (Prettier via `pnpm format`) before committing, then commit all pending changes and push to the remote. Confidence: 0.8
 
+- This repo's formatting is governed by Nx (`pnpm nx format:check` / `format:write`), which supplies the correct Prettier config/plugins — running bare `prettier --write` without the Nx-managed config reformats entire `.njk` files with wrong settings (single quotes, expanded classes) and floods the diff; the correct move was to revert the reformat noise and re-apply only the intended edits. Confidence: 0.8
+
 - Keeps repos clean of generated/scratch artifacts: deletes stray testing screenshots rather than committing them, and adds gitignore rules (e.g., `/*.png`) so the same artifact type can't get committed again. Confidence: 0.6
 
 ## Build pipeline
